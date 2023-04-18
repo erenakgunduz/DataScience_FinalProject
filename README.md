@@ -8,7 +8,7 @@
 
 ### Modules
 
-1. Visualization of character attack data \[scatterplots of frame advantage on block (x) vs damage and stun (y)\], have switch to see how it changes when V-Trigger is activated, also have tile plots with all characters (rows) and maximum number of attacks (columns, but sorted) with colormap for plotting both frames oB and damage of attack, include Pearson correlation
+1. Visualization of character attack data \[scatterplots of frame advantage on block (x) vs damage and stun (y)\], also have tile plots with all characters (rows) and maximum number of attacks (columns, but sorted) with colormap for plotting both frames oB and damage of attack, include Pearson correlation
 
 ![Tile plot example](https://www.royfrancis.com/assets/images/posts/2015/2015-11-01-a-guide-to-elegant-tiled-heatmaps-in-r/measles-mod3.png)
 _Here's an example of the tile plot, but sorting by frame advantage instead of year and heatmap the damages_
