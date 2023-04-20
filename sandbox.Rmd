@@ -1,7 +1,7 @@
 ---
 title: "Sandbox"
 author: "Eren Akgunduz"
-date: "19 April 2023"
+date: "20 April 2023"
 output:
   pdf_document: default
 ---
@@ -16,9 +16,9 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 ```
 
-### For starters
+### Clean it
 
-```{r}
+```{r, eval=FALSE}
 df <- read.csv("data/all.csv", stringsAsFactors = FALSE)
 df$Damage <- gsub(".*\\((\\d+)\\).*", "\\1", df$Damage)
 df$Damage <- gsub("(\\d+)\\s*\\((\\d+)\\)", "pmax(\\1, \\2)", df$Damage)
@@ -44,18 +44,43 @@ df$throwHurt <- as.numeric(df$throwHurt)
 df$throwRange <- as.numeric(df$throwRange)
 na_rows <- df[!complete.cases(df), ]
 na_rows
-# df$Damage %>%
-#   tibble() %>%
-#   print(n = Inf)
-# df$Stun %>%
-#   tibble() %>%
-#   print(n = Inf)
 write.csv(df, "data/all.csv", row.names = FALSE)
+```
+
+```{r, eval=FALSE}
+df <- read.csv("data/all.csv", stringsAsFactors = FALSE)
+
+# Replace values in parentheses with the minimum value
+regx <- ".*?(\\-?\\d+)\\((\\-?\\d+)\\).*"
+df$onBlock <- gsub(regx, "\\1", df$onBlock)
+df$onBlock <- gsub("(\\-?\\d+)[\\*/](\\-?\\d+)", "\\1", df$onBlock)
+
+# Use ifelse to replace NA values w/ NA and non-NA values with the minimum value
+df$onBlock <- ifelse(
+  is.na(df$onBlock), # condition: check if value is NA
+  NA, # value to replace with if condition is TRUE
+  # value to replace with if condition is FALSE
+  pmin(as.numeric(df$onBlock), as.numeric(gsub(regx, "\\2", df$onBlock)))
+)
+
+# Convert column to numeric
+df$onBlock <- as.numeric(df$onBlock)
+
+write.csv(df, "data/all.csv", row.names = FALSE)
+```
+
+```{r}
+df <- read.csv("data/all.csv", stringsAsFactors = FALSE)
+# Check for missing values
+na_rows <- df[!complete.cases(df), ]
+na_rows
 ```
 
 ### KDE
 
-<!-- # ```{r}
-# ggplot(data, aes(onBlock)) +
-#   geom_density()
-# ``` -->
+```{r}
+ggplot(df, aes(Damage)) +
+  geom_density()
+ggplot(df, aes(Stun)) +
+  geom_density()
+```
