@@ -1,1 +1,1 @@
-# Street Fighter V Attacks & Archetypes w/ Machine Learning App
+# Analysis of Street Fighter V Attacks App
