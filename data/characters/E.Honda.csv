@@ -1,0 +1,33 @@
+Move,onBlock,plnCmd,airmove,followUp,projectile,moveType,health,stun,vgauge1,vgauge2,fDash,bDash,fWalk,bWalk,throwHurt,throwRange,Damage,Stun
+Stand LP,3,LP,False,False,False,normal,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,40,90
+Stand MP,2,MP,False,False,False,normal,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,70,120
+Stand HP,-7,HP,False,False,False,normal,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,90(80),150
+Stand LK,2,LK,False,False,False,normal,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,40,90
+Stand MK,4,MK,False,False,False,normal,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,60,120
+Stand HK,2(-4),HK,False,False,False,normal,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,90(80),150
+Crouch LP,2,d+LP,False,False,False,normal,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,40,90
+Crouch MP,2,d+MP,False,False,False,normal,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,60,120
+Crouch HP,-5,d+HP,False,False,False,normal,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,100,150
+Crouch LK,0,d+LK,False,False,False,normal,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,30,90
+Crouch MK,-2,d+MK,False,False,False,normal,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,60,120
+Crouch HK,-9,d+HK,False,False,False,normal,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,100,150
+Harai-Geri,-7,f+HK,False,False,False,normal,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,80,150
+Chikara-Ashi,4,df+HK,False,False,False,normal,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,90,120
+Tokoshizume,2,MP > df+HK,False,True,False,normal,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,70*63 (133),100*110 (210)
+Tsurane Harite,-6,LP > MP,False,True,False,normal,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,40*45 (85),90*90 (180)
+Neko Damashi,-6,MP+MK (VS1),False,False,False,vskill,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,60,120
+Raiden-Ho,-2,f+PPP,False,False,False,alpha,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,60,0
+Super Sumo Impact,-2,MK+HP,False,True,False,vbreak,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,60,0
+LP Hundred Hand Slap,2,LP (mash),False,False,False,special,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,100(110),160(170)
+MP Hundred Hand Slap,1,MP (mash),False,False,False,special,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,110(120),170(180)
+HP Hundred Hand Slap,-2,HP (mash),False,False,False,special,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,120(130),180(190)
+EX Hundred Hand Slap,-2,PP (mash),False,False,False,special,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,100(110),150(160)
+LP Sumo Headbutt,-4,"b,f+LP",False,False,False,special,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,120(100),180(150)
+MP Sumo Headbutt,-7,"b,f+MP",False,False,False,special,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,140(110),180(150)
+HP Sumo Headbutt,-12,"b,f+HP",False,False,False,special,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,160(120),180(150)
+EX Sumo Headbutt,-26,"b,f+PP",False,False,False,special,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,160(130),200(180)
+LK Sumo Smash,-1(-3) / -3(-5),"d,u+LK",False,False,False,special,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,120(100),180(160)
+MK Sumo Smash,-1(-3) / -3(-5),"d,u+MK",False,False,False,special,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,120(100),180(160)
+HK Sumo Smash,-2(-3) / -4(-5),"d,u+HK",False,False,False,special,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,120(100),180(160)
+EX Sumo Smash,4(6) / -1(-3),"d,u+KK",False,False,False,special,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,160(140),200(180)
+Kamigashima,-22,"qcf,qcf+P",False,False,False,super,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,50*(4x27)*12*170,0

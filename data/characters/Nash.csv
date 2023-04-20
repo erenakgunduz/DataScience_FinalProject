@@ -1,0 +1,51 @@
+Move,onBlock,plnCmd,airmove,followUp,projectile,moveType,health,stun,vgauge1,vgauge2,fDash,bDash,fWalk,bWalk,throwHurt,throwRange,Damage,Stun
+Stand LP,3,LP,False,False,False,normal,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,30,70
+Stand MP,0,MP,False,False,False,normal,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,60,100
+Stand HP,-5,HP,False,False,False,normal,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,90,150
+Stand LK,1,LK,False,False,False,normal,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,30,70
+Stand MK,0,MK,False,False,False,normal,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,70,100
+Stand HK,-2,HK,False,False,False,normal,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,80,150
+Crouch LP,3,d+LP,False,False,False,normal,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,30,70
+Crouch MP,3,d+MP,False,False,False,normal,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,60,100
+Crouch HP,3,d+HP,False,False,False,normal,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,80,150
+Crouch LK,1,d+LK,False,False,False,normal,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,20,70
+Crouch MK,-4,d+MK,False,False,False,normal,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,50,100
+Crouch HK,-12,d+HK,False,False,False,normal,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,90,150
+Knee Bazooka,-5,f+LK,False,False,False,normal,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,60,70
+Jumping Sobat,-3,f+MK,False,False,False,normal,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,60,100
+Chopping Assault,-7,f+MP,False,False,False,normal,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,60,100
+Step Kick,-3,f+HK,False,False,False,normal,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,90,150
+Spinning Back Knuckle,-13,f+HP,False,False,False,normal,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,90,150
+Side Knee Attack,2,b+MK,False,False,False,normal,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,60,100
+Rapid Punch,-6,LP > MP,False,True,False,normal,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,30*45 (75),70*72 (142)
+Rapid Kick,-2,LK > MK,False,True,False,normal,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,30*54 (84),70*72 (142)
+Wind Shear 1st,-7,MP > LK,False,True,False,normal,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,60*36 (96),100*45 (145)
+Wind Shear 2nd,-7,MP > LK > HP,False,True,False,normal,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,60*36*56 (152),100*45*80 (225)
+Down Burst,-7,d+MP > f+MP,False,True,False,normal,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,60*54 (114),100*90 (190)
+Raptor Combination 1st,-10,MK > HK,False,True,False,normal,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,60*50 (110),100*72 (172)
+Raptor Combination 2nd,-10,MK > HK > MK,False,True,False,normal,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,60*50*44 (164),100*72*80 (252)
+Bullet Combination,-10,MK > HK > MP+MK (VS1),False,True,False,normal,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,60*50*44 (164),100*72*80 (252)
+Bullet Clear,-5,MP+MK (VS1),False,False,False,vskill,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,70,100
+Vengeful Bullet,-2,MK+HP,False,True,False,vbreak,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,60,0
+LP Sonic Boom,-6,qcf+LP,False,False,True,special,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,60,100
+MP Sonic Boom,-4,qcf+MP,False,False,True,special,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,60,100
+HP Sonic Boom,-2,qcf+HP,False,False,True,special,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,60,100
+EX Sonic Boom 1,2,qcf+PP,False,False,True,special,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,60,100
+EX Sonic Boom 2,2,qcf+PP,False,False,True,special,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,54,90
+LK Sonic Scythe,-7,qcb+LK,False,False,False,special,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,100,100
+MK Sonic Scythe,-10,qcb+MK,False,False,False,special,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,110,100
+HK Sonic Scythe,-15,qcb+HK,False,False,False,special,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,60*60 (120),100*50 (150)
+EX Sonic Scythe,-19,qcb+KK,False,False,False,special,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,30x4*40 (160),30x4*80 (200)
+LK Sonic Scythe (V-Skill 2),2,qcb+LK,False,False,False,special,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,60*40 (100),50*50 (100)
+MK Sonic Scythe (V-Skill 2),-5,qcb+MK,False,False,False,special,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,100*20 (120),100*20 (120)
+HK Sonic Scythe (V-Skill 2),-15,qcb+HK,False,False,False,special,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,60*30x2 (120),100*50 (150)
+EX Sonic Scythe (V-Skill 2),-19,qcb+KK,False,False,False,special,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,30x2*30x4 (180),30x4*80 (200)
+LK Moonsault Slash,1(3),qcf+LK,False,False,False,special,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,60,100
+MK Moonsault Slash,2(4),qcf+MK,False,False,False,special,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,60,100
+HK Moonsault Slash,3(5),qcf+HK,False,False,False,special,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,60,100
+EX Moonsault Slash,3,qcf+KK,False,False,False,special,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,40x3 (120),50*50*50 (150)
+LP Tragedy Assault,-5(-4),"f,d,df+LP",False,False,False,special,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,70*30 (100),0*150 (150)
+MP Tragedy Assault,-6(-5),"f,d,df+MP",False,False,False,special,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,90*30 (120),0*150 (150)
+HP Tragedy Assault,-8(-7),"f,d,df+HP",False,False,False,special,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,120*20 (140),0*150 (150)
+EX Tragedy Assault,-23,"f,d,df+PP",False,False,False,special,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,40*50*30 (120),0*0*150 (150)
+Judgement Saber,-31,"qcb,qcb+P",False,False,False,super,975,1000,600,900,18,24,0.027,0.027,0.25,0.85,330,0

@@ -1,0 +1,41 @@
+Move,onBlock,plnCmd,airmove,followUp,projectile,moveType,health,stun,vgauge1,vgauge2,fDash,bDash,fWalk,bWalk,throwHurt,throwRange,Damage,Stun
+Stand LP,2,LP,False,False,False,normal,925,925,600,600,16,21,0.05,0.04,0.25,0.8,30,70
+Stand MP,3,MP,False,False,False,normal,925,925,600,600,16,21,0.05,0.04,0.25,0.8,60,100
+Stand HP,-3,HP,False,False,False,normal,925,925,600,600,16,21,0.05,0.04,0.25,0.8,80,150
+Stand LK,1,LK,False,False,False,normal,925,925,600,600,16,21,0.05,0.04,0.25,0.8,40,70
+Stand MK,-2,MK,False,False,False,normal,925,925,600,600,16,21,0.05,0.04,0.25,0.8,60,100
+Stand HK,-2,HK,False,False,False,normal,925,925,600,600,16,21,0.05,0.04,0.25,0.8,90,150
+Crouch LP,0,d+LP,False,False,False,normal,925,925,600,600,16,21,0.05,0.04,0.25,0.8,20,70
+Crouch MP,1,d+MP,False,False,False,normal,925,925,600,600,16,21,0.05,0.04,0.25,0.8,60,100
+Crouch HP,-2,d+HP,False,False,False,normal,925,925,600,600,16,21,0.05,0.04,0.25,0.8,80,150
+Crouch LK,-1,d+LK,False,False,False,normal,925,925,600,600,16,21,0.05,0.04,0.25,0.8,20,70
+Crouch MK,-3,d+MK,False,False,False,normal,925,925,600,600,16,21,0.05,0.04,0.25,0.8,50,100
+Crouch HK,-12,d+HK,False,False,False,normal,925,925,600,600,16,21,0.05,0.04,0.25,0.8,90,150
+Knee Bullet,-2,f+HK,False,False,False,normal,925,925,600,600,16,21,0.05,0.04,0.25,0.8,40*40 (80),150
+Lift Upper,1,b+MP,False,False,False,normal,925,925,600,600,16,21,0.05,0.04,0.25,0.8,60,100
+Lift Combination,-12,b+MP > HK,False,True,False,normal,925,925,600,600,16,21,0.05,0.04,0.25,0.8,60*72 (132),100*90 (190)
+Axel Spin Knuckle,2,MP+MK (VS1),False,False,False,vskill,925,925,600,600,16,21,0.05,0.04,0.25,0.8,60,100
+Spinning Attack,-6,MP+MK (VS2),False,False,False,vskill,925,925,600,600,16,21,0.05,0.04,0.25,0.8,80,120
+Strike Back,-6,f+KKK,False,False,False,alpha,925,925,600,600,16,21,0.05,0.04,0.25,0.8,60,0
+Counter Spike,-2,MK+HP,False,True,False,vbreak,925,925,600,600,16,21,0.05,0.04,0.25,0.8,60,0
+LK Spiral Arrow,-12,qcf+LK,False,False,False,special,925,925,600,600,16,21,0.05,0.04,0.25,0.8,70,120
+MK Spiral Arrow,-15,qcf+MK,False,False,False,special,925,925,600,600,16,21,0.05,0.04,0.25,0.8,80,120
+HK Spiral Arrow,-12,qcf+HK,False,False,False,special,925,925,600,600,16,21,0.05,0.04,0.25,0.8,50*50 (100),50*70 (120)
+EX Spiral Arrow,-11,qcf+KK,False,False,False,special,925,925,600,600,16,21,0.05,0.04,0.25,0.8,70*70 (140),50*150 (200)
+LK Cannon Spike,-37,"f,d,df+LK",False,False,False,special,925,925,600,600,16,21,0.05,0.04,0.25,0.8,120(80),150
+MK Cannon Spike,-37,"f,d,df+MK",False,False,False,special,925,925,600,600,16,21,0.05,0.04,0.25,0.8,120(80),150
+HK Cannon Spike,-37,"f,d,df+HK",False,False,False,special,925,925,600,600,16,21,0.05,0.04,0.25,0.8,120(80),150
+EX Cannon Spike,-37,"f,d,df+KK",False,False,False,special,925,925,600,600,16,21,0.05,0.04,0.25,0.8,50*50*60 (160),50*50*100 (200)
+LK Cannon Strike,-5(2),qcb+LK(air),True,False,False,special,925,925,600,600,16,21,0.05,0.04,0.25,0.8,60,100
+MK Cannon Strike,-5(2),qcb+MK(air),True,False,False,special,925,925,600,600,16,21,0.05,0.04,0.25,0.8,60,100
+HK Cannon Strike,-5(2),qcb+HK(air),True,False,False,special,925,925,600,600,16,21,0.05,0.04,0.25,0.8,60,100
+EX Cannon Strike,-5(4),qcb+KK(air),True,False,False,special,925,925,600,600,16,21,0.05,0.04,0.25,0.8,80,100
+Hooligan Combination > Razor Edge Slicer,-2,hcf+P > no input,False,False,False,special,925,925,600,600,16,21,0.05,0.04,0.25,0.8,100,150
+EX Hooligan Combination > Razor Edge Slicer,3,hcf+PP > no input,False,False,False,special,925,925,600,600,16,21,0.05,0.04,0.25,0.8,50*50*50 (150),50*50*100 (150)
+Hooligan Combination > Fatal Leg Twister,KD,hcf+P > LP+LK,True,True,False,special,925,925,600,600,16,21,0.05,0.04,0.25,0.8,150,250
+EX Hooligan Combination > Fatal Leg Twister,KD,hcf+PP > LP+LK,True,True,False,special,925,925,600,600,16,21,0.05,0.04,0.25,0.8,150,250
+Hooligan Combination > Cross Scissors Pressure,KD,hcf+P > LP+LK (air),True,True,False,special,925,925,600,600,16,21,0.05,0.04,0.25,0.8,150,250
+EX Hooligan Combination > Cross Scissors Pressure,KD,hcf+PP > LP+LK (air),True,True,False,special,925,925,600,600,16,21,0.05,0.04,0.25,0.8,150,250
+Hooligan Combination > Cannon Strike,0(5),hcf+P > K,True,True,False,special,925,925,600,600,16,21,0.05,0.04,0.25,0.8,60,100
+EX Hooligan Combination > Cannon Strike,-2(6),hcf+PP > K,True,True,False,special,925,925,600,600,16,21,0.05,0.04,0.25,0.8,80,100
+Cross Stinger Assault,-30,"qcf,qcf+K",False,False,False,super,925,925,600,600,16,21,0.05,0.04,0.25,0.8,330,0

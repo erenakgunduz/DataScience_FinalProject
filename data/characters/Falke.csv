@@ -1,0 +1,29 @@
+Move,onBlock,plnCmd,airmove,followUp,projectile,moveType,health,stun,vgauge1,vgauge2,fDash,bDash,fWalk,bWalk,throwHurt,throwRange,Damage,Stun
+Stand LP,2,LP,False,False,False,normal,975,1000,600,600,20,25,0.04,0.03,0.25,0.85,30,70
+Stand MP,3,MP,False,False,False,normal,975,1000,600,600,20,25,0.04,0.03,0.25,0.85,60,100
+Stand HP,-3,HP,False,False,False,normal,975,1000,600,600,20,25,0.04,0.03,0.25,0.85,80,150
+Stand LK,3,LK,False,False,False,normal,975,1000,600,600,20,25,0.04,0.03,0.25,0.85,40,70
+Stand MK,-2,MK,False,False,False,normal,975,1000,600,600,20,25,0.04,0.03,0.25,0.85,60,100
+Stand HK,-4,HK,False,False,False,normal,975,1000,600,600,20,25,0.04,0.03,0.25,0.85,80,150
+Crouch LP,2,d+LP,False,False,False,normal,975,1000,600,600,20,25,0.04,0.03,0.25,0.85,30,70
+Crouch MP,-2,d+MP,False,False,False,normal,975,1000,600,600,20,25,0.04,0.03,0.25,0.85,70,100
+Crouch HP,-8,d+HP,False,False,False,normal,975,1000,600,600,20,25,0.04,0.03,0.25,0.85,80,150
+Crouch LK,2,d+LK,False,False,False,normal,975,1000,600,600,20,25,0.04,0.03,0.25,0.85,20,70
+Crouch MK,-2,d+MK,False,False,False,normal,975,1000,600,600,20,25,0.04,0.03,0.25,0.85,60,100
+Crouch HK,-12,d+HK,False,False,False,normal,975,1000,600,600,20,25,0.04,0.03,0.25,0.85,90,150
+Luftjagd,~(1),d+MK (air),True,False,False,normal,975,1000,600,600,20,25,0.04,0.03,0.25,0.85,60,100
+Blaukraehe,3,df+HK,False,False,False,normal,975,1000,600,600,20,25,0.04,0.03,0.25,0.85,70(40),150(100)
+Psycho Spitze,-10,f+HP,False,False,False,normal,975,1000,600,600,20,25,0.04,0.03,0.25,0.85,90,150
+Zweitrit,-15,MK > HK,False,True,False,normal,975,1000,600,600,20,25,0.04,0.03,0.25,0.85,60*63 (123),100*90 (190)
+Psycho Seele,-42,MK > HK > VS2,False,True,True,vskill,975,1000,600,600,20,25,0.04,0.03,0.25,0.85,60*63 (123),100*90 (190)
+Psycho Trombe,-10,MP+MK (VS1),False,False,False,vskill,975,1000,600,600,20,25,0.04,0.03,0.25,0.85,10x3*30 (60),20x3*40 (100)
+Psycho Mine,34,n or b or d or db + MP+MK (VS2),False,False,True,vskill,975,1000,600,600,20,25,0.04,0.03,0.25,0.85,70,100
+Psycho Angriff,-28,HP+HK (VT2),False,False,False,vtrigger,975,1000,600,600,20,25,0.04,0.03,0.25,0.85,40*100 (140),200
+Psycho Aufstand,-2,MK+HP,False,True,False,vbreak,975,1000,600,600,20,25,0.04,0.03,0.25,0.85,60,0
+Psycho Kugel,2,hold punch button + release (standing),False,False,True,special,975,1000,600,600,20,25,0.04,0.03,0.25,0.85,20*20*20 (60),40x3 (120)
+Psycho Kanonen,-3,hold punch button + release (crouch),False,False,True,special,975,1000,600,600,20,25,0.04,0.03,0.25,0.85,60,150
+Psycho Schneide,-17,PP,False,False,False,special,975,1000,600,600,20,25,0.04,0.03,0.25,0.85,50*70 (120),70*80 (150)
+EX Psycho Schneide,-25,PPP,False,False,False,special,975,1000,600,600,20,25,0.04,0.03,0.25,0.85,40*40*60 (140),60*60*80 (200)
+Katapult,-10,KK,False,False,False,special,975,1000,600,600,20,25,0.04,0.03,0.25,0.85,90,150
+EX Katapult,-10,KKK,False,False,False,special,975,1000,600,600,20,25,0.04,0.03,0.25,0.85,40x2 (80),80*70 (150)
+Psycho Fluegel,-35,"qcf,qcf+P",False,False,False,super,975,1000,600,600,20,25,0.04,0.03,0.25,0.85,340,0

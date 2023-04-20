@@ -1,0 +1,51 @@
+Move,onBlock,plnCmd,airmove,followUp,projectile,moveType,health,stun,vgauge1,vgauge2,fDash,bDash,fWalk,bWalk,throwHurt,throwRange,Damage,Stun
+Stand LP,2,LP,False,False,False,normal,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,30,70
+Stand MP,-2,MP,False,False,False,normal,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,60,100
+Stand HP,-6,HP,False,False,False,normal,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,90,150
+Stand LK,1,LK,False,False,False,normal,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,30,70
+Stand MK,-2,MK,False,False,False,normal,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,60,100
+Stand HK,-4,HK,False,False,False,normal,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,90,150
+Stand HK (hold),2,HK (hold),False,False,False,normal,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,100,150
+Crouch LP,1,d+LP,False,False,False,normal,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,20,70
+Crouch MP,-1,d+MP,False,False,False,normal,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,60,100
+Crouch HP,-6,d+HP,False,False,False,normal,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,80,150
+Crouch LK,1,d+LK,False,False,False,normal,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,20,70
+Crouch MK,-2,d+MK,False,False,False,normal,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,60,100
+Crouch HK,-12,d+HK,False,False,False,normal,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,90,150
+Jump LP,3~6,u+LP,True,False,False,normal,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,40,70
+Jump MP,9,u+MP,True,False,False,normal,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,60,100
+Jump HP,6~12,u+HP,True,False,False,normal,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,90,150
+Jump LK,2~6,u+LK,True,False,False,normal,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,40,70
+Jump MK,8~9,u+MK,True,False,False,normal,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,70,100
+Jump HK,9~12,u+HK,True,False,False,normal,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,90,150
+Stomp Chomp,-5,LK > MP,False,True,False,normal,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,30*45,70*90
+Divebomb,-9(-10),d+MP during f jump,True,False,False,normal,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,70,100
+Lady Mika,3,f+HP,False,False,False,normal,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,80,150
+Passion Press,-8,f or b+MP,False,False,False,normal,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,50,100
+Passion Rope Throw Forward,-40,f or b+MP > MP,False,True,False,special,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,50*27,100*0
+Passion Rope Throw Backward,-28,f or b+MP > b+MP,False,False,False,special,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,50*27,100*0
+Daydream Headlock,KD,LP+LK,False,False,False,throw,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,140,200
+Dream Driver,KD,LP+LK (opp crouched),False,False,False,throw,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,120,150
+Sell Down,KD,b+LP+LK,False,False,False,throw,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,140,200
+Heated Mic Performance lvl 1,4,MP+MK (VS1),False,False,True,vskill,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,40,100
+Pumped Up! (attack),4,MP+MK (VS2) (counter),False,True,False,vskill,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,90,150
+Nadeshiko (Above),32,HP+HK (VT1),False,False,False,vtrigger,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,100,100
+Nadeshiko (Above) (hold),32,HP+HK (hold),False,False,False,vtrigger,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,100,100
+Nadeshiko (Front),32,b+HP+HK,False,False,False,vtrigger,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,100,100
+Nadeshiko (Front) (hold),32,b+HP+HK (hold),False,False,False,vtrigger,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,100,100
+Nadeshiko (Behind),32,f+HP+HK,False,False,False,vtrigger,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,100,100
+Nadeshiko (Behind) (hold),32,f+HP+HK (hold),False,False,False,vtrigger,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,100,100
+Peach Gator,-2,f+KKK,False,False,False,alpha,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,60,0
+Gutsy Lariat,-2,MK+HP,False,True,False,vbreak,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,60,0
+LP Shooting Peach,-7,qcf+LP,False,False,False,special,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,80,150
+MP Shooting Peach,-10,qcf+MP,False,False,False,special,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,90,150
+HP Shooting Peach,-12,qcf+HP,False,False,False,special,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,100,150
+EX Shooting Peach,-15,qcf+PP,False,False,False,special,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,40*40*50,20*20*160
+LP Rainbow Typhoon,KD,hcb+LP,False,False,False,command-grab,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,180(130),200
+MP Rainbow Typhoon,KD,hcb+MP,False,False,False,command-grab,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,190(140),200
+HP Rainbow Typhoon,KD,hcb+HP,False,False,False,command-grab,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,200,200
+EX Rainbow Typhoon,KD,hcb+PP,False,False,False,command-grab,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,240,250
+LK Brimstone,KD,hcb+LK,False,False,False,command-grab,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,120,150
+MK Brimstone,KD,hcb+MK,False,False,False,command-grab,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,130,150
+HK Brimstone,KD,hcb+HK,False,False,False,command-grab,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,140,150
+EX Brimstone,KD,hcb+KK,False,False,False,command-grab,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,180,200

@@ -1,0 +1,62 @@
+Move,onBlock,plnCmd,airmove,followUp,projectile,moveType,health,stun,vgauge1,vgauge2,fDash,bDash,fWalk,bWalk,throwHurt,throwRange,Damage,Stun
+Stand LP,3,LP,False,False,False,normal,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,30,70
+Stand MP,3,MP,False,False,False,normal,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,60,100
+Stand HP,-3,HP,False,False,False,normal,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,80,150
+Stand LK,1,LK,False,False,False,normal,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,30,70
+Stand MK,-4,MK,False,False,False,normal,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,60,100
+Stand HK,-4,HK,False,False,False,normal,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,90,150
+Crouch LP,2,d+LP,False,False,False,normal,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,30,70
+Crouch MP,-2,d+MP,False,False,False,normal,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,60,100
+Crouch HP,-2,d+HP,False,False,False,normal,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,40*40 (80),50*100 (150)
+Crouch LK,0,d+LK,False,False,False,normal,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,20,70
+Crouch MK,-3,d+MK,False,False,False,normal,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,50,100
+Crouch HK,-12,d+HK,False,False,False,normal,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,90,150
+Flap Spin,-2,f+MP,False,False,False,normal,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,50*20 (70),70*30 (100)
+Beak Assault,-7,f+HP,False,False,False,normal,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,80,150
+Spinning Mixer (run),-2,f+P during run,False,True,False,normal,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,17*17*20*20*9 (83),13*13*20*20*23 (89)
+Spinning Mixer (lvl 2) (run),-4,f+P during run (lvl 2),False,True,False,normal,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,17*17*20*20*9x5 (119),13*13*20*20*23x5 (181)
+Spinning Mixer (lvl 3) (run),-11,f+P during run (lvl 3),False,True,False,normal,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,17*17*20*20*9x6*12 (140),13*13*20*20*23x6*21 (225)
+Spinning Mixer (run) (wind),0,f+P during run (wind),False,True,False,normal,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,20x4*12x6*15 (167),20x11 (220)
+Eagle Spike (run),-21,f+K during run,False,True,False,normal,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,140,200
+Eagle Spike (run) (wind),-21,f+K during run (wind),False,True,False,normal,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,150,200
+LK Airborne Eagle Spike (V-Skill 1),-24(3),MP+MK (VS1) > LK,False,True,False,vskill,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,120,200
+MK Airborne Eagle Spike (V-Skill 1),-24(3),MP+MK (VS1) > MK,False,True,False,vskill,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,120,200
+HK Airborne Eagle Spike (V-Skill 1),-24(3),MP+MK (VS1) > HK,False,True,False,vskill,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,120,200
+EX Airborne Eagle Spike (V-Skill 1),-27(-24),MP+MK (VS1) > KK,False,True,False,vskill,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,70*70 (140),100*100 (200)
+Nail Assault,-6,d+MP+MK (VS1) > K,False,True,False,vskill,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,80,100
+Wing Spike,-22,MP+MK (VS2) > K,False,True,False,vskill,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,100,150
+EX Wing Spike,-20,MP+MK (VS2) > KK,False,True,False,vskill,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,60*50 (110),0*150 (150)
+LK Wing Spike (Airborne),-40(-2),MP+MK (VS2) (air) > LK,True,True,False,vskill,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,120,200
+MK Wing Spike (Airborne),-40(-2),MP+MK (VS2) (air) > MK,True,True,False,vskill,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,120,200
+HK Wing Spike (Airborne),-40(-2),MP+MK (VS2) (air) > HK,True,True,False,vskill,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,120,200
+EX Wing Spike (Airborne),-40,MP+MK (VS2) (air) > KK,True,True,False,vskill,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,70*70 (140),100*100 (200)
+Ysaar,34,HP+HK (VT1),False,False,False,vtrigger,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,40x3 (120),50x3 (150)
+Eagle Slash,-2,MK+HP,False,True,False,vbreak,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,60,0
+LP Spinning Mixer,-2,qcf+LP,False,False,False,special,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,17x2*10 (44),13x2*25 (51)
+LP Spinning Mixer (lvl 2),-5,qcf+LP (lvl 2),False,True,False,special,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,17x2*10*9x2(62),13x2*25*15x2 (81)
+LP Spinning Mixer (lvl 3),-10,qcf+LP (lvl 3),False,True,False,special,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,17x2*10*9x4(80),13x2*25*15x3*29 (125)
+MP Spinning Mixer,-31,qcf+MP,False,False,False,special,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,10*12x3*9 (55),14x2*16x2*21 (81)
+MP Spinning Mixer (lvl 2),-43,qcf+MP (lvl 2),False,True,False,special,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,10*12x3*9*12x2 (79),14x2*16x2*21*16x2 (113)
+MP Spinning Mixer (lvl 3),-56,qcf+MP (lvl 3),False,True,False,special,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,10*12x3*9*12x3*9 (100),14x2*16x2*21*16x3*21 (150)
+HP Spinning Mixer,-36,qcf+HP,False,False,False,special,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,14x2*18x2 (64),11*10*29x2 (79)
+HP Spinning Mixer (lvl 2),-48,qcf+HP (lvl 2),False,True,False,special,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,14x2*18x4 (100),11*10*29x4 (137)
+HP Spinning Mixer (lvl 3),-62,qcf+HP (lvl 3),False,True,False,special,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,14x2*18x5*22 (140),11*10*29x5*34 (200)
+Spinning Mixer (wind),0,qcf+LP (wind),False,True,False,special,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,20x3*12x6*15 (147),20x10 (220)
+EX Spinning Mixer,-49,qcf+PP,False,False,False,special,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,25*20*12x2*11 (80),31*25*17x2*14 (104)
+EX Spinning Mixer (lvl 2),-49,qcf+PP (lvl 2),False,True,False,special,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,25*20*12x2*11*12x3*11 (127),31*25*17x2*14*17x3*14 (169)
+EX Spinning Mixer (lvl 3),-49,qcf+PP (lvl 3),False,True,False,special,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,25*20*12x2*11*12x3*11*12*11 (150),31*25*17x2*14*17x3*14*17*14 (200)
+LK Eagle Spike,-20,qcb+LK,True,False,False,special,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,100,150
+MK Eagle Spike,-20,qcb+MK,True,False,False,special,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,120,150
+HK Eagle Spike,-20,qcb+HK,True,False,False,special,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,130,200
+Eagle Spike (wind),-20,qcb+K (wind),True,False,False,special,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,150,200
+EX Eagle Spike,-23,qcb+KK,True,False,False,special,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,100,150
+EX Eagle Spike (wind),-3(+1),qcb+KK (wind),True,False,False,special,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,160,200
+LK Airborne Eagle Spike,-35(3),qcb+LK(air),True,False,False,special,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,120,200
+MK Airborne Eagle Spike,-35(3),qcb+MK(air),True,False,False,special,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,120,200
+HK Airborne Eagle Spike,-35(3),qcb+HK(air),True,False,False,special,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,120,200
+EX Airborne Eagle Spike,-35,qcb+KK(air),True,False,False,special,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,70*70 (140),100*100 (200)
+LK Whirlwind Shot,-5,qcf+LK,False,False,True,special,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,60,100
+MK Whirlwind Shot,-2,qcf+MK,False,False,True,special,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,30*30 (60),70*70 (140)
+HK Whirlwind Shot,1,qcf+HK,False,False,True,special,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,30*30 (60),70*70 (140)
+EX Whirlwind Shot,9,qcf+KK,False,False,True,special,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,30x3 (90),60x3 (180)
+Altair,-51,"qcf,qcf+P",False,False,False,super,950,950,600,600,15 (41 if held),24,0.04,0.036,0.402,0.852,340,0

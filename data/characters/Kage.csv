@@ -1,0 +1,47 @@
+Move,onBlock,plnCmd,airmove,followUp,projectile,moveType,health,stun,vgauge1,vgauge2,fDash,bDash,fWalk,bWalk,throwHurt,throwRange,Damage,Stun
+Stand LP,3,LP,False,False,False,normal,925,950,600,900,16,21,0.052,0.035,0.25,0.8,30,70
+Stand MP,-1,MP,False,False,False,normal,925,950,600,900,16,21,0.052,0.035,0.25,0.8,60,100
+Stand HP,-5,HP,False,False,False,normal,925,950,600,900,16,21,0.052,0.035,0.25,0.8,80,120
+Stand LK,1,LK,False,False,False,normal,925,950,600,900,16,21,0.052,0.035,0.25,0.8,30,70
+Stand MK,-3,MK,False,False,False,normal,925,950,600,900,16,21,0.052,0.035,0.25,0.8,70,100
+Stand HK,-2,HK,False,False,False,normal,925,950,600,900,16,21,0.052,0.035,0.25,0.8,80,150
+Crouch LP,1,d+LP,False,False,False,normal,925,950,600,900,16,21,0.052,0.035,0.25,0.8,30,70
+Crouch MP,3,d+MP,False,False,False,normal,925,950,600,900,16,21,0.052,0.035,0.25,0.8,60,100
+Crouch HP,-4,d+HP,False,False,False,normal,925,950,600,900,16,21,0.052,0.035,0.25,0.8,80,120
+Crouch LK,1,d+LK,False,False,False,normal,925,950,600,900,16,21,0.052,0.035,0.25,0.8,20,70
+Crouch MK,-2,d+MK,False,False,False,normal,925,950,600,900,16,21,0.052,0.035,0.25,0.8,60,100
+Crouch HK,-11,d+HK,False,False,False,normal,925,950,600,900,16,21,0.052,0.035,0.25,0.8,90,150
+Tenmakujinkyaku,-4(6),Forward Jump > d+MK ,True,False,False,normal,925,950,600,900,16,21,0.052,0.035,0.25,0.8,60,100
+Zugaihasatsu,-7,f+MP,False,False,False,normal,925,950,600,900,16,21,0.052,0.035,0.25,0.8,70,100
+Kikokuduki,-4,f+HP,False,False,False,normal,925,950,600,900,16,21,0.052,0.035,0.25,0.8,80,150
+Kikokuretsuzan,-12,f+HP > HK,False,True,False,normal,925,950,600,900,16,21,0.052,0.035,0.25,0.8,80*63 (143),150*90 (240)
+Shoulder Throw,KD,LP+LK,False,False,False,throw,925,950,600,900,16,21,0.052,0.035,0.25,0.8,130,170
+Somersault Throw,KD,b+LP+LK,False,False,False,throw,925,950,600,900,16,21,0.052,0.035,0.25,0.8,150,170
+Senha Kassatsu,-6,MP+MK (VS1),False,False,False,vskill,925,950,600,900,16,21,0.052,0.035,0.25,0.8,60,100
+Senha Kassatsu (hold),-2 (-4),MP+MK (VS1) (hold),False,True,False,vskill,925,950,600,900,16,21,0.052,0.035,0.25,0.8,90,150
+Sekieiken,-2,MP+MK (VS2),False,False,False,vskill,925,950,600,900,16,21,0.052,0.035,0.25,0.8,60,100
+Senbugeki,-2,f+PPP,False,False,False,alpha,925,950,600,900,16,21,0.052,0.035,0.25,0.8,40,0
+Yashazuki,-2,MK+HP,False,True,False,vbreak,925,950,600,900,16,21,0.052,0.035,0.25,0.8,60,0
+Hadoken,-3,qcf+P,False,False,True,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,60,100
+Airborne Hadoken,-6,qcf+P (air),True,False,True,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,90,100
+EX Airborne Hadoken,5,qcf+PP (air),True,False,True,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,50x2 (100),50x2 (100)
+LP Shakunetsu Hadoken,-6,hcb+LP,False,False,True,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,60,100
+MP Shakunetsu Hadoken,-6,hcb+MP,False,False,True,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,30*40,60x2
+HP Shakunetsu Hadoken,-6,hcb+HP,False,False,True,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,20x2*40 (80),50x3 (150)
+EX Shakunetsu Hadoken,6,hcb+PP,False,False,True,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,30x4 (120),30x3*60 (150)
+LP Shoryuken,-27,"f,d,df+LP",False,False,False,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,80,120
+MP Shoryuken,-33,"f,d,df+MP",False,False,False,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,60x2,100*50
+HP Shoryuken,-36,"f,d,df+HP",False,False,False,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,60*20*40 (120),100*20*30 (150)
+EX Shoryuken,-41,"f,d,df+PP",False,False,False,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,30*20x2*30x3 (160),0x3*50x2*100 (200)
+LK Kurekijin,-10,qcb+LK,False,False,False,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,50,100
+MK Kurekijin,-11,qcb+MK,False,False,False,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,50,100
+HK Kurekijin,-10,qcb+HK,False,False,False,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,60,100
+EX Kurekijin,-10,qcb+KK,False,False,False,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,80,120
+Airborne Kurekijin,-2(2),qcb+K(air),True,False,False,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,90(70),150
+EX Airborne Kurekijin,0(4),qcb+KK(air),True,False,False,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,100(70),150
+EX Airborne Kurekijin (instant),-9(-4),qcb+KK(air)(instant),True,False,False,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,90(70),150
+LK Ryusokyaku,-4,hcf+LK,False,False,False,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,60,100
+MK Ryusokyaku,-2,hcf+MK,False,False,False,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,60,100
+HK Ryusokyaku,3,hcf+HK,False,False,False,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,60,100
+EX Ryusokyaku,-8,hcf+KK,False,False,False,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,120,200
+Metsu Shoryuken,-38,"qcf,qcf+P",False,False,True,super,925,950,600,900,16,21,0.052,0.035,0.25,0.8,340(280),0

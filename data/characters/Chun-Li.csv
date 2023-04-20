@@ -1,0 +1,44 @@
+Move,onBlock,plnCmd,airmove,followUp,projectile,moveType,health,stun,vgauge1,vgauge2,fDash,bDash,fWalk,bWalk,throwHurt,throwRange,Damage,Stun
+Stand LP,2,LP,False,False,False,normal,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,30,70
+Stand MP,3,MP,False,False,False,normal,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,60,100
+Stand HP,-4,HP,False,False,False,normal,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,80,150
+Stand LK,-3,LK,False,False,False,normal,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,40,70
+Stand MK,-2,MK,False,False,False,normal,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,70,100
+Stand HK,-2,HK,False,False,False,normal,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,90,150
+Crouch LP,2,d+LP,False,False,False,normal,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,30,70
+Crouch MP,-8,d+MP,False,False,False,normal,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,60,100
+Crouch HP,-5,d+HP,False,False,False,normal,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,50*40,100*50
+Crouch LK,-1,d+LK,False,False,False,normal,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,20,70
+Crouch MK,-2,d+MK,False,False,False,normal,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,50,100
+Crouch HK,-12,d+HK,False,False,False,normal,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,90,150
+Tsuitotsuken,0,b or f+MP,False,False,False,normal,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,65,100
+Hakkei,2,b+HP,False,False,False,normal,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,90,150
+Senenshu,-2,df+MK,False,False,False,normal,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,70,100
+Tenkukyaku,0,b+HK,False,False,False,normal,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,80,150
+Yokusenkyaku,-2,f+HK,False,False,False,normal,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,80,150
+Kakurakukyaku,2(6),df+HK,False,False,False,normal,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,80,150
+Koshuto,KD,LP+LK,False,False,False,throw,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,120,150
+Tenshin Shushu,KD,b+LP+LK,False,False,False,throw,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,140,200
+Ryuseiraku,KD,LP+LK (air),False,False,False,throw,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,130,200
+Rankyaku,-24,MP+MK (VS1),False,False,False,vskill,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,40,50
+Hazanshu,-4,MP+MK (VS2),False,False,False,vskill,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,80,120
+Kikosho,2,HP+HK (VT2),False,False,True,vtrigger,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,20x4*40 (120),150
+Sohakkei,-2,f+PPP,False,False,False,alpha,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,40,0
+Ensenbu,-2,MK+HP,False,True,False,vbreak,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,60,0
+LP Kikoken,-6,"b,f+LP",False,False,True,special,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,60,100
+MP Kikoken,-5,"b,f+MP",False,False,True,special,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,60,100
+HP Kikoken,-4,"b,f+HP",False,False,True,special,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,60,100
+EX Kikoken,1,"b,f+PP",False,False,True,special,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,40*60,0*100
+LK Hyakuretsukyaku,-8,qcf+LK,False,False,False,special,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,15x4 (60),20x4 (80)
+MK Hyakuretsukyaku,-9,qcf+MK,False,False,False,special,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,16x5 (80),25x4*20 (120)
+HK Hyakuretsukyaku,-12,qcf+HK,False,False,False,special,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,15x5*25 (100),20x6 (120)
+EX Hyakuretsukyaku,-2,qcf+KK,False,False,False,special,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,10x9*50 (140),200
+LK Air Hyakuretsukyaku,-5(-2),qcf+LK(air),True,False,False,special,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,70,20x4 (80)
+MK Air Hyakuretsukyaku,-4(-2),qcf+MK(air),True,False,False,special,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,90,20x5 (100)
+HK Air Hyakuretsukyaku,-6(-4),qcf+HK(air),True,False,False,special,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,100,20x6 (120)
+EX Air Hyakuretsukyaku,-13,qcf+KK(air),True,False,False,special,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,23x6*22 (160),30x7 (210)
+LK Spinning Bird Kick,-6,"d,u+LK",False,False,False,special,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,25*15x3*40 (110),20*25x3*105 (200)
+MK Spinning Bird Kick,-8,"d,u+MK",False,False,False,special,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,35*11x5*40 (130),30*20x5*70 (200)
+HK Spinning Bird Kick,-8,"d,u+HK",False,False,False,special,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,21*12x7*45 (150),20x8*40 (200)
+EX Spinning Bird Kick,-20,"d,u+KK",False,False,False,special,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,25x4*50 (150),30x4*80 (200)
+Hoyokusen,-20,"qcf,qcf+K",False,False,False,super,975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,330,0

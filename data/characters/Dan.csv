@@ -1,0 +1,40 @@
+Move,onBlock,plnCmd,airmove,followUp,projectile,moveType,health,stun,vgauge1,vgauge2,fDash,bDash,fWalk,bWalk,throwHurt,throwRange,Damage,Stun
+Stand LP,3,LP,False,False,False,normal,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,30,50
+Stand MP,3,MP,False,False,False,normal,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,60,80
+Stand HP,-2,HP,False,False,False,normal,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,70,120
+Stand LK,0,LK,False,False,False,normal,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,30,50
+Stand MK,-2,MK,False,False,False,normal,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,60,80
+Stand HK,-4,HK,False,False,False,normal,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,90,120
+Crouch LP,2,d+LP,False,False,False,normal,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,30,50
+Crouch MP,1,d+MP,False,False,False,normal,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,60,80
+Crouch HP,-4,d+HP,False,False,False,normal,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,80,120
+Crouch LK,1,d+LK,False,False,False,normal,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,20,50
+Crouch MK,-1,d+MK,False,False,False,normal,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,50,80
+Crouch HK,-12,d+HK,False,False,False,normal,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,90,120
+Saikyo Jawbreaker,3,b+HK,False,False,False,normal,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,80,120
+Saikyo Chop,-7,f+HP,False,False,False,normal,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,80,120
+Saikyo-Style Burairuten No Kamae I,-2,MP+MK (VS1) fwd,False,False,False,vskill,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,10,10
+Saikyo-Style Otokoboe,-6,MP+MK (VS2),True,False,False,vskill,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,30,50
+Haoh Gadoken,2,HP+HK (VT1),False,False,True,vtrigger,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,100,150
+Haoh Gadoken (hold),47(GB),HP+HK (VT1) Hold,False,False,True,vtrigger,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,220,150
+Saikyo Donukigeri,-2,MK+HP,False,True,False,vbreak,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,60,0
+LP Gadoken,-2,qcf+LP,False,False,True,special,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,50,80
+LP Gadoken (hold),4,qcf+LP (hold),False,False,True,special,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,80,100
+MP Gadoken,-2,qcf+MP,False,False,True,special,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,50,80
+MP Gadoken (hold),4,qcf+MP (hold),False,False,True,special,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,80,100
+HP Gadoken,-2,qcf+HP,False,False,True,special,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,50,80
+HP Gadoken (hold),4,qcf+HP (hold),False,False,True,special,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,80,100
+EX Gadoken,2,qcf+PP,False,False,True,special,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,70,100
+LP Koryuken,-29,"f,d,df+LP",False,False,False,special,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,100(50),120(80)
+MP Koryuken,-29,"f,d,df+MP",False,False,False,special,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,110,120
+HP Koryuken,-35,"f,d,df+HP",False,False,False,special,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,120,120
+EX Koryuken,-37,"f,d,df+PP",False,False,False,special,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,140,150
+LK Dankukyaku,-5(3),qcb+LK,False,False,False,special,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,50,80
+MK Dankukyaku,-2,qcb+MK,False,False,False,special,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,30*40,50*50
+HK Dankukyaku,-4,qcb+HK,False,False,False,special,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,20*30*40 (90),20*50*50 (120)
+EX Dankukyaku,-2,qcb+KK,False,False,False,special,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,40*20x2*60 (140),150
+LP Danretsuken,-10,qcb+LP,False,False,False,special,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,20*30x2 (80),0*30*50 (80)
+MP Danretsuken,-10,qcb+MP,False,False,False,special,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,20x3*30 (90),0*30x2*40 (100)
+HP Danretsuken,-10,qcb+HP,False,False,False,special,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,20x3*40 (100),0*20x2*80 (120)
+EX Danretsuken,-10,qcb+PP,False,False,False,special,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,20*5x5*35 (80),0*10x5*100 (150)
+Hisshou Buraiken,-30,"qcf,qcf+P",False,False,False,super,1025,950,300,600,16,21,0.047,0.032,0.25,0.8,340,0

@@ -2,7 +2,7 @@ import json
 import os
 import pandas as pd
 
-# specify the path to your JSON file
+# The code is very ugly, but it got the job done
 json_path = f"{os.getcwd()}/data/sfv.json"
 
 with open(json_path) as f:
@@ -15,30 +15,45 @@ all_attacks = []
 for char in data:
     # loop through each normal attack for the character
     for move_name, move_data in data[char]["moves"]["normal"].items():
-        # create a dictionary to store the attack data
-        attack = {"Character": char, "Move": move_name}
-        # append the 16 features to the attack dictionary
-        attack.update(move_data)
-        # append the character-specific stats to the attack dictionary
-        attack.update(
-            {
-                "health": data[char]["stats"]["health"],
-                "stun": data[char]["stats"]["stun"],
-                "vgauge1": data[char]["stats"]["vgauge1"],
-                "vgauge2": data[char]["stats"]["vgauge2"],
-                "fDash": data[char]["stats"]["fDash"],
-                "bDash": data[char]["stats"]["bDash"],
-                "fWalk": data[char]["stats"]["fWalk"],
-                "bWalk": data[char]["stats"]["bWalk"],
-                "throwHurt": data[char]["stats"]["throwHurt"],
-                "throwRange": data[char]["stats"]["throwRange"],
-            }
+        conditions = (
+            "onBlock" in move_data
+            and "damage" in move_data
+            and "stun" in move_data
+            and "airmove" in move_data
         )
-
-        # append the damage and stun data to the attack dictionary
-        attack.update({"Damage": move_data["damage"], "Stun": move_data["stun"]})
-        # append the attack dictionary to the list
-        all_attacks.append(attack)
+        if conditions:
+            # create a dictionary to store the attack data
+            attack = {"Character": char, "Move": move_name}
+            # append the 16 features to the attack dictionary
+            attack.update(
+                {
+                    "onBlock": move_data["onBlock"],
+                    "plnCmd": move_data["plnCmd"],
+                    "airmove": move_data["airmove"],
+                    "followUp": move_data["followUp"],
+                    "projectile": move_data["projectile"],
+                    "moveType": move_data["moveType"],
+                }
+            )
+            # append the character-specific stats to the attack dictionary
+            attack.update(
+                {
+                    "health": data[char]["stats"]["health"],
+                    "stun": data[char]["stats"]["stun"],
+                    "vgauge1": data[char]["stats"]["vgauge1"],
+                    "vgauge2": data[char]["stats"]["vgauge2"],
+                    "fDash": data[char]["stats"]["fDash"],
+                    "bDash": data[char]["stats"]["bDash"],
+                    "fWalk": data[char]["stats"]["fWalk"],
+                    "bWalk": data[char]["stats"]["bWalk"],
+                    "throwHurt": data[char]["stats"]["throwHurt"],
+                    "throwRange": data[char]["stats"]["throwRange"],
+                }
+            )
+            # append the damage and stun data to the attack dictionary
+            attack.update({"Damage": move_data["damage"], "Stun": move_data["stun"]})
+            # append the attack dictionary to the list
+            all_attacks.append(attack)
 
 # create a pandas DataFrame from the list of attacks
 df_all = pd.DataFrame(all_attacks)
@@ -56,16 +71,45 @@ for char in data:
     char_attacks = []
     # loop through each normal attack for the character
     for move_name, move_data in data[char]["moves"]["normal"].items():
-        # create a dictionary to store the attack data
-        attack = {"Move": move_name}
-        # append the 16 features to the attack dictionary
-        attack.update(move_data)
-        # append the character-specific stats to the attack dictionary
-        attack.update(data[char]["stats"])
-        # append the damage and stun data to the attack dictionary
-        attack.update({"Damage": move_data["damage"], "Stun": move_data["stun"]})
-        # append the attack dictionary to the list
-        char_attacks.append(attack)
+        conditions = (
+            "onBlock" in move_data
+            and "damage" in move_data
+            and "stun" in move_data
+            and "airmove" in move_data
+        )
+        if conditions:
+            # create a dictionary to store the attack data
+            attack = {"Move": move_name}
+            # append the 16 features to the attack dictionary
+            attack.update(
+                {
+                    "onBlock": move_data["onBlock"],
+                    "plnCmd": move_data["plnCmd"],
+                    "airmove": move_data["airmove"],
+                    "followUp": move_data["followUp"],
+                    "projectile": move_data["projectile"],
+                    "moveType": move_data["moveType"],
+                }
+            )
+            # append the character-specific stats to the attack dictionary
+            attack.update(
+                {
+                    "health": data[char]["stats"]["health"],
+                    "stun": data[char]["stats"]["stun"],
+                    "vgauge1": data[char]["stats"]["vgauge1"],
+                    "vgauge2": data[char]["stats"]["vgauge2"],
+                    "fDash": data[char]["stats"]["fDash"],
+                    "bDash": data[char]["stats"]["bDash"],
+                    "fWalk": data[char]["stats"]["fWalk"],
+                    "bWalk": data[char]["stats"]["bWalk"],
+                    "throwHurt": data[char]["stats"]["throwHurt"],
+                    "throwRange": data[char]["stats"]["throwRange"],
+                }
+            )
+            # append the damage and stun data to the attack dictionary
+            attack.update({"Damage": move_data["damage"], "Stun": move_data["stun"]})
+            # append the attack dictionary to the list
+            char_attacks.append(attack)
 
     # create a pandas DataFrame from the list of character's attacks
     df_char = pd.DataFrame(char_attacks)

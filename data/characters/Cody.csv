@@ -1,0 +1,37 @@
+Move,onBlock,plnCmd,airmove,followUp,projectile,moveType,health,stun,vgauge1,vgauge2,fDash,bDash,fWalk,bWalk,throwHurt,throwRange,Damage,Stun
+Stand LP,1,LP,False,False,False,normal,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,30,70
+Stand MP,0,MP,False,False,False,normal,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,60,100
+Stand HP,-9*-10,HP,False,False,False,normal,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,90*30,120*50
+Stand LK,3,LK,False,False,False,normal,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,40,70
+Stand MK,3,MK,False,False,False,normal,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,60,100
+Stand HK,-4,HK,False,False,False,normal,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,80,150
+Crouch LP,2,d+LP,False,False,False,normal,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,30,70
+Crouch MP,2,d+MP,False,False,False,normal,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,60,100
+Crouch HP,-4,d+HP,False,False,False,normal,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,90,150
+Crouch LK,1,d+LK,False,False,False,normal,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,20,70
+Crouch MK,1,d+MK,False,False,False,normal,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,60,100
+Crouch HK,-14,d+HK,False,False,False,normal,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,90,150
+Axel Knuckle,-7,f+HP,False,False,False,normal,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,80,150
+Hammer Kick,-4*-2,f+HK,False,False,False,normal,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,60*40,100*50
+Slip Jab,-6,LP > LP,False,True,False,normal,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,30*27,70*45
+Crime Blow,-7,LP > LP > LP,False,True,False,normal,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,30*27*40 (97),70*45*64 (179)
+Final Combination,-13,LP > LP > LP > LP,False,True,False,normal,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,30*27*40*49 (146),70*45*64*84 (263)
+Double Kick,-18,MP+MK (VS1),False,False,False,vskill,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,80,70
+Crack Combination (V-Skill 1),-18,f+HK > MP+MK (VS1),False,True,False,vskill,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,60*40*72 (172),100*50*63 (213)
+Crime Combination (V-Skill 2),-11,f+HK > MP+MK (VS2),False,False,False,vskill,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,60*40*72 (172),100*50*135 (285)
+Wrench Fist,-7,MP+MK (VS2) > P,False,False,False,vskill,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,80,150
+Lumber Sweep,-6,d+MP+MK (VS2) > K,False,False,False,vskill,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,80,150
+Payback,-2,MK+HP,False,True,False,vbreak,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,60,0
+LP Tornado Sweep,-7,qcf+LP,False,False,True,special,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,50,100
+MP Tornado Sweep,-7,qcf+MP,False,False,True,special,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,50,100
+HP Tornado Sweep,-7,qcf+HP,False,False,True,special,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,50,100
+EX Tornado Sweep,2,qcf+PP,False,False,True,special,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,40*40,60*60
+LK Ruffian Kick,-8,qcf+LK,False,False,False,special,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,100,150
+MK Ruffian Kick,-8,qcf+MK,False,False,False,special,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,120,150
+HK Ruffian Kick,-10,qcf+HK,False,False,False,special,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,130,150
+EX Ruffian Kick,-12,qcf+KK,False,False,False,special,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,30*50,50*100
+Zonk Knuckle,-2,"hold any punch button, release",False,False,False,special,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,80,150
+Zonk Knuckle Level 2,-2,"hold any punch button, release",False,False,False,special,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,80,150
+EX Zonk Knuckle,3,"hold any 2 punch buttons, release",False,False,False,special,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,80*50,100*100
+EX Zonk Knuckle Level 2,5,"hold any 2 punch buttons, release",False,False,False,special,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,80*50,100*100
+Criminal Punisher,-35,"qcf,qcf+P",False,False,True,super,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,330,0

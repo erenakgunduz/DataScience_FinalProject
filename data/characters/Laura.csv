@@ -1,0 +1,42 @@
+Move,onBlock,plnCmd,airmove,followUp,projectile,moveType,health,stun,vgauge1,vgauge2,fDash,bDash,fWalk,bWalk,throwHurt,throwRange,Damage,Stun
+Stand LP,1,LP,False,False,False,normal,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,30,70
+Stand MP,3,MP,False,False,False,normal,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,60,100
+Stand HP,-2,HP,False,False,False,normal,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,80,150
+Stand LK,3,LK,False,False,False,normal,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,30,70
+Stand MK,-2,MK,False,False,False,normal,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,60,100
+Stand HK,-4,HK,False,False,False,normal,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,90,150
+Crouch LP,2,d+LP,False,False,False,normal,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,30,70
+Crouch MP,2,d+MP,False,False,False,normal,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,60,100
+Crouch HP,-2,d+HP,False,False,False,normal,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,90,150
+Crouch LK,0,d+LK,False,False,False,normal,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,20,70
+Crouch MK,-1,d+MK,False,False,False,normal,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,50,100
+Crouch HK,-14,d+HK,False,False,False,normal,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,90,150
+Jump LP,5(6),u+LP,True,False,False,normal,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,40,70
+Jump MP,9,u+MP,True,False,False,normal,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,60,100
+Jump HP,8(12),u+HP,True,False,False,normal,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,90,150
+Jump LK,2(6),u+LK,True,False,False,normal,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,40,70
+Jump MK,5(9),u+MK,True,False,False,normal,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,60,100
+Jump HK,8(12),u+HK,True,False,False,normal,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,90,150
+Step Elbow,-2,f+HP,False,False,False,normal,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,80,120
+Twist Barrage,-8,f+HP > HP,False,True,False,normal,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,54,90
+Dual Crash,-6,MP > MK,False,True,False,normal,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,60*54 (114),100*90 (190)
+Seoi Throw,KD,LP+LK,False,False,False,throw,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,120,150
+Pullback Hold,KD,b+LP+LK,False,False,False,throw,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,120,150
+Volty Line,-7,MP+MK (VS1),False,False,False,vskill,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,70,130
+Heavy Heel,-2,MP+MK (VS2) > K,True,True,False,vskill,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,70,100
+Double Slap,-2,f+PPP,False,False,False,alpha,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,60,0
+Neutralize,-2,MK+HP,False,True,False,vbreak,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,60,0
+LP Bolt Charge,-2,qcf+LP,False,False,False,special,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,60,100
+MP Bolt Charge,-7,qcf+MP,False,False,False,special,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,60,50
+EX Bolt Charge,-17,qcf+PP,False,False,False,special,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,80,50
+Thunder Clap Lvl 1,-5,qcb+P,False,False,True,special,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,60,60
+Thunder Clap Lvl 2,2,qcb+P (brief-hold),False,False,True,special,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,60*30 (90),60*30 (90)
+Thunder Clap Lvl 3,18,qcb+P (hold),False,False,True,special,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,60*30*30 (120),60*30*30 (120)
+LPMP Thunder Clap,3,qcb+LPMP,False,False,True,special,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,60*30 (90),60*30 (90)
+LPHP Thunder Clap,3,qcb+LPHP,False,False,True,special,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,60*30 (90),60*30 (90)
+MPHP Thunder Clap,3,qcb+MPHP,False,False,True,special,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,60*30 (90),60*30 (90)
+LK Sunset Wheel,KD,hcb+LK,False,False,False,command-grab,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,70*90 (160),100*100 (200)
+MK Sunset Wheel,KD,hcb+MK,False,False,False,command-grab,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,70*110 (180),100*100 (200)
+HK Sunset Wheel,KD,hcb+HK,False,False,False,command-grab,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,70*120 (190),100*100 (200)
+EX Sunset Wheel,KD,hcb+KK,False,False,False,command-grab,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,80*100 (180),100*150 (250)
+Inazuma Spin Hold,KD,"qcf,qcf+K",False,False,False,super,1025,1000,900,600,17,21,0.04,0.032,0.41,0.85,350,0

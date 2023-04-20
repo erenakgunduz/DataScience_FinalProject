@@ -1,0 +1,34 @@
+Move,onBlock,plnCmd,airmove,followUp,projectile,moveType,health,stun,vgauge1,vgauge2,fDash,bDash,fWalk,bWalk,throwHurt,throwRange,Damage,Stun
+Stand LP,3,LP,False,False,False,normal,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,40,90
+Stand MP,1,MP,False,False,False,normal,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,60,120
+Stand HP,-6,HP,False,False,False,normal,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,90,150
+Stand LK,3,LK,False,False,False,normal,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,30,90
+Stand MK,-2,MK,False,False,False,normal,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,60,120
+Stand HK,0,HK,False,False,False,normal,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,100,150
+Crouch LP,2,d+LP,False,False,False,normal,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,40,90
+Crouch MP,-5,d+MP,False,False,False,normal,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,70,120
+Crouch HP,-9,d+HP,False,False,False,normal,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,80,120
+Crouch LK,2,d+LK,False,False,False,normal,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,30,90
+Crouch MK,-4,d+MK,False,False,False,normal,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,60,120
+Crouch HK,-14,d+HK,False,False,False,normal,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,100,150
+Bull Charge,-8,f+HP,False,False,False,normal,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,80,150
+Bull Slider,-8,df+HP,False,False,False,normal,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,90,150
+Bull Drop,-7,f+HK,False,False,False,normal,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,40*80 (120),50*100 (150)
+Bad Hammer,-12,d+HP > HP,False,True,False,normal,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,80*81 (161),150*135 (285)
+Banana Time,2,b+MP+MK (VS1),False,False,False,vskill,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,10,0
+Drink Time,10,d+MP+MK (VS1),False,False,True,vskill,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,10,0
+Bubble Gum Pop,9(4),MP+MK (VS2) > LP,False,False,True,vskill,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,40(60),50
+Bubble Gum Launch MP,9(4),MP+MK (VS2) > MP,False,False,True,vskill,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,40(60),50
+Bubble Gum Launch HP,9(4),MP+MK (VS2) > HP,False,False,True,vskill,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,40(60),50
+Pepper Pot,-2,f+PPP,False,False,False,alpha,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,60,0
+Bull Crush,-2,MK+HP,False,True,False,vbreak,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,60,0
+LP Bull Head,-10,qcf+LP,False,False,False,special,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,100,150
+MP Bull Head,-10,qcf+MP,False,False,False,special,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,110,150
+HP Bull Head,-5,qcf+HP,False,False,False,special,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,140,150
+EX Bull Head,-5,qcf+PP,False,False,False,special,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,75*75 (150),100*100 (200)
+Bull Horn,-18,"hold any button, release",False,False,False,special,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,120,200
+EX Bull Horn,-21,"hold any 2 button, release",False,False,False,special,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,75*75 (150),50*200 (250)
+LK Hanging Chain,-23,qcf+LK,False,False,False,special,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,120,200
+MK Hanging Chain,-23,qcf+MK,False,False,False,special,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,150,200
+EX Hanging Chain,-21,qcf+KK,False,False,False,special,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,70*100 (170),100*120 (220)
+Skip To My Chain,-30,"qcf,qcf+P",False,False,False,super,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,50x3*190 (340),0*0*0*0

@@ -1,0 +1,50 @@
+Move,onBlock,plnCmd,airmove,followUp,projectile,moveType,health,stun,vgauge1,vgauge2,fDash,bDash,fWalk,bWalk,throwHurt,throwRange,Damage,Stun
+Stand LP,2,LP,False,False,False,normal,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,30,70
+Stand MP,2,MP,False,False,False,normal,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,60,100
+Stand HP,-4,HP,False,False,False,normal,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,80,150
+Stand LK,-2,LK,False,False,False,normal,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,40,70
+Stand MK,-2,MK,False,False,False,normal,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,50,100
+Stand HK,-2,HK,False,False,False,normal,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,80,150
+Crouch LP,1,d+LP,False,False,False,normal,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,20,70
+Crouch MP,2,d+MP,False,False,False,normal,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,60,100
+Crouch HP,-3,d+HP,False,False,False,normal,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,80,150
+Crouch LK,1,d+LK,False,False,False,normal,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,20,70
+Crouch MK,1,d+MK,False,False,False,normal,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,50,100
+Crouch HK,-12,d+HK,False,False,False,normal,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,60*40 (100),100*50 (150)
+Jump LP,4(6),u+LP,True,False,False,normal,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,40,70
+Jump MP,7(9),u+MP,True,False,False,normal,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,70,100
+Jump HP,9(12),u+HP,True,False,False,normal,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,90,150
+Jump LK,2(6),u+LK,True,False,False,normal,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,40,70
+Jump MK,6(9),u+MK,True,False,False,normal,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,60,100
+Jump HK,4(12),u+HK,True,False,False,normal,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,90,150
+Blizzard Heel,-7,f+MK,False,False,False,normal,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,20*40,50*50
+Sniping Kick,-2,b+HK,False,False,False,normal,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,90,150
+Frost Spike 1st,-6,LP > MP,False,True,False,normal,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,30*36 (66),70*54 (124)
+Frost Spike 2nd,-9,LP > MP > HP,False,True,False,normal,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,30*36*48 (114),70*54*64 (188)
+White Out 1st,-9,MK > HP,False,True,False,normal,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,50*45 (95),100*63 (163)
+White Out 2nd,-12,MK > HP > MPMK (VS1),False,True,False,normal,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,50*45*48 (143),100*63*80 (243)
+Inside Slash,-8,MP+MK (VS1),False,False,False,vskill,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,50,100
+Diamond Dust,32,HP+HK (VT1),False,False,False,vtrigger,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,40x3 (120),120x3 (360)
+Diamond Dust  2nd,26,HP+HK (VT1 - 2nd hit),False,False,False,vtrigger,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,40x3 (120),120x3 (360)
+Cold Snap,-2,MK+HP,False,True,False,vbreak,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,60,0
+LP Parabellum,-4,qcf+LP or mash LP,False,False,False,special,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,15x3*25 (70),25x3*75 (150)
+MP Parabellum,-6,qcf+MP or mash MP,False,False,False,special,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,15x4*20 (80),25x4*50 (150)
+HP Parabellum,-9,qcf+HP or mash HP,False,False,False,special,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,50x5*50 (100),25x6 (150)
+EX Parabellum,-7,qcf+PP or mash PP,False,False,False,special,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,10x4*15x2*30 (100),150
+LP Hailstorm,-8,"f,d,df+LP",False,False,True,special,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,50,100
+MP Hailstorm,-11,"f,d,df+MP",False,False,True,special,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,50,100
+HP Hailstorm,-11,"f,d,df+HP",False,False,True,special,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,50,100
+LP Hailstorm Projectile,23,"f,d,df+LP",False,False,True,special,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,50,100
+MP Hailstorm Projectile,25,"f,d,df+MP",False,False,True,special,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,50,100
+HP Hailstorm Projectile,20,"f,d,df+HP",False,False,True,special,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,50,100
+LPMP Hailstorm,-8,"f,d,df+LPMP",False,False,True,special,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,50,100
+LPHP Hailstorm,-8,"f,d,df+LPHP",False,False,True,special,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,50,100
+MPHP Hailstorm,-8,"f,d,df+MPHP",False,False,True,special,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,50,100
+EX Hailstorm Projectile,18,"f,d,df+PP",False,False,True,special,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,50x2,100x2
+> Silver Edge,-12,qcb+LK > P,False,True,False,special,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,100,150
+> Cold Low,-12,qcb+MK > d+LK > d+HK,False,True,False,normal,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,20*54*36 (110),70*90*45 (205)
+> Brinicle,-2,qcb+MK > d+LK > d+HP,False,True,False,normal,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,20*81 (101),70*135 (205)
+> Snow Grain,-8,qcb+MK > d+MP > HP,False,True,False,normal,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,60*81 (141),100*135 (235)
+> White Spear,9,qcb+HK > LK > MK,True,True,False,normal,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,40*63 (103),70*90 (160)
+> EX Silver Edge,-9,qcb+LKMK > P,False,True,False,special,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,160,200
+Frost Tower,-37,"qcf,qcf+P",False,False,False,super,1000,1000,600,600,17,21,0.0413,0.0325,0.35,0.85,330,0

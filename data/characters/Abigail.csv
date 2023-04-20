@@ -1,0 +1,39 @@
+Move,onBlock,plnCmd,airmove,followUp,projectile,moveType,health,stun,vgauge1,vgauge2,fDash,bDash,fWalk,bWalk,throwHurt,throwRange,Damage,Stun
+Stand LP,3,LP,False,False,False,normal,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,40,70
+Stand MP,5,MP,False,False,False,normal,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,70,100
+Stand HP,-3,HP,False,False,False,normal,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,90,150
+Stand LK,3,LK,False,False,False,normal,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,50,70
+Stand MK,0,MK,False,False,False,normal,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,80,100
+Stand HK,-8,HK,False,False,False,normal,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,90,150
+Crouch LP,3,d+LP,False,False,False,normal,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,40,70
+Crouch MP,-2,d+MP,False,False,False,normal,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,70,100
+Crouch HP,-18,d+HP,False,False,False,normal,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,90,150
+Crouch LK,2,d+LK,False,False,False,normal,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,40,70
+Crouch MK,-3,d+MK,False,False,False,normal,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,60,100
+Crouch HK,-14,d+HK,False,False,False,normal,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,50*70 (120),50*100 (150)
+Abi Hammer,-8,f+MP,False,False,False,normal,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,70,100
+Abi Lift,1,f+HP,False,False,False,normal,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,90,150
+Abi Blaster,-6,b+HP,False,False,False,normal,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,90,150
+Abi Scissor,-14,db+HK,False,False,False,normal,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,100,150
+Abi Twist,-9,b+HP > HP,False,True,False,normal,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,90*81 (171),150*135 (285)
+Vroom Vroom,3,st.LP > st.LP,False,True,False,normal,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,40*27 (67),70*63 (133)
+Bang Bang,3,cr.LP > cr.LP,False,True,False,normal,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,40*27 (67),70*63 (133)
+Hungabee Parry,-6,Parry Attack,False,True,False,vskill,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,30,70
+Ontario Drop,-2,f+KKK,False,False,False,alpha,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,60,0
+Abigail Junker,-2,MK+HP,False,True,False,vbreak,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,60,0
+LP Abigail Punch,-12,qcf+LP,False,False,False,special,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,100 (120),120 (150)
+MP Abigail Punch,-19,qcf+MP,False,False,False,special,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,110 (130),120 (150)
+HP Abigail Punch,-16,qcf+HP,False,False,False,special,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,120 (140),120 (150)
+EX Abigail Punch,-23,qcf+PP,False,False,False,special,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,140,150
+LP Giant Flip,0,hcb+LP,False,False,False,special,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,50*20 (70),70*30 (100)
+MP Giant Flip,1,hcb+MP,False,False,False,special,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,50*30 (80),70*30 (100)
+HP Giant Flip,2,hcb+HP,False,False,False,special,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,50*50 (100),90*60 (150)
+EX Giant Flip,-2,hcb+PP,False,False,False,special,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,20*20*40 (80),30*50*70 (150)
+EX Giant Flip Mash,-8,hcb+PP (mash),False,True,False,special,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,50*20 (70),70*30 (100)
+Nitro Blitz  > Dynamite Punch,-9,KK > P,False,True,False,special,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,100,200
+Nitro Blitz  > Avalanche Press,-12,KK > K,False,True,False,special,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,80*70 (150),150*50 (200)
+Nitro Blitz  > Nitro Hungabee Parry,-6,KK > Parry Attack,False,True,False,vskill,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,30,70
+EX Nitro Charge,-9,KKK,False,False,False,special,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,130,215
+EX Nitro Charge > EX Dynamite Punch,-9,KKK > P,False,True,False,special,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,100,150
+EX Nitro Charge > EX Avalanche Press,-12,KKK > K,False,True,False,special,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,90*80 (170),150*50 (200)
+Abigail Special,-95,"qcf,qcf+P",False,False,False,super,1100,1050,900,900,25,25,0.032,0.025,0.4,0.9,350,0

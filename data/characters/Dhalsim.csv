@@ -1,0 +1,42 @@
+Move,onBlock,plnCmd,airmove,followUp,projectile,moveType,health,stun,vgauge1,vgauge2,fDash,bDash,fWalk,bWalk,throwHurt,throwRange,Damage,Stun
+Stand LP,3,LP,False,False,False,normal,950,950,600,600,21,25,0.022,0.02,0.25,0.85,30,70
+Stand MP,-4,MP,False,False,False,normal,950,950,600,600,21,25,0.022,0.02,0.25,0.85,60,100
+Stand HP,-6,HP,False,False,False,normal,950,950,600,600,21,25,0.022,0.02,0.25,0.85,90,150
+Stand LK,2,LK,False,False,False,normal,950,950,600,600,21,25,0.022,0.02,0.25,0.85,40,70
+Stand MK,-4,MK,False,False,False,normal,950,950,600,600,21,25,0.022,0.02,0.25,0.85,50,100
+Stand HK,-4,HK,False,False,False,normal,950,950,600,600,21,25,0.022,0.02,0.25,0.85,90,150
+Crouch LP,1,d+LP,False,False,False,normal,950,950,600,600,21,25,0.022,0.02,0.25,0.85,30,70
+Crouch MP,-3,d+MP,False,False,False,normal,950,950,600,600,21,25,0.022,0.02,0.25,0.85,70,100
+Crouch HP,3,d+HP,False,False,False,normal,950,950,600,600,21,25,0.022,0.02,0.25,0.85,90,150
+Crouch LK,-6,d+LK,False,False,False,normal,950,950,600,600,21,25,0.022,0.02,0.25,0.85,30,70
+Crouch MK,-7,d+MK,False,False,False,normal,950,950,600,600,21,25,0.022,0.02,0.25,0.85,60,100
+Crouch HK,-21,d+HK,False,False,False,normal,950,950,600,600,21,25,0.022,0.02,0.25,0.85,90,150
+LK Drill Kick,6,d+LK or db+LK or df+LK (air),True,False,False,normal,950,950,600,600,21,25,0.022,0.02,0.25,0.85,60,70
+MK Drill Kick,7,d+MK or db+MK or df+MK (air),True,False,False,normal,950,950,600,600,21,25,0.022,0.02,0.25,0.85,60,70
+HK Drill Kick,8,d+HK or db+HK or df+HK (air),True,False,False,normal,950,950,600,600,21,25,0.022,0.02,0.25,0.85,60,70
+Yoga Anvil,-8,b+HP,False,False,False,normal,950,950,600,600,21,25,0.022,0.02,0.25,0.85,90,150
+Yoga Upper,1,b+MP,False,False,False,normal,950,950,600,600,21,25,0.022,0.02,0.25,0.85,60,100
+Divine Kick,1,b+MK,False,False,False,normal,950,950,600,600,21,25,0.022,0.02,0.25,0.85,60,100
+Thrust Kick,-1,db+MK,False,False,False,normal,950,950,600,600,21,25,0.022,0.02,0.25,0.85,50,100
+Yoga Burner,4,HP+HK (VT1),False,False,True,vtrigger,950,950,600,600,21,25,0.022,0.02,0.25,0.85,120,150
+Yoga Mala,-2,f+PPP,False,False,False,alpha,950,950,600,600,21,25,0.022,0.02,0.25,0.85,60,0
+Yoga Bazooka,-2,MK+HP,False,True,False,vbreak,950,950,600,600,21,25,0.022,0.02,0.25,0.85,60,0
+LP Yoga Fire,-5,qcf+LP,False,False,True,special,950,950,600,600,21,25,0.022,0.02,0.25,0.85,50,100
+MP Yoga Fire,-5,qcf+MP,False,False,True,special,950,950,600,600,21,25,0.022,0.02,0.25,0.85,50,100
+HP Yoga Fire,-5,qcf+HP,False,False,True,special,950,950,600,600,21,25,0.022,0.02,0.25,0.85,50,100
+EX Yoga Fire,3,qcf+PP,False,False,True,special,950,950,600,600,21,25,0.022,0.02,0.25,0.85,40*60 (100),40*60 (100)
+LP Yoga Fire (V-Skill 2),2,qcf+LP (VS2),False,False,True,special,950,950,600,600,21,25,0.022,0.02,0.25,0.85,35*35 (70),60*60 (120)
+MP Yoga Fire (V-Skill 2),2,qcf+MP (VS2),False,False,True,special,950,950,600,600,21,25,0.022,0.02,0.25,0.85,35*35 (70),60*60 (120)
+HP Yoga Fire (V-Skill 2),2,qcf+HP (VS2),False,False,True,special,950,950,600,600,21,25,0.022,0.02,0.25,0.85,35*35 (70),60*60 (120)
+EX Yoga Fire (V-Skill 2),16,qcf+PP (VS2),False,False,True,special,950,950,600,600,21,25,0.022,0.02,0.25,0.85,30*30*60 (120),30*30*60 (120)
+LP Yoga Flame,-3,hcb+LP,False,False,True,special,950,950,600,600,21,25,0.022,0.02,0.25,0.85,60,150
+MP Yoga Flame,-2,hcb+MP,False,False,True,special,950,950,600,600,21,25,0.022,0.02,0.25,0.85,70,150
+HP Yoga Flame,3,hcb+HP,False,False,True,special,950,950,600,600,21,25,0.022,0.02,0.25,0.85,90,200
+EX Yoga Flame,-8,hcb+PP,False,False,True,special,950,950,600,600,21,25,0.022,0.02,0.25,0.85,40*20x2*40 (120),30x2*40*50 (150)
+LP Yoga Gale,2,hcb+LP (air),True,False,True,special,950,950,600,600,21,25,0.022,0.02,0.25,0.85,80,200
+MP Yoga Gale,0,hcb+MP (air),True,False,True,special,950,950,600,600,21,25,0.022,0.02,0.25,0.85,90,200
+HP Yoga Gale,-2,hcb+HP (air),True,False,True,special,950,950,600,600,21,25,0.022,0.02,0.25,0.85,100,200
+EX Yoga Gale,-12,hcb+PP (air),True,False,True,special,950,950,600,600,21,25,0.022,0.02,0.25,0.85,50*50*50 (150),70*70*60 (200)
+Yoga Sunburst lvl 1,9,"qcf,qcf+P (can hold)",False,False,True,super,950,950,600,600,21,25,0.022,0.02,0.25,0.85,300,0
+Yoga Sunburst lvl 2,21,"qcf,qcf+P (can hold)",False,False,True,super,950,950,600,600,21,25,0.022,0.02,0.25,0.85,360,0
+Yoga Sunburst lvl 3,39,"qcf,qcf+P (can hold)",False,False,True,super,950,950,600,600,21,25,0.022,0.02,0.25,0.85,400,0

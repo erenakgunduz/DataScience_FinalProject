@@ -1,0 +1,50 @@
+Move,onBlock,plnCmd,airmove,followUp,projectile,moveType,health,stun,vgauge1,vgauge2,fDash,bDash,fWalk,bWalk,throwHurt,throwRange,Damage,Stun
+Stand LP,2,LP,False,False,False,normal,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,30,70
+Stand MP,3,MP,False,False,False,normal,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,60,100
+Stand HP,-5,HP,False,False,False,normal,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,80,150
+Stand LK,2,LK,False,False,False,normal,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,40,70
+Stand MK,2,MK,False,False,False,normal,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,60,100
+Stand HK,-2,HK,False,False,False,normal,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,90,150
+Crouch LP,2,d+LP,False,False,False,normal,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,30,70
+Crouch MP,1,d+MP,False,False,False,normal,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,60,100
+Crouch HP,2,d+HP,False,False,False,normal,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,80,150
+Crouch LK,2,d+LK,False,False,False,normal,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,20,70
+Crouch MK,-2,d+MK,False,False,False,normal,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,60,100
+Crouch HK,-8,d+HK,False,False,False,normal,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,90,150
+Nouten Wari,-7,f+HP,False,False,False,normal,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,40*40 (80),50*50 (100)
+Fukuro,-7,MP+MK (VS1),False,False,False,vskill,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,50*50 (100),0*150 (150)
+Kuchiyose - Shii,35,b or n or f + MP + MK (VS2),False,False,True,vskill,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,20x4 (80),20x4 (80)
+Bushin Bakujasho,-2,HP+HK - Attack (VT1),False,False,False,vtrigger,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,160,200
+Karura Tenzan,-28,HP+HK (VT2),False,False,False,vtrigger,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,40*20x2*60 (140),150
+Karura Tenzan (Secondary),-28,HP+HK (VT2) (secondary),False,False,False,vtrigger,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,40*20x2*60 (140),100
+Toushi,-2,f+PPP,False,False,False,alpha,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,40,0
+Bushin Murakumo,-2,MK+HP,False,True,False,vbreak,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,60,0
+LK Bushin Gram - Koku,-6(-4),qcf+LK,False,False,False,special,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,90,150
+LK Bushin Gram - Koku (Projectile),-3(4),qcf+LK (Projectile),False,False,True,special,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,60,100
+MK Bushin Gram - Koku,-4,qcf+MK,False,False,False,special,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,100,150
+MK Bushin Gram - Koku (Projectile),-4(4),qcf+MK (Projectile),False,False,True,special,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,70,100
+HK Bushin Gram - Koku,-2,qcf+HK,False,False,False,special,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,120,200
+HK Bushin Gram - Koku (Projectile),-5(4),qcf+HK (Projectile),False,False,True,special,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,90,100
+EX Bushin Gram - Koku,1,qcf+KK,False,False,True,special,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,100*20x2 (140),150
+EX Bushin Gram - Koku (Projectile),-1,qcf+KK (Projectile),False,False,True,special,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,30x2*50 (110),100
+LK Bushin Gram - Teki,-14,qcb+LK,False,False,False,special,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,70,150
+LK Bushin Gram - Teki (Projectile),-2(9),qcb+LK (Projectile),False,False,True,special,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,70,100
+MK Bushin Gram - Teki,-14,qcb+MK,False,False,True,special,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,80,150
+MK Bushin Gram - Teki (Projectile),-4(7),qcb+MK (Projectile),False,False,True,special,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,70,100
+HK Bushin Gram - Teki,-14,qcb+HK,False,False,True,special,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,120,200
+HK Bushin Gram - Teki (Projectile),-2(9),qcb+HK (Projectile),False,False,True,special,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,100,100
+EX Bushin Gram - Teki,-2,qcb+KK,False,False,True,special,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,60*30x2 (110),150
+EX Bushin Gram - Teki (Projectile),5(22),qcb+KK (Projectile),False,False,True,special,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,20x2*50 (90),100
+LK Bushin Gram - Ban,-23,"f,d,df+LK",False,False,False,special,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,100,200
+LK Bushin Gram - Ban (Projectile),-7(2),"f,d,df+LK (Projectile)",False,False,True,special,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,100,150
+MK Bushin Gram - Ban,-29,"f,d,df+MK",False,False,False,special,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,110,200
+MK Bushin Gram - Ban (Projectile),-10(2),"f,d,df+MK (Projectile)",False,False,True,special,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,110,150
+HK Bushin Gram - Ban,-33,"f,d,df+HK",False,False,False,special,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,120,200
+HK Bushin Gram - Ban (Projectile),-11(2),"f,d,df+HK (Projectile)",False,False,True,special,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,120,150
+EX Bushin Gram - Ban,-33,"f,d,df+KK",False,False,True,special,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,100*20*30 (150),200
+EX Bushin Gram - Ban (Projectile),-27(-14),"f,d,df+KK (Projectile)",False,False,True,special,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,20x2*80 (120),100
+Bushin Gekirinchu,-1(5),qcf+P > P,False,True,False,special,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,60,100
+Bushin Kirinkyaku,-5(4),qcf+P > K,False,True,False,special,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,60,100
+EX Bushin Gekirinchu,2(7),qcf+PP > P,False,True,False,special,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,80,150
+EX Bushin Kirinkyaku,-4(5),qcf+PP > K,False,True,False,special,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,80,150
+Batsuzan Gaisei,-33,"qcf,qcf+K",False,False,False,super,1000,1000,600,600,17,22,0.0435,0.0284,0.3,0.8,340,0

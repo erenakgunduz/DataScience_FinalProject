@@ -1,0 +1,60 @@
+Move,onBlock,plnCmd,airmove,followUp,projectile,moveType,health,stun,vgauge1,vgauge2,fDash,bDash,fWalk,bWalk,throwHurt,throwRange,Damage,Stun
+Stand LP,2,LP,False,False,False,normal,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,30,70
+Stand MP,3,MP,False,False,False,normal,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,60,100
+Stand HP,-2,HP,False,False,False,normal,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,90,150
+Stand HP (hold),5,HP (hold),False,False,False,normal,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,100,150
+Stand HP (release),-2,HP (release),False,False,False,normal,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,90,150
+Stand LK,3,LK,False,False,False,normal,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,40,70
+Stand MK,-2,MK,False,False,False,normal,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,60,100
+Stand HK (large),-3,HK,False,False,False,normal,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,90,150
+Stand HK (hold) (large),2,HK (hold),False,False,False,normal,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,50*50 (100),100*50 (150)
+Stand HK (crouch large),-2,HK,False,False,False,normal,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,90,150
+Stand HK (hold) (crouch large),2,HK (hold),False,False,False,normal,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,50*50 (100),100*50 (150)
+Stand HK,-2,HK,False,False,False,normal,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,90,150
+Stand HK (hold),2,HK (hold),False,False,False,normal,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,50*50 (100),100*50 (150)
+Stand HK (crouch),-1,HK,False,False,False,normal,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,90,150
+Stand HK (hold) (crouch),2,HK (hold),False,False,False,normal,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,50*50 (100),100*50 (150)
+Crouch LP,1,d+LP,False,False,False,normal,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,30,70
+Crouch MP,0,d+MP,False,False,False,normal,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,60,100
+Crouch HP,-9*-8,d+HP,False,False,False,normal,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,50*40 (90),75*75 (150)
+Crouch LK,1,d+LK,False,False,False,normal,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,20,70
+Crouch MK,-2,d+MK,False,False,False,normal,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,60,100
+Crouch HK,-14,d+HK,False,False,False,normal,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,100,150
+Quarrel Punch,-2,f+MP,False,False,False,normal,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,70,100
+Terrible Smash,-8,f+HP,False,False,False,normal,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,80,150
+Quarrel Kick,-4,df+HK,False,False,False,normal,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,90,150
+Killer Straight,-4,LP > MP,False,True,False,normal,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,30*45 (75),70*72 (142)
+Break Rush,-8,f+MP > f+HP,False,True,False,normal,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,70*54 (124),100*135 (235)
+1st Aegis Reflector (far),17,HP+HK (VT1),False,False,True,vtrigger,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,20,0
+1st Aegis Reflector (close),17,b+HP+HK (VT1),False,False,True,vtrigger,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,20,0
+1st Aegis Reflector (air),17,d+HP+HK (VT1),False,False,True,vtrigger,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,20,0
+2nd Aegis Reflector (far),17,HP+HK (2nd VT1),False,False,True,vtrigger,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,20,0
+2nd Aegis Reflector (close),17,b+HP+HK (2nd VT1),False,False,True,vtrigger,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,20,0
+2nd Aegis Reflector (air),17,d+HP+HK (2nd VT1),False,False,True,vtrigger,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,20,0
+Anger Snap Fist,-2,f+PPP,False,False,False,alpha,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,60,0
+Tyrant Kick,-2,MK+HP,False,True,False,vbreak,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,60,0
+LK Chariot Tackle,-5,"b,f+LK",False,False,False,special,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,80,150
+MK Chariot Tackle,-9,"b,f+MK",False,False,False,special,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,90,150
+HK Chariot Tackle,-6,"b,f+HK",False,False,False,special,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,100,150
+EX Chariot Tackle,-2,"b,f+KK",False,False,False,special,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,90*60 (150),100*100 (200)
+LK Violence Knee Drop,-4(2),"d,u+LK",False,False,False,special,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,100,200
+MK Violence Knee Drop,-7(0),"d,u+MK",False,False,False,special,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,100,200
+HK Violence Knee Drop,-8(-1),"d,u+HK",False,False,False,special,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,100,200
+EX Violence Knee Drop,-1(6),"d,u+KK",False,False,False,special,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,150,200
+LP Dangerous Headbutt,-2,"d,u+LP",False,False,False,special,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,100,150
+MP Dangerous Headbutt,-2,"d,u+MP",False,False,False,special,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,110,150
+HP Dangerous Headbutt,-2,"d,u+HP",False,False,False,special,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,120,150
+EX Dangerous Headbutt,-17,"d,u+PP",False,False,False,special,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,40*40 (80),40*40 (80)
+LP Metallic Sphere,-7,qcf+LP,False,False,True,special,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,60,100
+LP Metallic Sphere (hold),4,qcf+LP (hold),False,False,True,special,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,40*50 (90),60*60 (120)
+MP Metallic Sphere,-7,qcf+MP,False,False,True,special,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,60,100
+MP Metallic Sphere (hold),2,qcf+MP (hold),False,False,True,special,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,40*50 (90),60*60 (120)
+EX Metallic Sphere Ground,2,qcf+LPMP or LPHP,False,False,True,special,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,40*50 (90),60*60 (120)
+EX Metallic Sphere Ground (hold),13,qcf+LPMP or LPHP (hold),False,False,True,special,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,30*30*60 (120),50*50*50 (150)
+LP Metallic Sphere (V-Skill 2),-2,qcf+LP (VS2),False,False,True,special,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,20*20*50 (90) / 20*40 (60),20*20*80 (120) / 20*80 (100)
+LP Metallic Sphere (hold) (V-Skill 2),-2,qcf+LP (hold) (VS2),False,False,True,special,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,20*20*50 (90) / 20*40 (60),20*20*80 (120) / 20*80 (100)
+MP Metallic Sphere (V-Skill 2),-2,qcf+MP (VS2),False,False,True,special,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,20*20*50 (90),20*20*80 (120)
+MP Metallic Sphere (hold) (V-Skill 2),-2,qcf+MP (hold) (VS2),False,False,True,special,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,20*20*50 (90),20*20*80 (120)
+EX Metallic Sphere Ground (V-Skill 2),12,qcf+LPMP or LPHP (VS2),False,False,True,special,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,25x4*20 (120) / 25x3*20 (95),10x4*110 (150) / 10x3*110 (140) 
+EX Metallic Sphere Ground (hold) (V-Skill 2),12,qcf+LPMP or LPHP (hold) (VS2),False,False,True,special,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,25x4*20 (120) / 25x3*20 (95),10x4*110 (150) / 10x3*110 (140) 
+Dominate Crush,-47,"qcf,qcf+P",False,False,False,super,1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,340,0
