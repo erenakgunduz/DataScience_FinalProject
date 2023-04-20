@@ -144,7 +144,7 @@ Alex,LK Air Stampede,-5,"d,u+LK",False,False,False,special,1050,1075,600,600,19,
 Alex,MK Air Stampede,-5,"d,u+MK",False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1,120,200
 Alex,HK Air Stampede,-5,"d,u+HK",False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1,120,200
 Alex,EX Air Stampede,2,"d,u+KK",False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1,140,200
-Alex,Heavy Hammer,-25,"qcf,qcf+P",False,False,False,super,1050,1075,600,600,19,24,0.04,0.035,0.45,1,340,0*0*0
+Alex,Heavy Hammer,-25,"qcf,qcf+P",False,False,False,super,1050,1075,600,600,19,24,0.04,0.035,0.45,1,340,0
 Balrog,Stand LP,3,LP,False,False,False,normal,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,30,70
 Balrog,Stand MP,0,MP,False,False,False,normal,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,70,100
 Balrog,Stand HP,-3,HP,False,False,False,normal,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,80,150
@@ -227,7 +227,7 @@ Birdie,EX Bull Horn,-21,"hold any 2 button, release",False,False,False,special,1
 Birdie,LK Hanging Chain,-23,qcf+LK,False,False,False,special,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,120,200
 Birdie,MK Hanging Chain,-23,qcf+MK,False,False,False,special,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,150,200
 Birdie,EX Hanging Chain,-21,qcf+KK,False,False,False,special,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,70*100 (170),100*120 (220)
-Birdie,Skip To My Chain,-30,"qcf,qcf+P",False,False,False,super,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,50x3*190 (340),0*0*0*0
+Birdie,Skip To My Chain,-30,"qcf,qcf+P",False,False,False,super,1050,1000,900,600,23,26,0.031,0.024,0.3,0.9,340,0
 Blanka,Stand LP,2,LP,False,False,False,normal,1025,1050,600,900,16,24,0.043,0.032,0.25,0.8,30,70
 Blanka,Stand MP,0,MP,False,False,False,normal,1025,1050,600,900,16,24,0.043,0.032,0.25,0.8,60,100
 Blanka,Stand HP,-6,HP,False,False,False,normal,1025,1050,600,900,16,24,0.043,0.032,0.25,0.8,80,150
@@ -494,7 +494,7 @@ E.Honda,LK Sumo Smash,-1(-3) / -3(-5),"d,u+LK",False,False,False,special,1050,10
 E.Honda,MK Sumo Smash,-1(-3) / -3(-5),"d,u+MK",False,False,False,special,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,120(100),180(160)
 E.Honda,HK Sumo Smash,-2(-3) / -4(-5),"d,u+HK",False,False,False,special,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,120(100),180(160)
 E.Honda,EX Sumo Smash,4(6) / -1(-3),"d,u+KK",False,False,False,special,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,160(140),200(180)
-E.Honda,Kamigashima,-22,"qcf,qcf+P",False,False,False,super,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,50*(4x27)*12*170,0
+E.Honda,Kamigashima,-22,"qcf,qcf+P",False,False,False,super,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,340,0
 Ed,Stand LP,3,LP,False,False,False,normal,1025,1050,600,900,16,23,0.047,0.034,0.25,0.8,30,70
 Ed,Stand MP,3,MP,False,False,False,normal,1025,1050,600,900,16,23,0.047,0.034,0.25,0.8,60,100
 Ed,Stand HP,-2,HP,False,False,False,normal,1025,1050,600,900,16,23,0.047,0.034,0.25,0.8,90,150
@@ -564,7 +564,7 @@ F.A.N.G,Crouch MP,-2,d+MP,False,False,False,normal,975,1000,600,900,20,24,0.032,
 F.A.N.G,Crouch HP,-12*-6,d+HP,False,False,False,normal,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,50*40 (90),75*75 (150)
 F.A.N.G,Crouch LK,1,d+LK,False,False,False,normal,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,20,70
 F.A.N.G,Crouch MK,3,d+MK,False,False,False,normal,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,20*40 (60),50*50 (100)
-F.A.N.G,Crouch HK,-12,d+HK,False,False,False,normal,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,50*50 9100),75*75 (150)
+F.A.N.G,Crouch HK,-12,d+HK,False,False,False,normal,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,100,150
 F.A.N.G,Nirenko,-5,df+HP,False,False,False,normal,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,60*40 (100),100*100 (200)
 F.A.N.G,Senpukuga > Kick,2,d+PPP > K,False,True,False,normal,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,30*40 (70),50*50 (100)
 F.A.N.G,Sodokubu (Attack),-42,MP+MK (VS2) (Attack),False,True,False,vskill,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,10x3*30 (60),20x3*60 (120)
@@ -707,7 +707,7 @@ Guile,EX Sonic Boom,4,"b,f+PP",False,False,True,special,975,975,900,600,18,25,0.
 Guile,LK Somersault Kick,-28,"d,u+LK",False,False,False,special,975,975,900,600,18,25,0.052,0.033,0.25,0.8,130 (100),200
 Guile,MK Somersault Kick,-28,"d,u+MK",False,False,False,special,975,975,900,600,18,25,0.052,0.033,0.25,0.8,130 (100),200
 Guile,HK Somersault Kick,-30,"d,u+HK",False,False,False,special,975,975,900,600,18,25,0.052,0.033,0.25,0.8,130 (100),200
-Guile,EX Somersault Kick,-37,"d,u+KK",False,False,False,special,975,975,900,600,18,25,0.052,0.033,0.25,0.8,90*60 (60*60),100*100
+Guile,EX Somersault Kick,-37,"d,u+KK",False,False,False,special,975,975,900,600,18,25,0.052,0.033,0.25,0.8,150,200
 Guile,LP Sonic Cross,12,"MP+MK > b,f+LP",False,True,True,special,975,975,900,600,18,25,0.052,0.033,0.25,0.8,40*40 (80),50*50 (100)
 Guile,MP Sonic Cross,14,"MP+MK > b,f+MP",False,True,True,special,975,975,900,600,18,25,0.052,0.033,0.25,0.8,40*40 (80),50*50 (100)
 Guile,HP Sonic Cross,14,"MP+MK > b,f+HP",False,True,True,special,975,975,900,600,18,25,0.052,0.033,0.25,0.8,40*40 (80),50*50 (100)
@@ -759,9 +759,9 @@ Ibuki,EX Kunai,18,qcf+PP,False,False,True,special,925,950,900,600,16,21,0.052,0.
 Ibuki,LP Airborne Kunai,-8(5),qcf+LP (air),True,False,True,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,40,50
 Ibuki,MP Airborne Kunai,-8(7),qcf+MP (air),True,False,True,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,40,50
 Ibuki,HP Airborne Kunai,-7(11),qcf+HP (air),True,False,True,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,40,50
-Ibuki,LP Kunai Ikkinage,-1(9),Hold + Release LP,False,False,True,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,20 per dagger,20 per dagger
-Ibuki,MP Kunai Ikkinage,-1(9),Hold + Release MP,False,False,True,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,20 per dagger,20 per dagger
-Ibuki,HP Kunai Ikkinage,-1(9),Hold + Release HP,False,False,True,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,20 per dagger,20 per dagger
+Ibuki,LP Kunai Ikkinage,-1(9),Hold + Release LP,False,False,True,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,120,120
+Ibuki,MP Kunai Ikkinage,-1(9),Hold + Release MP,False,False,True,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,120,120
+Ibuki,HP Kunai Ikkinage,-1(9),Hold + Release HP,False,False,True,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,120,120
 Ibuki,Kachofugetsu,-20,"qcf,qcf+K",False,False,False,super,925,950,900,600,16,21,0.052,0.034,0.25,0.8,340,356
 Juri,Stand LP,2,LP,False,False,False,normal,975,1000,600,600,16,24,0.05,0.033,0.25,0.8,30,70
 Juri,Stand MP,2/-1,MP,False,False,False,normal,975,1000,600,600,16,24,0.05,0.033,0.25,0.8,60,100
@@ -831,9 +831,9 @@ Kage,MP Shakunetsu Hadoken,-6,hcb+MP,False,False,True,special,925,950,600,900,16
 Kage,HP Shakunetsu Hadoken,-6,hcb+HP,False,False,True,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,20x2*40 (80),50x3 (150)
 Kage,EX Shakunetsu Hadoken,6,hcb+PP,False,False,True,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,30x4 (120),30x3*60 (150)
 Kage,LP Shoryuken,-27,"f,d,df+LP",False,False,False,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,80,120
-Kage,MP Shoryuken,-33,"f,d,df+MP",False,False,False,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,60x2,100*50
-Kage,HP Shoryuken,-36,"f,d,df+HP",False,False,False,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,60*20*40 (120),100*20*30 (150)
-Kage,EX Shoryuken,-41,"f,d,df+PP",False,False,False,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,30*20x2*30x3 (160),0x3*50x2*100 (200)
+Kage,MP Shoryuken,-33,"f,d,df+MP",False,False,False,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,120,150
+Kage,HP Shoryuken,-36,"f,d,df+HP",False,False,False,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,120,150
+Kage,EX Shoryuken,-41,"f,d,df+PP",False,False,False,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,160,200
 Kage,LK Kurekijin,-10,qcb+LK,False,False,False,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,50,100
 Kage,MK Kurekijin,-11,qcb+MK,False,False,False,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,50,100
 Kage,HK Kurekijin,-10,qcb+HK,False,False,False,special,925,950,600,900,16,21,0.052,0.035,0.25,0.8,60,100
@@ -1090,7 +1090,7 @@ M.Bison,EX Psycho Blast,6,"b,f+PP",False,False,True,special,1000,1000,900,600,22
 M.Bison,LK Double Knee Press,-4,"b,f+LK",False,False,False,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,40*40,50*100
 M.Bison,MK Double Knee Press,-3,"b,f+MK",False,False,False,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,40*50,50*100
 M.Bison,HK Double Knee Press,-2,"b,f+HK",False,False,False,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,50*50,50*100
-M.Bison,EX Double Knee Press,1,"b,f+KK",False,False,False,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,70*25*25*30 (150),0*0*0*200
+M.Bison,EX Double Knee Press,1,"b,f+KK",False,False,False,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,150,200
 M.Bison,Somersault Skull Diver,3(8),P after head press,True,True,False,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,70,100
 M.Bison,Devil Reverse,2(6),P before head press,True,True,False,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,70,100
 M.Bison,EX Devil Reverse,7(11),PP before head press,True,True,False,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,70*70,100*100
@@ -1364,9 +1364,9 @@ R.Mika,Gutsy Lariat,-2,MK+HP,False,True,False,vbreak,950,1000,600,900,18,24,0.04
 R.Mika,LP Shooting Peach,-7,qcf+LP,False,False,False,special,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,80,150
 R.Mika,MP Shooting Peach,-10,qcf+MP,False,False,False,special,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,90,150
 R.Mika,HP Shooting Peach,-12,qcf+HP,False,False,False,special,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,100,150
-R.Mika,EX Shooting Peach,-15,qcf+PP,False,False,False,special,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,40*40*50,20*20*160
-R.Mika,LP Rainbow Typhoon,KD,hcb+LP,False,False,False,command-grab,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,180(130),200
-R.Mika,MP Rainbow Typhoon,KD,hcb+MP,False,False,False,command-grab,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,190(140),200
+R.Mika,EX Shooting Peach,-15,qcf+PP,False,False,False,special,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,130,200
+R.Mika,LP Rainbow Typhoon,KD,hcb+LP,False,False,False,command-grab,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,180,200
+R.Mika,MP Rainbow Typhoon,KD,hcb+MP,False,False,False,command-grab,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,190,200
 R.Mika,HP Rainbow Typhoon,KD,hcb+HP,False,False,False,command-grab,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,200,200
 R.Mika,EX Rainbow Typhoon,KD,hcb+PP,False,False,False,command-grab,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,240,250
 R.Mika,LK Brimstone,KD,hcb+LK,False,False,False,command-grab,950,1000,600,900,18,24,0.042,0.03,0.25,0.85,120,150
@@ -1796,8 +1796,8 @@ Zeku (Young),Karura Tenzan (Secondary),-28,HP+HK (VT2) (secondary),False,False,F
 Zeku (Young),Toushi,-2,f+PPP,False,False,False,alpha,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,40,0
 Zeku (Young),Habakiri,-2,MK+HP,False,True,False,vbreak,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,60,0
 Zeku (Young),LP Bushin Sho,-4,qcf+LP,False,False,False,special,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,60,150
-Zeku (Young),MP Bushin Sho,-2,qcf+MP,False,False,False,special,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,50*40,100*50
-Zeku (Young),HP Bushin Sho,2,qcf+HP,False,False,False,special,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,30*30*60,50*50*100
+Zeku (Young),MP Bushin Sho,-2,qcf+MP,False,False,False,special,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,90,150
+Zeku (Young),HP Bushin Sho,2,qcf+HP,False,False,False,special,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,120,200
 Zeku (Young),EX Bushin Sho,2,qcf+PP,False,False,False,special,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,80,150
 Zeku (Young),LP Hozanto,-6,qcb+LP,False,False,False,special,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,60,100
 Zeku (Young),MP Hozanto,-6,qcb+MP,False,False,False,special,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,70,100

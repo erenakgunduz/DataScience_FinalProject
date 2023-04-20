@@ -14,12 +14,38 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r, message=FALSE}
 library(tidyverse)
-library(jsonlite)
 ```
 
 ### For starters
 
 ```{r}
-data <- fromJSON("data/sfv.json")
-head(data)
+df <- read.csv("data/all.csv", stringsAsFactors = FALSE)
+df$Damage <- gsub(".*\\((\\d+)\\).*", "\\1", df$Damage)
+df$Damage <- gsub("(\\d+)\\s*\\((\\d+)\\)", "pmax(\\1, \\2)", df$Damage)
+df$Damage <- gsub("(\\d+)\\*(\\d+)", "\\1+\\2", df$Damage)
+df$Damage <- gsub("(\\d+)x(\\d+)", "\\1*\\2", df$Damage)
+df$Damage <- sapply(df$Damage, function(x) eval(parse(text = x)))
+df$Damage <- as.numeric(df$Damage)
+df$Stun <- gsub(".*\\((\\d+)\\).*", "\\1", df$Stun)
+df$Stun <- gsub("(\\d+)\\s*\\((\\d+)\\)", "pmax(\\1, \\2)", df$Stun)
+df$Stun <- gsub("(\\d+)\\*(\\d+)", "\\1+\\2", df$Stun)
+df$Stun <- gsub("(\\d+)x(\\d+)", "\\1*\\2", df$Stun)
+df$Stun <- sapply(df$Stun, function(x) eval(parse(text = x)))
+df$Stun <- as.numeric(df$Stun)
+na_rows <- df[!complete.cases(df), ]
+na_rows
+# df$Damage %>%
+#   tibble() %>%
+#   print(n = Inf)
+# df$Stun %>%
+#   tibble() %>%
+#   print(n = Inf)
+# write.csv(data, "data/all.csv", row.names = FALSE)
 ```
+
+### KDE
+
+<!-- # ```{r}
+# ggplot(data, aes(onBlock)) +
+#   geom_density()
+# ``` -->
