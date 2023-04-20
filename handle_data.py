@@ -12,8 +12,7 @@ if not os.path.exists(f"{os.getcwd()}/data/characters"):
 
 all_attacks = []
 
-# loop through each character
-for char in data:
+for char in data:  # loop through each character
     char_attacks = []
     # loop through each normal attack for the character
     for move_name, move_data in data[char]["moves"]["normal"].items():
@@ -63,7 +62,6 @@ for char in data:
 
     df_char = pd.DataFrame(char_attacks)
     df_char = df_char.drop(columns=["Character"])
-
     df_char.to_csv(f"{os.getcwd()}/data/characters/{char}.csv", index=False)
 
 df_all = pd.DataFrame(all_attacks)
