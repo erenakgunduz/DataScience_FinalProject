@@ -61,7 +61,7 @@ for char in data:  # loop through each character
             char_attacks.append(attack)
 
     df_char = pd.DataFrame(char_attacks)
-    df_char = df_char.drop(columns=["Character"])
+    df_char = df_char.drop(columns=["Character"])  # redundant for these files
     df_char.to_csv(f"{os.getcwd()}/data/characters/{char}.csv", index=False)
 
 df_all = pd.DataFrame(all_attacks)
