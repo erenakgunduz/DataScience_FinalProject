@@ -400,7 +400,7 @@
 "Dan","Saikyo-Style Burairuten No Kamae I",-2,"MP+MK (VS1) fwd","False","False","False","vskill",1025,950,300,600,16,21,0.047,0.032,0.25,0.8,10,10
 "Dan","Saikyo-Style Otokoboe",-6,"MP+MK (VS2)","True","False","False","vskill",1025,950,300,600,16,21,0.047,0.032,0.25,0.8,30,50
 "Dan","Haoh Gadoken",2,"HP+HK (VT1)","False","False","True","vtrigger",1025,950,300,600,16,21,0.047,0.032,0.25,0.8,100,150
-"Dan","Haoh Gadoken (hold)",NA,"HP+HK (VT1) Hold","False","False","True","vtrigger",1025,950,300,600,16,21,0.047,0.032,0.25,0.8,220,150
+"Dan","Haoh Gadoken (hold)",47,"HP+HK (VT1) Hold","False","False","True","vtrigger",1025,950,300,600,16,21,0.047,0.032,0.25,0.8,220,150
 "Dan","Saikyo Donukigeri",-2,"MK+HP","False","True","False","vbreak",1025,950,300,600,16,21,0.047,0.032,0.25,0.8,60,0
 "Dan","LP Gadoken",-2,"qcf+LP","False","False","True","special",1025,950,300,600,16,21,0.047,0.032,0.25,0.8,50,80
 "Dan","LP Gadoken (hold)",4,"qcf+LP (hold)","False","False","True","special",1025,950,300,600,16,21,0.047,0.032,0.25,0.8,80,100
@@ -514,7 +514,7 @@
 "Ed","Psycho Swing (hold)",-2,"MP+MK (VS2) (hold)","False","False","False","vskill",1025,1050,600,900,16,23,0.047,0.034,0.25,0.8,80,120
 "Ed","Psycho Smash",-6,"d+MP+MK (VS2)","False","False","False","vskill",1025,1050,600,900,16,23,0.047,0.034,0.25,0.8,70,100
 "Ed","Psycho Smash (hold)",3,"d+MP+MK (VS2) (hold)","False","False","False","vskill",1025,1050,600,900,16,23,0.047,0.034,0.25,0.8,90,120
-"Ed","Psycho Cannon",NA,"HP+HK (VT1)","False","False","True","vtrigger",1025,1050,600,900,16,23,0.047,0.034,0.25,0.8,140,175
+"Ed","Psycho Cannon",48,"HP+HK (VT1)","False","False","True","vtrigger",1025,1050,600,900,16,23,0.047,0.034,0.25,0.8,140,175
 "Ed","Psycho Split",-2,"MK+HP","False","True","False","vbreak",1025,1050,600,900,16,23,0.047,0.034,0.25,0.8,60,0
 "Ed","Psycho Knuckle",-2,"HP (hold)","False","False","False","special",1025,1050,600,900,16,23,0.047,0.034,0.25,0.8,100,150
 "Ed","Psycho Spark",-2,"f+MP","False","False","False","special",1025,1050,600,900,16,23,0.047,0.034,0.25,0.8,50,80
@@ -537,7 +537,7 @@
 "Falke","Crouch LK",2,"d+LK","False","False","False","normal",975,1000,600,600,20,25,0.04,0.03,0.25,0.85,20,70
 "Falke","Crouch MK",-2,"d+MK","False","False","False","normal",975,1000,600,600,20,25,0.04,0.03,0.25,0.85,60,100
 "Falke","Crouch HK",-12,"d+HK","False","False","False","normal",975,1000,600,600,20,25,0.04,0.03,0.25,0.85,90,150
-"Falke","Luftjagd",NA,"d+MK (air)","True","False","False","normal",975,1000,600,600,20,25,0.04,0.03,0.25,0.85,60,100
+"Falke","Luftjagd",1,"d+MK (air)","True","False","False","normal",975,1000,600,600,20,25,0.04,0.03,0.25,0.85,60,100
 "Falke","Blaukraehe",3,"df+HK","False","False","False","normal",975,1000,600,600,20,25,0.04,0.03,0.25,0.85,40,100
 "Falke","Psycho Spitze",-10,"f+HP","False","False","False","normal",975,1000,600,600,20,25,0.04,0.03,0.25,0.85,90,150
 "Falke","Zweitrit",-15,"MK > HK","False","True","False","normal",975,1000,600,600,20,25,0.04,0.03,0.25,0.85,123,190
@@ -819,7 +819,7 @@
 "Kage","Shoulder Throw",35,"LP+LK","False","False","False","throw",925,950,600,900,16,21,0.052,0.035,0.25,0.8,130,170
 "Kage","Somersault Throw",35,"b+LP+LK","False","False","False","throw",925,950,600,900,16,21,0.052,0.035,0.25,0.8,150,170
 "Kage","Senha Kassatsu",-6,"MP+MK (VS1)","False","False","False","vskill",925,950,600,900,16,21,0.052,0.035,0.25,0.8,60,100
-"Kage","Senha Kassatsu (hold)",NA,"MP+MK (VS1) (hold)","False","True","False","vskill",925,950,600,900,16,21,0.052,0.035,0.25,0.8,90,150
+"Kage","Senha Kassatsu (hold)",-4,"MP+MK (VS1) (hold)","False","True","False","vskill",925,950,600,900,16,21,0.052,0.035,0.25,0.8,90,150
 "Kage","Sekieiken",-2,"MP+MK (VS2)","False","False","False","vskill",925,950,600,900,16,21,0.052,0.035,0.25,0.8,60,100
 "Kage","Senbugeki",-2,"f+PPP","False","False","False","alpha",925,950,600,900,16,21,0.052,0.035,0.25,0.8,40,0
 "Kage","Yashazuki",-2,"MK+HP","False","True","False","vbreak",925,950,600,900,16,21,0.052,0.035,0.25,0.8,60,0
@@ -1120,7 +1120,7 @@
 "Menat","Crouch HK",-11,"d+HK","False","False","False","normal",950,950,900,600,20,24,0.04,0.032,0.25,0.85,80,150
 "Menat","Crouch HK orb",-16,"d+HK orb","False","False","False","normal",950,950,900,600,20,24,0.04,0.032,0.25,0.85,90,150
 "Menat","Judgement of Anubis",-10,"df+MK","False","False","False","normal",950,950,900,600,20,24,0.04,0.032,0.25,0.85,50,100
-"Menat","Divine Retribution",NA,"f+MK","False","True","False","normal",950,950,900,600,20,24,0.04,0.032,0.25,0.85,60,100
+"Menat","Divine Retribution",-19,"f+MK","False","True","False","normal",950,950,900,600,20,24,0.04,0.032,0.25,0.85,60,100
 "Menat","LK Khamun Kick",-6,"d+LK or db+LK or df+LK (air)","True","False","False","normal",950,950,900,600,20,24,0.04,0.032,0.25,0.85,60,70
 "Menat","MK Khamun Kick",-2,"d+MK or db+MK or df+MK (air)","True","False","False","normal",950,950,900,600,20,24,0.04,0.032,0.25,0.85,60,70
 "Menat","HK Khamun Kick",-2,"d+HK or db+HK or df+HK (air)","True","False","False","normal",950,950,900,600,20,24,0.04,0.032,0.25,0.85,60,70
@@ -1139,7 +1139,7 @@
 "Menat","LPHP Soul Sphere",-10,"qcf+LPHP","False","False","True","special",950,950,900,600,20,24,0.04,0.032,0.25,0.85,150,200
 "Menat","MPHP Soul Sphere",-9,"qcf+MPHP","False","False","True","special",950,950,900,600,20,24,0.04,0.032,0.25,0.85,40,70
 "Menat","MPHP Soul Sphere Air",-9,"qcf+MPHP Air","False","False","True","special",950,950,900,600,20,24,0.04,0.032,0.25,0.85,150,200
-"Menat","Soul Sphere Ankh",NA,"qcf+P (recall)","False","True","True","special",950,950,900,600,20,24,0.04,0.032,0.25,0.85,40,70
+"Menat","Soul Sphere Ankh",3,"qcf+P (recall)","False","True","True","special",950,950,900,600,20,24,0.04,0.032,0.25,0.85,40,70
 "Menat","The Nefertem",-46,"qcf,qcf+P","False","False","False","super",950,950,900,600,20,24,0.04,0.032,0.25,0.85,330,0
 "Nash","Stand LP",3,"LP","False","False","False","normal",975,1000,600,900,18,24,0.027,0.027,0.25,0.85,30,70
 "Nash","Stand MP",0,"MP","False","False","False","normal",975,1000,600,900,18,24,0.027,0.027,0.25,0.85,60,100
@@ -1313,7 +1313,7 @@
 "Rashid","HK Eagle Spike",-20,"qcb+HK","True","False","False","special",950,950,600,600,15,24,0.04,0.036,0.402,0.852,130,200
 "Rashid","Eagle Spike (wind)",-20,"qcb+K (wind)","True","False","False","special",950,950,600,600,15,24,0.04,0.036,0.402,0.852,150,200
 "Rashid","EX Eagle Spike",-23,"qcb+KK","True","False","False","special",950,950,600,600,15,24,0.04,0.036,0.402,0.852,100,150
-"Rashid","EX Eagle Spike (wind)",NA,"qcb+KK (wind)","True","False","False","special",950,950,600,600,15,24,0.04,0.036,0.402,0.852,160,200
+"Rashid","EX Eagle Spike (wind)",-3,"qcb+KK (wind)","True","False","False","special",950,950,600,600,15,24,0.04,0.036,0.402,0.852,160,200
 "Rashid","LK Airborne Eagle Spike",-35,"qcb+LK(air)","True","False","False","special",950,950,600,600,15,24,0.04,0.036,0.402,0.852,120,200
 "Rashid","MK Airborne Eagle Spike",-35,"qcb+MK(air)","True","False","False","special",950,950,600,600,15,24,0.04,0.036,0.402,0.852,120,200
 "Rashid","HK Airborne Eagle Spike",-35,"qcb+HK(air)","True","False","False","special",950,950,600,600,15,24,0.04,0.036,0.402,0.852,120,200
@@ -1336,12 +1336,12 @@
 "R.Mika","Crouch LK",1,"d+LK","False","False","False","normal",950,1000,600,900,18,24,0.042,0.03,0.25,0.85,20,70
 "R.Mika","Crouch MK",-2,"d+MK","False","False","False","normal",950,1000,600,900,18,24,0.042,0.03,0.25,0.85,60,100
 "R.Mika","Crouch HK",-12,"d+HK","False","False","False","normal",950,1000,600,900,18,24,0.042,0.03,0.25,0.85,90,150
-"R.Mika","Jump LP",NA,"u+LP","True","False","False","normal",950,1000,600,900,18,24,0.042,0.03,0.25,0.85,40,70
+"R.Mika","Jump LP",4,"u+LP","True","False","False","normal",950,1000,600,900,18,24,0.042,0.03,0.25,0.85,40,70
 "R.Mika","Jump MP",9,"u+MP","True","False","False","normal",950,1000,600,900,18,24,0.042,0.03,0.25,0.85,60,100
-"R.Mika","Jump HP",NA,"u+HP","True","False","False","normal",950,1000,600,900,18,24,0.042,0.03,0.25,0.85,90,150
-"R.Mika","Jump LK",NA,"u+LK","True","False","False","normal",950,1000,600,900,18,24,0.042,0.03,0.25,0.85,40,70
-"R.Mika","Jump MK",NA,"u+MK","True","False","False","normal",950,1000,600,900,18,24,0.042,0.03,0.25,0.85,70,100
-"R.Mika","Jump HK",NA,"u+HK","True","False","False","normal",950,1000,600,900,18,24,0.042,0.03,0.25,0.85,90,150
+"R.Mika","Jump HP",9,"u+HP","True","False","False","normal",950,1000,600,900,18,24,0.042,0.03,0.25,0.85,90,150
+"R.Mika","Jump LK",4,"u+LK","True","False","False","normal",950,1000,600,900,18,24,0.042,0.03,0.25,0.85,40,70
+"R.Mika","Jump MK",8,"u+MK","True","False","False","normal",950,1000,600,900,18,24,0.042,0.03,0.25,0.85,70,100
+"R.Mika","Jump HK",10,"u+HK","True","False","False","normal",950,1000,600,900,18,24,0.042,0.03,0.25,0.85,90,150
 "R.Mika","Stomp Chomp",-5,"LK > MP","False","True","False","normal",950,1000,600,900,18,24,0.042,0.03,0.25,0.85,75,160
 "R.Mika","Divebomb",-9,"d+MP during f jump","True","False","False","normal",950,1000,600,900,18,24,0.042,0.03,0.25,0.85,70,100
 "R.Mika","Lady Mika",3,"f+HP","False","False","False","normal",950,1000,600,900,18,24,0.042,0.03,0.25,0.85,80,150
@@ -1552,7 +1552,7 @@
 "Seth","Install Art | [Lucia] Fire Spinner",-4,"MP+MK (Lucia)","False","False","False","vskill",900,900,600,600,16,23,0.047,0.032,0.25,0.8,80,100
 "Seth","Install Art | [M. Bison] Double Knee Press",-2,"MP+MK (Dictator)","False","False","False","vskill",900,900,600,600,16,23,0.047,0.032,0.25,0.8,100,150
 "Seth","Install Art | [Menat] Soul Sphere",-8,"MP+MK (Menat Soul Sphere)","False","False","True","vskill",900,900,600,600,16,23,0.047,0.032,0.25,0.8,40,70
-"Seth","Install Art | [Menat] Soul Sphere: Ankh",NA,"MP+MK (Menat Soul Sphere: Ankh)","False","True","True","vskill",900,900,600,600,16,23,0.047,0.032,0.25,0.8,40,70
+"Seth","Install Art | [Menat] Soul Sphere: Ankh",1,"MP+MK (Menat Soul Sphere: Ankh)","False","True","True","vskill",900,900,600,600,16,23,0.047,0.032,0.25,0.8,40,70
 "Seth","Install Art | [Nash] Sonic Scythe",-10,"MP+MK (Nash)","False","False","False","vskill",900,900,600,600,16,23,0.047,0.032,0.25,0.8,100,100
 "Seth","Install Art | [Necalli] The Disc's Guidance",-6,"MP+MK (Necalli Lunge)","True","False","False","vskill",900,900,600,600,16,23,0.047,0.032,0.25,0.8,120,150
 "Seth","Install Art | [Necalli] The Disc's Guidance (V-Trigger)",-6,"MP+MK (Necalli Lunge (V-Trigger))","True","False","False","vskill",900,900,600,600,16,23,0.047,0.032,0.25,0.8,140,150
@@ -1715,7 +1715,7 @@
 "Zangief","Iron Muscle (hold)",-2,"MP+MK (VS1) (hold)","False","False","False","vskill",1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,50,100
 "Zangief","Iron Muscle (release)",-2,"MP+MK (VS1) (release)","False","True","False","vskill",1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,50,100
 "Zangief","Super Russian Kick",-4,"MP+MK (VS2)","False","False","False","vskill",1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,80,100
-"Zangief","Super Russian Kick (hold)",NA,"MP+MK (VS2) (hold)","False","False","False","vskill",1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,100,120
+"Zangief","Super Russian Kick (hold)",11,"MP+MK (VS2) (hold)","False","False","False","vskill",1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,100,120
 "Zangief","Muscle Explosion",-2,"f+KKK","False","False","False","alpha",1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,40,0
 "Zangief","Colossal Boot",-2,"MK+HP","False","True","False","vbreak",1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,60,0
 "Zangief","Double Lariat",-38,"PPP","False","False","False","special",1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,100,200
