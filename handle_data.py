@@ -2,85 +2,34 @@ import json
 import os
 import pandas as pd
 
-# The code is very ugly, but it got the job done
-json_path = f"{os.getcwd()}/data/sfv.json"
 
-with open(json_path) as f:
+with open(f"{os.getcwd()}/data/sfv.json") as f:
     data = json.load(f)
-
-# create an empty list to store the data
-all_attacks = []
-
-# loop through each character
-for char in data:
-    # loop through each normal attack for the character
-    for move_name, move_data in data[char]["moves"]["normal"].items():
-        conditions = (
-            "onBlock" in move_data
-            and "damage" in move_data
-            and "stun" in move_data
-            and "airmove" in move_data
-        )
-        if conditions:
-            # create a dictionary to store the attack data
-            attack = {"Character": char, "Move": move_name}
-            # append the 16 features to the attack dictionary
-            attack.update(
-                {
-                    "onBlock": move_data["onBlock"],
-                    "plnCmd": move_data["plnCmd"],
-                    "airmove": move_data["airmove"],
-                    "followUp": move_data["followUp"],
-                    "projectile": move_data["projectile"],
-                    "moveType": move_data["moveType"],
-                }
-            )
-            # append the character-specific stats to the attack dictionary
-            attack.update(
-                {
-                    "health": data[char]["stats"]["health"],
-                    "stun": data[char]["stats"]["stun"],
-                    "vgauge1": data[char]["stats"]["vgauge1"],
-                    "vgauge2": data[char]["stats"]["vgauge2"],
-                    "fDash": data[char]["stats"]["fDash"],
-                    "bDash": data[char]["stats"]["bDash"],
-                    "fWalk": data[char]["stats"]["fWalk"],
-                    "bWalk": data[char]["stats"]["bWalk"],
-                    "throwHurt": data[char]["stats"]["throwHurt"],
-                    "throwRange": data[char]["stats"]["throwRange"],
-                }
-            )
-            # append the damage and stun data to the attack dictionary
-            attack.update({"Damage": move_data["damage"], "Stun": move_data["stun"]})
-            # append the attack dictionary to the list
-            all_attacks.append(attack)
-
-# create a pandas DataFrame from the list of attacks
-df_all = pd.DataFrame(all_attacks)
-
-# save the DataFrame to a CSV file
-df_all.to_csv(f"{os.getcwd()}/data/all.csv", index=False)
 
 # create a directory for the character-specific CSV files
 if not os.path.exists(f"{os.getcwd()}/data/characters"):
     os.makedirs(f"{os.getcwd()}/data/characters")
 
+all_attacks = []
+
 # loop through each character
 for char in data:
-    # create an empty list to store the character's attacks
     char_attacks = []
     # loop through each normal attack for the character
     for move_name, move_data in data[char]["moves"]["normal"].items():
+        # clean up data by adding attack only if it contains this info
         conditions = (
             "onBlock" in move_data
             and "damage" in move_data
             and "stun" in move_data
             and "airmove" in move_data
         )
+
         if conditions:
             # create a dictionary to store the attack data
-            attack = {"Move": move_name}
+            attack = {"Character": char, "Move": move_name}
             # append the 16 features to the attack dictionary
+            # starting with onBlock followed by categorical features
             attack.update(
                 {
                     "onBlock": move_data["onBlock"],
@@ -108,12 +57,14 @@ for char in data:
             )
             # append the damage and stun data to the attack dictionary
             attack.update({"Damage": move_data["damage"], "Stun": move_data["stun"]})
-            # append the attack dictionary to the list
+            # append the attack dictionary to the lists
+            all_attacks.append(attack)
             char_attacks.append(attack)
 
-    # create a pandas DataFrame from the list of character's attacks
     df_char = pd.DataFrame(char_attacks)
+    df_char = df_char.drop(columns=["Character"])
 
-    # save the DataFrame to a CSV file
-    filename = f"{os.getcwd()}/data/characters/{char}.csv"
-    df_char.to_csv(filename, index=False)
+    df_char.to_csv(f"{os.getcwd()}/data/characters/{char}.csv", index=False)
+
+df_all = pd.DataFrame(all_attacks)
+df_all.to_csv(f"{os.getcwd()}/data/all.csv", index=False)
