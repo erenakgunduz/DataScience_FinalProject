@@ -1,0 +1,25 @@
+---
+title: "Sandbox"
+author: "Eren Akgunduz"
+date: "19 April 2023"
+output:
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## The data
+
+```{r, message=FALSE}
+library(tidyverse)
+library(jsonlite)
+```
+
+### For starters
+
+```{r}
+data <- fromJSON("data/sfv.json")
+head(data)
+```
