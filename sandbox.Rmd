@@ -32,6 +32,16 @@ df$Stun <- gsub("(\\d+)\\*(\\d+)", "\\1+\\2", df$Stun)
 df$Stun <- gsub("(\\d+)x(\\d+)", "\\1*\\2", df$Stun)
 df$Stun <- sapply(df$Stun, function(x) eval(parse(text = x)))
 df$Stun <- as.numeric(df$Stun)
+df$health <- as.numeric(df$health)
+df$stun <- as.numeric(df$stun)
+df$vgauge1 <- as.numeric(df$vgauge1)
+df$vgauge2 <- as.numeric(df$vgauge2)
+df$fDash <- as.numeric(df$fDash)
+df$bDash <- as.numeric(df$bDash)
+df$fWalk <- as.numeric(df$fWalk)
+df$bWalk <- as.numeric(df$bWalk)
+df$throwHurt <- as.numeric(df$throwHurt)
+df$throwRange <- as.numeric(df$throwRange)
 na_rows <- df[!complete.cases(df), ]
 na_rows
 # df$Damage %>%
@@ -40,7 +50,7 @@ na_rows
 # df$Stun %>%
 #   tibble() %>%
 #   print(n = Inf)
-# write.csv(data, "data/all.csv", row.names = FALSE)
+write.csv(df, "data/all.csv", row.names = FALSE)
 ```
 
 ### KDE
