@@ -74,11 +74,15 @@ df <- read.csv("data/all.csv", stringsAsFactors = FALSE)
 # Check for missing values
 na_rows <- df[!complete.cases(df), ]
 na_rows
+nrow(df)
+ncol(df)
 ```
 
 ### KDE
 
 ```{r}
+ggplot(df, aes(onBlock)) +
+  geom_density()
 ggplot(df, aes(Damage)) +
   geom_density()
 ggplot(df, aes(Stun)) +
