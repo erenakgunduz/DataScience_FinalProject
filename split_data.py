@@ -1,5 +1,7 @@
-import pandas as pd
 import os
+
+import pandas as pd
+
 
 df = pd.read_csv(f"{os.getcwd()}/data/all.csv")
 
