@@ -4,7 +4,7 @@ Stand MP,3,MP,False,False,False,normal,1025,1050,900,600,20,24,0.0365,0.0277,0.2
 Stand HP,-2,HP,False,False,False,normal,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,90,150
 Stand LK,1,LK,False,False,False,normal,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,40,70
 Stand MK,-2,MK,False,False,False,normal,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,70,100
-Stand HK,-1,HK,False,False,False,normal,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,80,150
+Stand HK,-3,HK,False,False,False,normal,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,80,150
 Crouch LP,1,d+LP,False,False,False,normal,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,30,70
 Crouch MP,1,d+MP,False,False,False,normal,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,65,100
 Crouch HP,-1,d+HP,False,False,False,normal,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,90,150

@@ -1,10 +1,10 @@
 Move,onBlock,plnCmd,airmove,followUp,projectile,moveType,health,stun,vgauge1,vgauge2,fDash,bDash,fWalk,bWalk,throwHurt,throwRange,Damage,Stun
 Stand LP,3,LP,False,False,False,normal,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,40,90
 Stand MP,2,MP,False,False,False,normal,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,70,120
-Stand HP,-7,HP,False,False,False,normal,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,80,150
+Stand HP,-7,HP,False,False,False,normal,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,85,150
 Stand LK,2,LK,False,False,False,normal,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,40,90
 Stand MK,4,MK,False,False,False,normal,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,60,120
-Stand HK,2,HK,False,False,False,normal,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,80,150
+Stand HK,-1,HK,False,False,False,normal,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,85,150
 Crouch LP,2,d+LP,False,False,False,normal,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,40,90
 Crouch MP,2,d+MP,False,False,False,normal,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,60,120
 Crouch HP,-5,d+HP,False,False,False,normal,1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,100,150

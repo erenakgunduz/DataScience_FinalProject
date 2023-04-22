@@ -4,7 +4,7 @@ Stand MP,-2,MP,False,False,False,normal,900,900,600,600,16,23,0.047,0.032,0.25,0
 Stand HP,-4,HP,False,False,False,normal,900,900,600,600,16,23,0.047,0.032,0.25,0.8,80,150
 Stand LK,3,LK,False,False,False,normal,900,900,600,600,16,23,0.047,0.032,0.25,0.8,40,70
 Stand MK,-2,MK,False,False,False,normal,900,900,600,600,16,23,0.047,0.032,0.25,0.8,70,100
-Stand HK,-6,HK,False,False,False,normal,900,900,600,600,16,23,0.047,0.032,0.25,0.8,80,150
+Stand HK,-10,HK,False,False,False,normal,900,900,600,600,16,23,0.047,0.032,0.25,0.8,80,150
 Crouch LP,2,d+LP,False,False,False,normal,900,900,600,600,16,23,0.047,0.032,0.25,0.8,30,70
 Crouch MP,2,d+MP,False,False,False,normal,900,900,600,600,16,23,0.047,0.032,0.25,0.8,60,100
 Crouch HP,-10,d+HP,False,False,False,normal,900,900,600,600,16,23,0.047,0.032,0.25,0.8,80,150
@@ -87,7 +87,7 @@ MK Cruel Disaster,-4,qcb+MK,False,False,False,special,900,900,600,600,16,23,0.04
 HK Cruel Disaster,2,qcb+HK,False,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,100,150
 EX Cruel Disaster,-12,qcb+KK,False,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,100,150
 LK Annihilate Sword,-4,qcb+LK (air),True,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,70,150
-MK Annihilate Sword,0,qcb+MK (air),True,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,80,150
+MK Annihilate Sword,-5,qcb+MK (air),True,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,80,150
 HK Annihilate Sword,-5,qcb+HK (air),True,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,90,150
 EX Annihilate Sword,-7,qcb+KK (air),True,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,130,200
 Tanden Destruction,-30,"qcf,qcf+P",False,False,False,super,900,900,600,600,16,23,0.047,0.032,0.25,0.8,330,0

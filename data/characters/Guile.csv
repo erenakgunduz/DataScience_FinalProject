@@ -10,7 +10,7 @@ Crouch MP,2,d+MP,False,False,False,normal,975,975,900,600,18,25,0.052,0.033,0.25
 Crouch HP,-4,d+HP,False,False,False,normal,975,975,900,600,18,25,0.052,0.033,0.25,0.8,90,150
 Crouch LK,0,d+LK,False,False,False,normal,975,975,900,600,18,25,0.052,0.033,0.25,0.8,20,70
 Crouch MK,-4,d+MK,False,False,False,normal,975,975,900,600,18,25,0.052,0.033,0.25,0.8,60,100
-Crouch HK,-13,d+HK,False,False,False,normal,975,975,900,600,18,25,0.052,0.033,0.25,0.8,70,100
+Crouch HK,-13,d+HK,False,False,False,normal,975,975,900,600,18,25,0.052,0.033,0.25,0.8,80,125
 Guile High Kick,-3,df+HK,False,False,False,normal,975,975,900,600,18,25,0.052,0.033,0.25,0.8,80,150
 Knee Bazooka,-3,b or f+LK,False,False,False,normal,975,975,900,600,18,25,0.052,0.033,0.25,0.8,50,100
 Rolling Sobat,-4,b or f+MK,False,False,False,normal,975,975,900,600,18,25,0.052,0.033,0.25,0.8,60,100

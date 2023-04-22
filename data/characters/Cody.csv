@@ -1,7 +1,7 @@
 Move,onBlock,plnCmd,airmove,followUp,projectile,moveType,health,stun,vgauge1,vgauge2,fDash,bDash,fWalk,bWalk,throwHurt,throwRange,Damage,Stun
 Stand LP,1,LP,False,False,False,normal,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,30,70
 Stand MP,0,MP,False,False,False,normal,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,60,100
-Stand HP,-9,HP,False,False,False,normal,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,120,170
+Stand HP,-10,HP,False,False,False,normal,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,120,170
 Stand LK,3,LK,False,False,False,normal,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,40,70
 Stand MK,3,MK,False,False,False,normal,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,60,100
 Stand HK,-4,HK,False,False,False,normal,1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,80,150
