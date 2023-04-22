@@ -12,9 +12,5 @@ for filename in os.listdir(directory):
         else:
             name, ext = filename.split(".")
             new_name = f"{name.lower().replace(' ', '_')}.{ext}"
-        os.rename(os.path.join(directory, filename), os.path.join(directory, new_name))
-        print(f"Renamed {filename} to {new_name}")
-    else:
-        new_name = filename.lower()
-        os.rename(os.path.join(directory, filename), os.path.join(directory, new_name))
+        os.rename(f"{directory}/{filename}", f"{directory}/{new_name}")
         print(f"Renamed {filename} to {new_name}")
