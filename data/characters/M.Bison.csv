@@ -12,8 +12,8 @@ Crouch LK,2,d+LK,False,False,False,normal,1000,1000,900,600,22,22,0.0262,0.023,0
 Crouch MK,-2,d+MK,False,False,False,normal,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,50,100
 Crouch HK,-12,d+HK,False,False,False,normal,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,90,150
 Psycho Axe,1,df+HP,False,False,False,normal,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,80,150
-Shadow Axe,-8,MP > df+HP,False,True,False,normal,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,60*45 (105),100*108 (208)
-Psycho Reflect (release),13,MP+MK (VS1) (release),False,False,True,vskill,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,40*40,50*50
+Shadow Axe,-8,MP > df+HP,False,True,False,normal,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,105,208
+Psycho Reflect (release),13,MP+MK (VS1) (release),False,False,True,vskill,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,80,100
 Hell's Warp,1,MP+MK (VS2),False,False,False,vskill,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,70,100
 Psycho Burst,-2,f+PPP,False,False,False,alpha,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,60,0
 Psycho Fist,-2,MK+HP,False,True,False,vbreak,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,60,0
@@ -21,15 +21,15 @@ LP Psycho Blast,-2,"b,f+LP",False,False,True,special,1000,1000,900,600,22,22,0.0
 MP Psycho Blast,-1,"b,f+MP",False,False,True,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,70,100
 HP Psycho Blast,2,"b,f+HP",False,False,True,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,70,100
 EX Psycho Blast,6,"b,f+PP",False,False,True,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,100,150
-LK Double Knee Press,-4,"b,f+LK",False,False,False,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,40*40,50*100
-MK Double Knee Press,-3,"b,f+MK",False,False,False,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,40*50,50*100
-HK Double Knee Press,-2,"b,f+HK",False,False,False,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,50*50,50*100
-EX Double Knee Press,1,"b,f+KK",False,False,False,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,70*25*25*30 (150),0*0*0*200
-Somersault Skull Diver,3(8),P after head press,True,True,False,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,70,100
-Devil Reverse,2(6),P before head press,True,True,False,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,70,100
-EX Devil Reverse,7(11),PP before head press,True,True,False,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,70*70,100*100
-LP Psycho Inferno,-12,qcb+LP,False,False,False,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,25*25*30 (80),40*40*70 (150)
-MP Psycho Inferno,-11,qcb+MP,False,False,False,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,25x3*15 (90),35x3*45 (150)
-HP Psycho Inferno,-10,qcb+HP,False,False,False,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,20x5 (100),30x5 (150)
-EX Psycho Inferno,-1,qcb+PP,False,False,False,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,20x4*40 (120),20x4*70 (150)
+LK Double Knee Press,-4,"b,f+LK",False,False,False,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,80,150
+MK Double Knee Press,-3,"b,f+MK",False,False,False,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,90,150
+HK Double Knee Press,-2,"b,f+HK",False,False,False,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,100,150
+EX Double Knee Press,1,"b,f+KK",False,False,False,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,150,200
+Somersault Skull Diver,3,P after head press,True,True,False,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,70,100
+Devil Reverse,2,P before head press,True,True,False,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,70,100
+EX Devil Reverse,7,PP before head press,True,True,False,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,140,200
+LP Psycho Inferno,-12,qcb+LP,False,False,False,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,80,150
+MP Psycho Inferno,-11,qcb+MP,False,False,False,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,90,150
+HP Psycho Inferno,-10,qcb+HP,False,False,False,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,100,150
+EX Psycho Inferno,-1,qcb+PP,False,False,False,special,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,120,150
 Ultimate Psycho Crusher,-40,"qcf,qcf+P",False,False,False,super,1000,1000,900,600,22,22,0.0262,0.023,0.25,0.9,340,0

@@ -4,7 +4,7 @@ Stand MP,3,MP,False,False,False,normal,1025,1050,900,600,20,24,0.0365,0.0277,0.2
 Stand HP,-2,HP,False,False,False,normal,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,90,150
 Stand LK,1,LK,False,False,False,normal,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,40,70
 Stand MK,-2,MK,False,False,False,normal,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,70,100
-Stand HK,-1(-3),HK,False,False,False,normal,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,20*70 (80),30*120
+Stand HK,-1,HK,False,False,False,normal,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,80,150
 Crouch LP,1,d+LP,False,False,False,normal,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,30,70
 Crouch MP,1,d+MP,False,False,False,normal,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,65,100
 Crouch HP,-1,d+HP,False,False,False,normal,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,90,150
@@ -18,25 +18,25 @@ Tiger Tornado,-2,MK+HP,False,True,False,vbreak,1025,1050,900,600,20,24,0.0365,0.
 LP Tiger Shot,1,qcf+LP,False,False,True,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,70,100
 MP Tiger Shot,1,qcf+MP,False,False,True,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,70,100
 HP Tiger Shot,1,qcf+HP,False,False,True,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,70,100
-EX Tiger Shot,6,qcf+PP,False,False,True,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,50*50,75*75
+EX Tiger Shot,6,qcf+PP,False,False,True,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,100,150
 LK Grand Tiger Shot,-4,qcf+LK,False,False,True,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,60,100
 MK Grand Tiger Shot,-4,qcf+MK,False,False,True,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,60,100
 HK Grand Tiger Shot,-4,qcf+HK,False,False,True,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,60,100
-EX Grand Tiger Shot,-2,qcf+KK,False,False,True,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,40*40,75*75
-LP Tiger Uppercut,-39,"f,d,df+LP",False,False,False,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,130(110),150(120)
-MP Tiger Uppercut,-39,"f,d,df+MP",False,False,False,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,130(110),150(120)
-HP Tiger Uppercut,-39,"f,d,df+HP",False,False,False,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,130(110),150(120)
-EX Tiger Uppercut,-38(-39),"f,d,df+PP",False,False,False,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,60*20x5 (160),90*11
-LP Tiger Uppercut (V-Skill 2),-34,"f,d,df+LP",False,False,False,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,160(140),180(150)
-MP Tiger Uppercut (V-Skill 2),-34,"f,d,df+MP",False,False,False,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,160(140),180(150)
-HP Tiger Uppercut (V-Skill 2),-34,"f,d,df+HP",False,False,False,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,160(140),180(150)
-EX Tiger Uppercut (V-Skill 2),-38(-39),"f,d,df+PP",False,False,False,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,80*20x5 (180),100*130
-LK Tiger Knee Crush,-5(1),"f,d,df+LK",True,False,False,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,80,150
-MK Tiger Knee Crush,-7(1),"f,d,df+MK",True,False,False,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,90,150
-HK Tiger Knee Crush,-7(3),"f,d,df+HK",True,False,False,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,100,150
-EX Tiger Knee Crush,-5(3),"f,d,df+KK",True,False,False,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,40*20x2*80 (160),200
-LK Tiger Knee Crush (V-Skill 2),0(6),"f,d,df+LK",True,False,False,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,80,150
-MK Tiger Knee Crush (V-Skill 2),-2(6),"f,d,df+MK",True,False,False,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,90,150
-HK Tiger Knee Crush (V-Skill 2),-2(8),"f,d,df+HK",True,False,False,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,100,150
-EX Tiger Knee Crush (V-Skill 2),0(8),"f,d,df+KK",True,False,False,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,40*20x2*80 (160),200
+EX Grand Tiger Shot,-2,qcf+KK,False,False,True,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,80,150
+LP Tiger Uppercut,-39,"f,d,df+LP",False,False,False,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,110,120
+MP Tiger Uppercut,-39,"f,d,df+MP",False,False,False,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,110,120
+HP Tiger Uppercut,-39,"f,d,df+HP",False,False,False,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,110,120
+EX Tiger Uppercut,-38,"f,d,df+PP",False,False,False,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,160,101
+LP Tiger Uppercut (V-Skill 2),-34,"f,d,df+LP",False,False,False,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,140,150
+MP Tiger Uppercut (V-Skill 2),-34,"f,d,df+MP",False,False,False,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,140,150
+HP Tiger Uppercut (V-Skill 2),-34,"f,d,df+HP",False,False,False,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,140,150
+EX Tiger Uppercut (V-Skill 2),-38,"f,d,df+PP",False,False,False,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,180,230
+LK Tiger Knee Crush,-5,"f,d,df+LK",True,False,False,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,80,150
+MK Tiger Knee Crush,-7,"f,d,df+MK",True,False,False,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,90,150
+HK Tiger Knee Crush,-7,"f,d,df+HK",True,False,False,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,100,150
+EX Tiger Knee Crush,-5,"f,d,df+KK",True,False,False,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,160,200
+LK Tiger Knee Crush (V-Skill 2),0,"f,d,df+LK",True,False,False,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,80,150
+MK Tiger Knee Crush (V-Skill 2),-2,"f,d,df+MK",True,False,False,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,90,150
+HK Tiger Knee Crush (V-Skill 2),-2,"f,d,df+HK",True,False,False,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,100,150
+EX Tiger Knee Crush (V-Skill 2),0,"f,d,df+KK",True,False,False,special,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,160,200
 Tiger Rampage,-42,"qcf,qcf+K",False,False,False,super,1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,340,0

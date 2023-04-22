@@ -14,38 +14,38 @@ Crouch HK,-12,d+HK,False,False,False,normal,925,950,900,600,16,21,0.052,0.034,0.
 Kobekudaki,-2,f+MK,False,False,False,normal,925,950,900,600,16,21,0.052,0.034,0.25,0.8,70,100
 Bonshogeri,-3,f+HK,False,False,False,normal,925,950,900,600,16,21,0.052,0.034,0.25,0.8,90,150
 Sazan,-10,df+MK,False,False,False,normal,925,950,900,600,16,21,0.052,0.034,0.25,0.8,50,100
-Agemen,-1*0,b+MP,False,False,False,normal,925,950,900,600,16,21,0.052,0.034,0.25,0.8,40,70
-Shinten 1,-8,LP > MP,False,True,False,normal,925,950,900,600,16,21,0.052,0.034,0.25,0.8,30*36 (66),70*45 (115)
-Shinten 2,-9,LP > MP > HP,False,True,False,normal,925,950,900,600,16,21,0.052,0.034,0.25,0.8,40*36*40 (106),70*45*56 (171)
-Yagurakuzushi,-2,st.LP > st.MP > st.LK,False,True,False,normal,925,950,900,600,16,21,0.052,0.034,0.25,0.8,30*36*24 (90),70*45*40 (155)
-Gogasha 1,-12,MK > cr.HK,False,True,False,normal,925,950,900,600,16,21,0.052,0.034,0.25,0.8,60*54 (114),100*54 (154)
-Shakunage,-5,d+MP > f+HK,False,True,False,normal,925,950,900,600,16,21,0.052,0.034,0.25,0.8,60*63 (123),100*90 (190)
+Agemen,-1,b+MP,False,False,False,normal,925,950,900,600,16,21,0.052,0.034,0.25,0.8,40,70
+Shinten 1,-8,LP > MP,False,True,False,normal,925,950,900,600,16,21,0.052,0.034,0.25,0.8,66,115
+Shinten 2,-9,LP > MP > HP,False,True,False,normal,925,950,900,600,16,21,0.052,0.034,0.25,0.8,106,171
+Yagurakuzushi,-2,st.LP > st.MP > st.LK,False,True,False,normal,925,950,900,600,16,21,0.052,0.034,0.25,0.8,90,155
+Gogasha 1,-12,MK > cr.HK,False,True,False,normal,925,950,900,600,16,21,0.052,0.034,0.25,0.8,114,154
+Shakunage,-5,d+MP > f+HK,False,True,False,normal,925,950,900,600,16,21,0.052,0.034,0.25,0.8,123,190
 Sasanaki,-2,MP > f+MK,False,True,False,normal,925,950,900,600,16,21,0.052,0.034,0.25,0.8,70,100
 Tenrai,-7,MP+MK (VS1),False,False,False,vskill,925,950,900,600,16,21,0.052,0.034,0.25,0.8,60,100
 Tenrai Full,-2,Hold MP+MK (VS1),False,False,False,vskill,925,950,900,600,16,21,0.052,0.034,0.25,0.8,80,150
-Makibishi,-3(12),MP+MK (VS2),False,False,True,vskill,925,950,900,600,16,21,0.052,0.034,0.25,0.8,20x3,0
-Makibishi - Single,-4(12),MP+MK (VS2) > P,False,False,True,vskill,925,950,900,600,16,21,0.052,0.034,0.25,0.8,20,0
-Rokushaku Horokudama,2,b or n or f or u + HP+HK (VT1),False,False,True,vtrigger,925,950,900,600,16,21,0.052,0.034,0.25,0.8,100(160),80
-Rokushaku Horokudama 2nd,2,b or n or f or u + HP+HK (VT1) (2nd Bomb),False,False,True,vtrigger,925,950,900,600,16,21,0.052,0.034,0.25,0.8,100(160),80
-Fuma Shuriken (Haku),-4,HP+HK (VT2),False,False,False,vtrigger,925,950,900,600,16,21,0.052,0.034,0.25,0.8,20*20(80),40*40(160)
-Fuma Shuriken (Kokufu),-6,b+HP+HK (VT2),False,False,False,vtrigger,925,950,900,600,16,21,0.052,0.034,0.25,0.8,25*25(100),40*40(160)
+Makibishi,-3,MP+MK (VS2),False,False,True,vskill,925,950,900,600,16,21,0.052,0.034,0.25,0.8,60,0
+Makibishi - Single,-4,MP+MK (VS2) > P,False,False,True,vskill,925,950,900,600,16,21,0.052,0.034,0.25,0.8,20,0
+Rokushaku Horokudama,2,b or n or f or u + HP+HK (VT1),False,False,True,vtrigger,925,950,900,600,16,21,0.052,0.034,0.25,0.8,160,80
+Rokushaku Horokudama 2nd,2,b or n or f or u + HP+HK (VT1) (2nd Bomb),False,False,True,vtrigger,925,950,900,600,16,21,0.052,0.034,0.25,0.8,160,80
+Fuma Shuriken (Haku),-4,HP+HK (VT2),False,False,False,vtrigger,925,950,900,600,16,21,0.052,0.034,0.25,0.8,80,160
+Fuma Shuriken (Kokufu),-6,b+HP+HK (VT2),False,False,False,vtrigger,925,950,900,600,16,21,0.052,0.034,0.25,0.8,100,160
 Chizuri Hayabusa,-2,MK+HP,False,True,False,vbreak,925,950,900,600,16,21,0.052,0.034,0.25,0.8,60,0
-LK Kazekiri,-27,"f,d,df+LK",False,False,False,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,50*40*30 (120),50*50*50 (150)
-MK Kazekiri,-27,"f,d,df+MK",False,False,False,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,50*40*30 (120),50*50*50 (150)
-HK Kazekiri,-27,"f,d,df+HK",False,False,False,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,50*40*30 (120),50*50*50 (150)
-EX Kazekiri,-31,"f,d,df+KK",False,False,False,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,50*30x3 (140),50x4 (200)
+LK Kazekiri,-27,"f,d,df+LK",False,False,False,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,120,150
+MK Kazekiri,-27,"f,d,df+MK",False,False,False,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,120,150
+HK Kazekiri,-27,"f,d,df+HK",False,False,False,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,120,150
+EX Kazekiri,-31,"f,d,df+KK",False,False,False,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,140,200
 LP Raida,-12,hcb+LP,False,False,False,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,100,200
 MP Raida,-12,hcb+MP,False,False,False,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,110,200
 HP Raida,-12,hcb+HP,False,False,False,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,120,200
-EX Raida,-11,hcb+PP,False,False,False,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,20*130 (150),200
+EX Raida,-11,hcb+PP,False,False,False,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,150,200
 LP Kunai,-2,qcf+LP,False,False,True,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,40,50
 MP Kunai,-2,qcf+MP,False,False,True,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,40,50
 HP Kunai,-2,qcf+HP,False,False,True,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,40,50
-EX Kunai,18,qcf+PP,False,False,True,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,20*40,50*50
-LP Airborne Kunai,-8(5),qcf+LP (air),True,False,True,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,40,50
-MP Airborne Kunai,-8(7),qcf+MP (air),True,False,True,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,40,50
-HP Airborne Kunai,-7(11),qcf+HP (air),True,False,True,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,40,50
-LP Kunai Ikkinage,-1(9),Hold + Release LP,False,False,True,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,20 per dagger,20 per dagger
-MP Kunai Ikkinage,-1(9),Hold + Release MP,False,False,True,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,20 per dagger,20 per dagger
-HP Kunai Ikkinage,-1(9),Hold + Release HP,False,False,True,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,20 per dagger,20 per dagger
+EX Kunai,18,qcf+PP,False,False,True,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,60,100
+LP Airborne Kunai,-8,qcf+LP (air),True,False,True,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,40,50
+MP Airborne Kunai,-8,qcf+MP (air),True,False,True,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,40,50
+HP Airborne Kunai,-7,qcf+HP (air),True,False,True,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,40,50
+LP Kunai Ikkinage,-1,Hold + Release LP,False,False,True,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,120,120
+MP Kunai Ikkinage,-1,Hold + Release MP,False,False,True,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,120,120
+HP Kunai Ikkinage,-1,Hold + Release HP,False,False,True,special,925,950,900,600,16,21,0.052,0.034,0.25,0.8,120,120
 Kachofugetsu,-20,"qcf,qcf+K",False,False,False,super,925,950,900,600,16,21,0.052,0.034,0.25,0.8,340,356

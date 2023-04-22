@@ -14,29 +14,29 @@ Crouch HK,-12,d+HK,False,False,False,normal,1025,1050,900,600,15,24,0.05,0.035,0
 Thunder Kick,-7,f+HK (hold),False,False,False,normal,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,80,150
 Inazuma Kick,-7,b+MK,False,False,False,normal,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,60,100
 Chin Buster,-2,b+MP,False,False,False,normal,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,50,80
-Chin Buster 2nd,-13,b+MP > HP,False,True,False,normal,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,50*45 (95),80*72 (152)
-Lion Breaker,-6,MK > HK,False,True,False,normal,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,60*45 (105),100*90 (190)
+Chin Buster 2nd,-13,b+MP > HP,False,True,False,normal,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,95,152
+Lion Breaker,-6,MK > HK,False,True,False,normal,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,105,190
 Quick Step Kick,-6,MP+MK (VS1) (hold),False,False,False,vskill,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,50,100
 Ryusenkyaku,-2,MP+MK (VS2),False,False,False,vskill,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,60,100
 Ryusenkyaku (hold),3,MP+MK (VS2) (hold),False,False,False,vskill,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,90,120
 Ryusenkyaku (release),-2,MP+MK (VS2) (release),False,False,False,vskill,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,60,100
-Shinryuken lvl 1,-51,HP+HK (VT2),False,False,False,vtrigger,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,30*10x4*40 (110),150
+Shinryuken lvl 1,-51,HP+HK (VT2),False,False,False,vtrigger,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,110,150
 Senpu Nataotoshi,-2,f+KKK,False,False,False,alpha,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,40,0
 Shadow Thunder-Kick,-2,MK+HP,False,True,False,vbreak,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,60,0
 LP Hadoken,-6,qcf+LP,False,False,True,special,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,60,100
 MP Hadoken,-6,qcf+MP,False,False,True,special,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,60,100
 HP Hadoken,-6,qcf+HP,False,False,True,special,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,60,100
-EX Hadoken,1,qcf+PP,False,False,True,special,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,40*50 (90),150
-LP Shoryuken,-25,"f,d,df+LP",False,False,False,special,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,110(70),150(100)
-MP Shoryuken,-30,"f,d,df+MP",False,False,False,special,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,90*40 (130),75*75 (150)
-HP Shoryuken,-34,"f,d,df+HP",False,False,False,special,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,70*50*20 (140),50*50*50 (150)
-EX Shoryuken,-45,"f,d,df+PP",False,False,False,special,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,20x6*40 (160),20x5*50*50 (200)
-LK Tatsumaki Senpukyaku,-8,qcb+LK,False,False,False,special,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,20*30 (50),50*50 (100)
-MK Tatsumaki Senpukyaku,-9,qcb+MK,False,False,False,special,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,40*20*20 (80),50*50*50 (150)
-HK Tatsumaki Senpukyaku,-4,qcb+HK,False,False,False,special,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,30*35*35*40 (140),60*40*40*60 (200)
-EX Tatsumaki Senpukyaku,-59,qcb+KK,False,False,False,special,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,40x4 (160),50x4 (200)
-LK Air Tatsumaki Senpukyaku,-3(3),qcb+LK(air),True,False,False,special,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,80,100
-MK Air Tatsumaki Senpukyaku,-3(3),qcb+MK(air),True,False,False,special,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,80,100
-HK Air Tatsumaki Senpukyaku,-3(3),qcb+HK(air),True,False,False,special,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,80,100
-EX Air Tatsumaki Senpukyaku,-2(0),qcb+KK(air),True,False,False,special,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,70,100
+EX Hadoken,1,qcf+PP,False,False,True,special,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,90,150
+LP Shoryuken,-25,"f,d,df+LP",False,False,False,special,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,70,100
+MP Shoryuken,-30,"f,d,df+MP",False,False,False,special,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,130,150
+HP Shoryuken,-34,"f,d,df+HP",False,False,False,special,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,140,150
+EX Shoryuken,-45,"f,d,df+PP",False,False,False,special,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,160,200
+LK Tatsumaki Senpukyaku,-8,qcb+LK,False,False,False,special,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,50,100
+MK Tatsumaki Senpukyaku,-9,qcb+MK,False,False,False,special,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,80,150
+HK Tatsumaki Senpukyaku,-4,qcb+HK,False,False,False,special,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,140,200
+EX Tatsumaki Senpukyaku,-59,qcb+KK,False,False,False,special,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,160,200
+LK Air Tatsumaki Senpukyaku,-3,qcb+LK(air),True,False,False,special,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,80,100
+MK Air Tatsumaki Senpukyaku,-3,qcb+MK(air),True,False,False,special,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,80,100
+HK Air Tatsumaki Senpukyaku,-3,qcb+HK(air),True,False,False,special,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,80,100
+EX Air Tatsumaki Senpukyaku,-2,qcb+KK(air),True,False,False,special,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,70,100
 Guren Enjikyaku,-26,"qcf,qcf+K",False,False,False,super,1025,1050,900,600,15,24,0.05,0.035,0.25,0.8,340,0

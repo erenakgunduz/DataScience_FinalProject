@@ -7,18 +7,18 @@ Stand MK,2,MK,False,False,False,normal,1025,1050,900,600,17,24,0.048,0.03,0.35,0
 Stand HK,3,HK,False,False,False,normal,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,80,150
 Crouch LP,3,d+LP,False,False,False,normal,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,30,70
 Crouch MP,2,d+MP,False,False,False,normal,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,60,100
-Crouch HP,-5,d+HP,False,False,False,normal,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,90 (80),150
+Crouch HP,-5,d+HP,False,False,False,normal,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,80,150
 Crouch LK,1,d+LK,False,False,False,normal,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,20,70
 Crouch MK,-2,d+MK,False,False,False,normal,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,60,100
 Crouch HK,-14,d+HK,False,False,False,normal,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,100,150
-Hard Lead In,-8,MK > MP,False,True,False,normal,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,60*36 (96),100*72 (172)
-Hard KKB,-17,MK > MP > MP+MK (VS1),False,True,False,normal,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,60*36 (96),100*72 (172)
-OTB,-36,MK > MP > MP+MK (VS2),False,True,False,normal,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,60*36 (96),100*72 (172)
-Hard Smasher,-8,MK > MP > MP+MK (VS1) > P,False,True,False,normal,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,60*36*48 (144),100*72*96 (268)
-Hard Pressure,-8,MK > MP > MP+MK (VS1) > K,False,True,False,normal,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,60*36*48 (144),100*72*96 (268)
-Under Impact 1,-7,LK > MK,False,True,False,normal,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,30*36 (66),70*63 (133)
-Under Impact 2,-8,LK > MK > HK,False,True,False,normal,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,30*36*66 (122),70*63*80 (213)
-Stomping Combo,-7,d+MK > d+MK,False,True,False,normal,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,60*36 (96),100*72 (172)
+Hard Lead In,-8,MK > MP,False,True,False,normal,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,96,172
+Hard KKB,-17,MK > MP > MP+MK (VS1),False,True,False,normal,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,96,172
+OTB,-36,MK > MP > MP+MK (VS2),False,True,False,normal,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,96,172
+Hard Smasher,-8,MK > MP > MP+MK (VS1) > P,False,True,False,normal,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,144,268
+Hard Pressure,-8,MK > MP > MP+MK (VS1) > K,False,True,False,normal,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,144,268
+Under Impact 1,-7,LK > MK,False,True,False,normal,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,66,133
+Under Impact 2,-8,LK > MK > HK,False,True,False,normal,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,122,213
+Stomping Combo,-7,d+MK > d+MK,False,True,False,normal,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,96,172
 KKB > Buffalo Swing,-4,MP+MK (VS1) > P,False,True,False,special,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,50,100
 KKB > Buffalo Pressure,-7,MP+MK (VS1) > K,False,True,False,special,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,50,100
 Buffalo Headbutt,-2,f+PPP,False,False,False,alpha,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,60,0
@@ -26,11 +26,11 @@ Buffalo Breaker,-2,MK+HP,False,True,False,vbreak,1025,1050,900,600,17,24,0.048,0
 LP Dash Straight,-4,"b,f+LP",False,False,False,special,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,90,150
 MP Dash Straight,-4,"b,f+MP",False,False,False,special,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,100,150
 HP Dash Straight,-4,"b,f+HP",False,False,False,special,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,110,150
-EX Dash Straight,1,"b,f+PP",False,False,False,special,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,80*70 (150),50*150 (200)
-LP Dash Straight (V-Skill 2),2,"b,f+LP (VS2)",False,False,False,special,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,30x3 (90),30x2*40 (100)
-MP Dash Straight (V-Skill 2),2,"b,f+MP (VS2)",False,False,False,special,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,30x2*40 (100),30x2*40 (100)
-HP Dash Straight (V-Skill 2),2,"b,f+HP (VS2)",False,False,False,special,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,30x2*50 (110),30x2*40 (100)
-EX Dash Straight (V-Skill 2),4,"b,f+PP (VS2)",False,False,False,special,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,20x2*40*20x2*40 (160),10x2*40*10x2*40 (120)
+EX Dash Straight,1,"b,f+PP",False,False,False,special,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,150,200
+LP Dash Straight (V-Skill 2),2,"b,f+LP (VS2)",False,False,False,special,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,90,100
+MP Dash Straight (V-Skill 2),2,"b,f+MP (VS2)",False,False,False,special,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,100,100
+HP Dash Straight (V-Skill 2),2,"b,f+HP (VS2)",False,False,False,special,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,110,100
+EX Dash Straight (V-Skill 2),4,"b,f+PP (VS2)",False,False,False,special,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,160,120
 LK Dash Grand Blow,-7,"b,f+LK",False,False,False,special,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,80,150
 MK Dash Grand Blow,-7,"b,f+MK",False,False,False,special,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,90,150
 HK Dash Grand Blow,-7,"b,f+HK",False,False,False,special,1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,100,150

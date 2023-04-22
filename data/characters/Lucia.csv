@@ -13,37 +13,37 @@ Crouch MK,-1,d+MK,False,False,False,normal,975,1000,900,600,16,21,0.05,0.04,0.25
 Crouch HK,-10,d+HK,False,False,False,normal,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,90,150
 Knee Slide,-7,df+LK,False,False,False,normal,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,30,70
 Elbow Crush,-7,f+HP,False,False,False,normal,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,80,150
-Quick Side-Kick,-6,LP > LK,False,True,False,normal,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,30*27,70*45
-Spin Drive,-8,LP > LK > MK,False,True,False,normal,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,30*27*20x2 (97),70*45*32x2 (179)
-Street-Style Set,-15,LP > LK > MK > HK,False,True,False,normal,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,30*27*20x2*42 (139),70*45*32x2*84 (263)
-German Suplex,KD,LP+LK,False,False,False,throw,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,120,150
-Back-Carry Throw,KD,b+LP+LK,False,False,False,throw,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,150,200
-Tap-Kick,-8,MP+MK (VS1),False,False,False,vskill,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,10x3*30 (60),10x2*20*60 (100)
+Quick Side-Kick,-6,LP > LK,False,True,False,normal,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,57,115
+Spin Drive,-8,LP > LK > MK,False,True,False,normal,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,97,179
+Street-Style Set,-15,LP > LK > MK > HK,False,True,False,normal,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,139,263
+German Suplex,35,LP+LK,False,False,False,throw,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,120,150
+Back-Carry Throw,35,b+LP+LK,False,False,False,throw,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,150,200
+Tap-Kick,-8,MP+MK (VS1),False,False,False,vskill,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,60,100
 Arrest Heel,-4,MP+MK (VS2),False,False,False,vskill,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,90,120
 Hammer Knuckle,-2,f+PPP,False,False,False,alpha,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,60,0
 Peacekeeper,-2,MK+HP,False,True,False,vbreak,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,60,0
 Rough Chase,-6,qcf+P > P,False,True,False,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,70,80
 EX Rough Chase,-8,qcf+PP > P,False,True,False,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,80,120
-Tornado Spinner,-35,qcf+P > K,False,True,False,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,70*70,50*100
-EX Tornado Spinner,-30,qcf+PP > K,False,True,False,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,40x2*80 (160),50x2*100 (200)
-Cyclone Spinner,-8,qcf+P > MP+MK (VS1),False,True,False,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,60x2,50*100
-EX Cyclone Spinner,-6,qcf+PP > MP+MK (VS1),False,True,False,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,50x3 (150),50x2*80 (180)
+Tornado Spinner,-35,qcf+P > K,False,True,False,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,140,150
+EX Tornado Spinner,-30,qcf+PP > K,False,True,False,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,160,200
+Cyclone Spinner,-8,qcf+P > MP+MK (VS1),False,True,False,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,120,150
+EX Cyclone Spinner,-6,qcf+PP > MP+MK (VS1),False,True,False,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,150,180
 Nubbing Needle,-2,qcf+P > MP+MK (VS2),False,True,False,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,80,150
-EX Nubbing Needle,-2,qcf+PP > MP+MK (VS2),False,True,False,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,80*40 (120),50*100 (150)
+EX Nubbing Needle,-2,qcf+PP > MP+MK (VS2),False,True,False,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,120,150
 Firecracker,-4,qcf+K,False,False,False,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,30,30
 EX Firecracker,-4,qcf+KK,False,False,True,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,50,50
 LK Flipper Shot,-5,qcf+K > LK,False,True,True,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,60,100
 MK Flipper Shot,-4,qcf+K > MK,False,True,True,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,60,100
 HK Flipper Shot,-4,qcf+K > HK,False,True,True,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,60,100
-EX LK Flipper Shot,2,qcf+KK > LK,False,True,True,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,40*40,60*60
-EX MK Flipper Shot,3,qcf+KK > MK,False,True,True,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,40*40,60*60
-EX HK Flipper Shot,3,qcf+KK > HK,False,True,True,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,40*40,60*60
+EX LK Flipper Shot,2,qcf+KK > LK,False,True,True,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,80,120
+EX MK Flipper Shot,3,qcf+KK > MK,False,True,True,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,80,120
+EX HK Flipper Shot,3,qcf+KK > HK,False,True,True,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,80,120
 LK Fire Spinner,-4,qcb+LK,True,False,False,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,60,100
 MK Fire Spinner,-4,qcb+MK,True,False,False,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,70,100
 HK Fire Spinner,-4,qcb+HK,True,False,False,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,80,100
-EX Fire Spinner,-2,qcb+KK,True,False,False,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,30*40,60x2
-LK Hurricane Spinner,-38,"f,d,df+LK",False,False,False,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,40*60,50*100
-MK Hurricane Spinner,-41,"f,d,df+MK",False,False,False,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,50*60,50*100
-HK Hurricane Spinner,-48,"f,d,df+HK",False,False,False,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,60*60,50*100
-EX Hurricane Spinner,-46,"f,d,df+KK",False,False,False,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,30*40x2*40 (150),20x3*140 (200)
-Hard Hit Knee,-32,"qcb,qcb+K",False,False,False,super,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,340(360),0
+EX Fire Spinner,-2,qcb+KK,True,False,False,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,70,120
+LK Hurricane Spinner,-38,"f,d,df+LK",False,False,False,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,100,150
+MK Hurricane Spinner,-41,"f,d,df+MK",False,False,False,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,110,150
+HK Hurricane Spinner,-48,"f,d,df+HK",False,False,False,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,120,150
+EX Hurricane Spinner,-46,"f,d,df+KK",False,False,False,special,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,150,200
+Hard Hit Knee,-32,"qcb,qcb+K",False,False,False,super,975,1000,900,600,16,21,0.05,0.04,0.25,0.8,360,0

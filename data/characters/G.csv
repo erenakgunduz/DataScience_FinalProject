@@ -4,15 +4,15 @@ Stand MP,3,MP,False,False,False,normal,1025,1050,900,600,19,25,0.0377,0.03,0.25,
 Stand HP,-3,HP,False,False,False,normal,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,80,150
 Stand LK,1,LK,False,False,False,normal,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,40,70
 Stand MK,-2,MK,False,False,False,normal,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,60,100
-Stand HK,-5,HK,False,False,False,normal,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,50*40 (80),75*75 (100)
+Stand HK,-5,HK,False,False,False,normal,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,80,100
 Crouch LP,2,d+LP,False,False,False,normal,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,30,70
 Crouch MP,2,d+MP,False,False,False,normal,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,60,100
-Crouch HP,-3,d+HP,False,False,False,normal,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,90(80),150(100)
+Crouch HP,-3,d+HP,False,False,False,normal,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,80,100
 Crouch LK,1,d+LK,False,False,False,normal,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,20,70
 Crouch MK,-2,d+MK,False,False,False,normal,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,60,100
 Crouch HK,-14,d+HK,False,False,False,normal,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,100,150
 Wild President,-4,f+HP,False,False,False,normal,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,90,150
-Strong President,-5(-6),b+HP,False,False,False,normal,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,40*40 (80),50*50 (100)
+Strong President,-5,b+HP,False,False,False,normal,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,80,100
 Crash President,-7,f+HK,False,False,False,normal,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,90,150
 G Barrier,-17,MP+MK (VS1),False,False,False,vskill,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,50,100
 G Elimination,-2,MK+HP,False,True,False,vbreak,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,60,0
@@ -22,30 +22,30 @@ HP G Smash Over (Level 1),-4,"f,d,df+HP (Level 1)",False,False,False,special,102
 LP G Smash Over (Level 2),-4,"f,d,df+LP (Level 2)",False,False,False,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,120,120
 MP G Smash Over (Level 2),-4,"f,d,df+MP (Level 2)",False,False,False,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,120,120
 HP G Smash Over (Level 2),-4,"f,d,df+HP (Level 2)",False,False,False,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,120,120
-G Smash Over (Level 3),-6,"f,d,df+P (Level 3)",False,False,False,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,50*50 (100),60*60 (120)
-EX G Smash Over,-6,"f,d,df+PP",False,False,False,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,50*50 (100),60*60 (120)
+G Smash Over (Level 3),-6,"f,d,df+P (Level 3)",False,False,False,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,100,120
+EX G Smash Over,-6,"f,d,df+PP",False,False,False,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,100,120
 LK G Smash Under (Level 1),-8,"f,d,df+LK (Level 1)",False,False,False,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,80,100
 MK G Smash Under (Level 1),-8,"f,d,df+MK (Level 1)",False,False,False,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,80,100
 HK G Smash Under (Level 1),-8,"f,d,df+HK (Level 1)",False,False,False,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,80,100
 LK G Smash Under (Level 2),-8,"f,d,df+LK (Level 2)",False,False,False,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,100,150
 MK G Smash Under (Level 2),-6,"f,d,df+MK (Level 2)",False,False,False,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,100,150
 HK G Smash Under (Level 2),-6,"f,d,df+HK (Level 2)",False,False,False,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,100,150
-G Smash Under (Level 3),-8,"f,d,df+K (Level 3)",False,False,False,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,50*60 (110),75*75 (150)
-EX G Smash Under,-8,"f,d,df+KK",False,False,False,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,50*60 (110),75*75 (150)
+G Smash Under (Level 3),-8,"f,d,df+K (Level 3)",False,False,False,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,110,150
+EX G Smash Under,-8,"f,d,df+KK",False,False,False,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,110,150
 LP G Burst (Level 1),-11,qcf+LP (Level 1),False,False,True,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,50,100
 MP G Burst (Level 1),-6,qcf+MP (Level 1),False,False,True,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,50,100
 HP G Burst (Level 1),-4,qcf+HP (Level 1),False,False,True,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,50,100
-LP G Burst (Level 2),-8,qcf+LP (Level 2),False,False,True,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,40*40 (80),75*75 (150)
-MP G Burst (Level 2),-3,qcf+MP (Level 2),False,False,True,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,40*40 (80),75*75 (150)
-HP G Burst (Level 2),-1,qcf+HP (Level 2),False,False,True,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,40*40 (80),75*75 (150)
-G Burst (Level 3),-2,qcf+P (Level 3),False,False,True,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,50*50 (100),75*75 (150)
-EX G Burst,-2,qcf+PP,False,False,True,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,50*50 (100),75*75 (150)
+LP G Burst (Level 2),-8,qcf+LP (Level 2),False,False,True,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,80,150
+MP G Burst (Level 2),-3,qcf+MP (Level 2),False,False,True,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,80,150
+HP G Burst (Level 2),-1,qcf+HP (Level 2),False,False,True,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,80,150
+G Burst (Level 3),-2,qcf+P (Level 3),False,False,True,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,100,150
+EX G Burst,-2,qcf+PP,False,False,True,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,100,150
 LK G Spin Kick (Level 1),-5,qcf+LK (Level 1),True,False,False,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,70,150
 MK G Spin Kick (Level 1),-5,qcf+MK (Level 1),True,False,False,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,70,150
 HK G Spin Kick (Level 1),-5,qcf+HK (Level 1),True,False,False,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,70,150
 LK G Spin Kick (Level 2),-5,qcf+LK (Level 2),True,False,False,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,50,100
 MK G Spin Kick (Level 2),-5,qcf+MK (Level 2),True,False,False,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,50,100
 HK G Spin Kick (Level 2),-5,qcf+HK (Level 2),True,False,False,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,50,100
-G Spin Kick (Level 3),-2,qcf+K (Level 3),True,False,False,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,30x2*50 (110),150
-EX G Spin Kick,-2,qcf+KK,True,False,False,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,30x2*50 (110),150
-Pangaea Burst,-24(-52),"qcf,qcf+P",False,False,False,super,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,50x5*80 (330),0
+G Spin Kick (Level 3),-2,qcf+K (Level 3),True,False,False,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,110,150
+EX G Spin Kick,-2,qcf+KK,True,False,False,special,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,110,150
+Pangaea Burst,-24,"qcf,qcf+P",False,False,False,super,1025,1050,900,600,19,25,0.0377,0.03,0.25,0.85,330,0

@@ -11,12 +11,12 @@ Crouch HP,-7,d+HP,False,False,False,normal,925,950,600,600,16,21,0.049,0.036,0.2
 Crouch LK,0,d+LK,False,False,False,normal,925,950,600,600,16,21,0.049,0.036,0.25,0.85,30,70
 Crouch MK,-4,d+MK,False,False,False,normal,925,950,600,600,16,21,0.049,0.036,0.25,0.85,50,100
 Crouch HK,-14,d+HK,False,False,False,normal,925,950,600,600,16,21,0.049,0.036,0.25,0.85,90,150
-Jump LP,3(6),u+LP,True,False,False,normal,925,950,600,600,16,21,0.049,0.036,0.25,0.85,40,70
-Jump MP,8(9),u+MP,True,False,False,normal,925,950,600,600,16,21,0.049,0.036,0.25,0.85,60,100
-Jump HP,9(12),u+HP,True,False,False,normal,925,950,600,600,16,21,0.049,0.036,0.25,0.85,90,150
-Jump LK,3(6),u+LK,True,False,False,normal,925,950,600,600,16,21,0.049,0.036,0.25,0.85,40,70
-Jump MK,6(9),u+MK,True,False,False,normal,925,950,600,600,16,21,0.049,0.036,0.25,0.85,60,100
-Jump HK,9(12),u+HK,True,False,False,normal,925,950,600,600,16,21,0.049,0.036,0.25,0.85,90,150
+Jump LP,3,u+LP,True,False,False,normal,925,950,600,600,16,21,0.049,0.036,0.25,0.85,40,70
+Jump MP,8,u+MP,True,False,False,normal,925,950,600,600,16,21,0.049,0.036,0.25,0.85,60,100
+Jump HP,9,u+HP,True,False,False,normal,925,950,600,600,16,21,0.049,0.036,0.25,0.85,90,150
+Jump LK,3,u+LK,True,False,False,normal,925,950,600,600,16,21,0.049,0.036,0.25,0.85,40,70
+Jump MK,6,u+MK,True,False,False,normal,925,950,600,600,16,21,0.049,0.036,0.25,0.85,60,100
+Jump HK,9,u+HK,True,False,False,normal,925,950,600,600,16,21,0.049,0.036,0.25,0.85,90,150
 Tsumujigari,-7,f+MK,False,False,False,normal,925,950,600,600,16,21,0.049,0.036,0.25,0.85,60,100
 Myo-Oken,-5,MP+MK (VS1),False,False,False,vskill,925,950,600,600,16,21,0.049,0.036,0.25,0.85,50,100
 Myo-Oken (hold),-2,MP+MK (VS1) (hold),False,False,False,vskill,925,950,600,600,16,21,0.049,0.036,0.25,0.85,70,150
@@ -29,13 +29,13 @@ Late Tenko,-10,qcf+K > P,False,True,False,special,925,950,600,600,16,21,0.049,0.
 EX Tenko,-7,qcf+KK > P,False,True,False,special,925,950,600,600,16,21,0.049,0.036,0.25,0.85,100,120
 Orochi,-2,qcf+K > d+P,False,True,False,special,925,950,600,600,16,21,0.049,0.036,0.25,0.85,80,150
 EX Orochi,-7,qcf+2K > d+P,False,True,False,special,925,950,600,600,16,21,0.049,0.036,0.25,0.85,140,150
-LK Mujinkyaku,-7,qcb+LK,False,False,False,special,925,950,600,600,16,21,0.049,0.036,0.25,0.85,30*40 (70),50*50 (100)
-MK Mujinkyaku,-6,qcb+MK,False,False,False,special,925,950,600,600,16,21,0.049,0.036,0.25,0.85,30*40*90 (160),50*40*150 (240)
-HK Mujinkyaku,-15,qcb+HK,False,False,False,special,925,950,600,600,16,21,0.049,0.036,0.25,0.85,30*40*25x2 (120),50*40*30*60 (180)
-EX Mujinkyaku,-2,qcb+KK,False,False,False,special,925,950,600,600,16,21,0.049,0.036,0.25,0.85,15*15*30x2*60 (150),200
-LP Ressenha,-6,qcb+LP,False,False,False,special,925,950,600,600,16,21,0.049,0.036,0.25,0.85,30*40 (70),50*50 (100)
-MP Ressenha,-5,qcb+MP,False,False,False,special,925,950,600,600,16,21,0.049,0.036,0.25,0.85,40*40 (80),50*100 (150)
-HP Ressenha,-4,qcb+HP,False,False,False,special,925,950,600,600,16,21,0.049,0.036,0.25,0.85,40*50 (90),50*100
-EX Ressenha,-41,qcb+PP,False,False,False,special,925,950,600,600,16,21,0.049,0.036,0.25,0.85,30*40*70 (140),50x3 (150)
+LK Mujinkyaku,-7,qcb+LK,False,False,False,special,925,950,600,600,16,21,0.049,0.036,0.25,0.85,70,100
+MK Mujinkyaku,-6,qcb+MK,False,False,False,special,925,950,600,600,16,21,0.049,0.036,0.25,0.85,160,240
+HK Mujinkyaku,-15,qcb+HK,False,False,False,special,925,950,600,600,16,21,0.049,0.036,0.25,0.85,120,180
+EX Mujinkyaku,-2,qcb+KK,False,False,False,special,925,950,600,600,16,21,0.049,0.036,0.25,0.85,150,200
+LP Ressenha,-6,qcb+LP,False,False,False,special,925,950,600,600,16,21,0.049,0.036,0.25,0.85,70,100
+MP Ressenha,-5,qcb+MP,False,False,False,special,925,950,600,600,16,21,0.049,0.036,0.25,0.85,80,150
+HP Ressenha,-4,qcb+HP,False,False,False,special,925,950,600,600,16,21,0.049,0.036,0.25,0.85,90,150
+EX Ressenha,-41,qcb+PP,False,False,False,special,925,950,600,600,16,21,0.049,0.036,0.25,0.85,140,150
 Senha Kusabi,-9,qcb+P > d+K,False,True,False,special,925,950,600,600,16,21,0.049,0.036,0.25,0.85,80,100
 Kanzuki-Ryu Hadorokushiki Hasha No Kata,-18,"qcf,qcf+P",False,False,False,super,925,950,600,600,16,21,0.049,0.036,0.25,0.85,340,0

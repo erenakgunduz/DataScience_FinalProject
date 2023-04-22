@@ -11,58 +11,58 @@ Crouch HP,3,d+HP,False,False,False,normal,900,900,900,600,16,21,0.052,0.036,0.25
 Crouch LK,1,d+LK,False,False,False,normal,900,900,900,600,16,21,0.052,0.036,0.25,0.8,20,70
 Crouch MK,-2,d+MK,False,False,False,normal,900,900,900,600,16,21,0.052,0.036,0.25,0.8,50,100
 Crouch HK,-15,d+HK,False,False,False,normal,900,900,900,600,16,21,0.052,0.036,0.25,0.8,90,150
-Tenmakujinkyaku,-2(6),Forward Jump > d+MK ,True,False,False,normal,900,900,900,600,16,21,0.052,0.036,0.25,0.8,60,100
-Zugaihasatsu,-7,f+MP,False,False,False,normal,900,900,900,600,16,21,0.052,0.036,0.25,0.8,20*50 (70),60*40 (100)
+Tenmakujinkyaku,-2,Forward Jump > d+MK ,True,False,False,normal,900,900,900,600,16,21,0.052,0.036,0.25,0.8,60,100
+Zugaihasatsu,-7,f+MP,False,False,False,normal,900,900,900,600,16,21,0.052,0.036,0.25,0.8,70,100
 Sekiseiken,-2,f+HP,False,False,False,normal,900,900,900,600,16,21,0.052,0.036,0.25,0.8,60,100
 Tenha,-10,b+HP,False,False,False,normal,900,900,900,600,16,21,0.052,0.036,0.25,0.8,90,200
-Kikokurenzan,0,HK > HK,False,True,False,normal,900,900,900,600,16,21,0.052,0.036,0.25,0.8,80*45 (125),120*63 (183)
-Kongoken,-12,HP > HP,False,True,False,normal,900,900,900,600,16,21,0.052,0.036,0.25,0.8,80*54 (134),150*72 (222)
-Goshoha,KD,LP+LK,False,False,False,throw,900,900,900,600,16,21,0.052,0.036,0.25,0.8,130,170
-Shuretsuzan,KD,b+LP+LK,False,False,False,throw,900,900,900,600,16,21,0.052,0.036,0.25,0.8,120,170
+Kikokurenzan,0,HK > HK,False,True,False,normal,900,900,900,600,16,21,0.052,0.036,0.25,0.8,125,183
+Kongoken,-12,HP > HP,False,True,False,normal,900,900,900,600,16,21,0.052,0.036,0.25,0.8,134,222
+Goshoha,35,LP+LK,False,False,False,throw,900,900,900,600,16,21,0.052,0.036,0.25,0.8,130,170
+Shuretsuzan,35,b+LP+LK,False,False,False,throw,900,900,900,600,16,21,0.052,0.036,0.25,0.8,120,170
 Rakan Gosho,-10,MP+MK (VS1) > P,False,True,False,vskill,900,900,900,600,16,21,0.052,0.036,0.25,0.8,70,100
 Rakan Gokyaku,-13,MP+MK (VS1) > K,False,True,False,vskill,900,900,900,600,16,21,0.052,0.036,0.25,0.8,60,100
-Kiai,-13,MP+MK (VS2),False,True,False,vskill,900,900,900,600,16,21,0.052,0.036,0.25,0.8,50 (80),50 (80)
+Kiai,-13,MP+MK (VS2),False,True,False,vskill,900,900,900,600,16,21,0.052,0.036,0.25,0.8,80,80
 Sekia Goshoha (V-Skill 2),-6,MP+MK (VS2) > hcb+P,False,True,True,vskill,900,900,900,600,16,21,0.052,0.036,0.25,0.8,70,100
-Sekia Goshoha EX (V-Skill 2),8,MP+MK (VS2) > hcb+PP,False,True,True,vskill,900,900,900,600,16,21,0.052,0.036,0.25,0.8,25x4 (100),40x3*30 (150)
-Sekia Goshoha Just Frame (V-Skill 2),-4,MP+MK (VS2) > hcb+P,False,True,True,vskill,900,900,900,600,16,21,0.052,0.036,0.25,0.8,40x2 (80),50x2 (100)
-Sekia Goshoha EX Just Frame (V-Skill 2),11,MP+MK (VS2) > hcb+PP,False,True,True,vskill,900,900,900,600,16,21,0.052,0.036,0.25,0.8,20x4*30 (110),30x4*30 (150)
+Sekia Goshoha EX (V-Skill 2),8,MP+MK (VS2) > hcb+PP,False,True,True,vskill,900,900,900,600,16,21,0.052,0.036,0.25,0.8,100,150
+Sekia Goshoha Just Frame (V-Skill 2),-4,MP+MK (VS2) > hcb+P,False,True,True,vskill,900,900,900,600,16,21,0.052,0.036,0.25,0.8,80,100
+Sekia Goshoha EX Just Frame (V-Skill 2),11,MP+MK (VS2) > hcb+PP,False,True,True,vskill,900,900,900,600,16,21,0.052,0.036,0.25,0.8,110,150
 Gosenkyaku,-2,f+KKK,False,False,False,alpha,900,900,900,600,16,21,0.052,0.036,0.25,0.8,60,0
 Rasen Shuto Uchi,-2,MK+HP,False,True,False,vbreak,900,900,900,600,16,21,0.052,0.036,0.25,0.8,60,0
 Taunt Stomp,22,PPP+KKK,False,False,False,taunt,900,900,900,600,16,21,0.052,0.036,0.25,0.8,70,100
-Neutral Stomp,?,Neutral,False,False,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,90,150
-LP Gohadoken,-6,qcf+LP,False,False,True,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,60,120(100)
-MP Gohadoken,-6,qcf+MP,False,False,True,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,60,120(100)
-HP Gohadoken,-6,qcf+HP,False,False,True,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,60,120(100)
-EX Gohadoken,1,qcf+PP,False,False,True,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,50*50 (100),170(150)
+Neutral Stomp,0,Neutral,False,False,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,90,150
+LP Gohadoken,-6,qcf+LP,False,False,True,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,60,100
+MP Gohadoken,-6,qcf+MP,False,False,True,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,60,100
+HP Gohadoken,-6,qcf+HP,False,False,True,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,60,100
+EX Gohadoken,1,qcf+PP,False,False,True,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,100,150
 LP Sekia Goshoha,-6,hcb+LP,False,False,True,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,70,120
-MP Sekia Goshoha,-4,hcb+MP,False,False,True,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,40x2 (80),60x2 (120)
-HP Sekia Goshoha,-4,hcb+HP,False,False,True,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,30*30*40 (100),50x3 (150)
-EX Sekia Goshoha,8,hcb+PP,False,False,True,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,4x25 (100),40*40*40*30 (150)
+MP Sekia Goshoha,-4,hcb+MP,False,False,True,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,80,120
+HP Sekia Goshoha,-4,hcb+HP,False,False,True,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,100,150
+EX Sekia Goshoha,8,hcb+PP,False,False,True,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,100,150
 LP Goshoryuken,-28,"f,d,df+LP",False,False,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,100,150
-MP Goshoryuken,-30,"f,d,df+MP",False,False,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,70*50 (120),100*50 (150)
-HP Goshoryuken,-33,"f,d,df+HP",False,False,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,80*30x2 (140),100*30*20 (150)
-EX Goshoryuken,-44,"f,d,df+PP",False,False,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,30*20x2*30x3 (160),0x3*50*50*100 (200)
+MP Goshoryuken,-30,"f,d,df+MP",False,False,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,120,150
+HP Goshoryuken,-33,"f,d,df+HP",False,False,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,140,150
+EX Goshoryuken,-44,"f,d,df+PP",False,False,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,160,200
 LK Tatsumaki Zankukyaku,-11,qcb+LK,False,False,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,50,80
-MK Tatsumaki Zankukyaku,-8,qcb+MK,False,False,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,30*20x2 (70),70*30*20 (120)
-HK Tatsumaki Zankukyaku,-39,qcb+HK,False,False,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,30*15x2*40 (100),50x4 (200)
-EX Tatsumaki Zankukyaku,-19,qcb+KK,False,False,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,20x4*40 (120),30x5 (150)
-LK Air Tatsumaki Zankukyaku,-4(1),qcb+LK(air),True,False,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,70,100
-MK Air Tatsumaki Zankukyaku,-4(1),qcb+MK(air),True,False,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,70,100
-HK Air Tatsumaki Zankukyaku,-4(1),qcb+HK(air),True,False,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,70,100
+MK Tatsumaki Zankukyaku,-8,qcb+MK,False,False,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,70,120
+HK Tatsumaki Zankukyaku,-39,qcb+HK,False,False,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,100,200
+EX Tatsumaki Zankukyaku,-19,qcb+KK,False,False,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,120,150
+LK Air Tatsumaki Zankukyaku,-4,qcb+LK(air),True,False,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,70,100
+MK Air Tatsumaki Zankukyaku,-4,qcb+MK(air),True,False,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,70,100
+HK Air Tatsumaki Zankukyaku,-4,qcb+HK(air),True,False,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,70,100
 LK Hyakki Gozan,-2,hcf+LK > no input,False,False,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,100,150
 MK Hyakki Gozan,-2,hcf+MK > no input,False,False,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,100,150
 HK Hyakki Gozan,-2,hcf+HK > no input,False,False,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,100,150
 EX Hyakki Gozan,-2,hcf+KK > no input,False,False,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,120,150
-LK Hyakkishu > Hyakki Gosho,1(8),hcf+LK > P,True,True,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,100,150
-MK Hyakkishu > Hyakki Gosho,1(8),hcf+MK > P,True,True,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,100,150
-HK Hyakkishu > Hyakki Gosho,1(8),hcf+HK > P,True,True,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,100,150
-EX Hyakkishu > Hyakki Gosho,3(9),hcf+KK > P,True,True,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,120,200
-LK Hyakkishu > Hyakki Gojin,-2(5),hcf+LK > K,True,True,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,60,100
-MK Hyakkishu > Hyakki Gojin,-2(5),hcf+MK > K,True,True,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,60,100
-HK Hyakkishu > Hyakki Gojin,-4(5),hcf+HK > K,True,True,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,60,100
-EX Hyakkishu > Hyakki Gojin,-2(9),hcf+KK > K,True,True,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,70,100
-LK Hyakkishu > Hyakki Gosai,KD,hcf+LK > LPLK,True,True,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,150,200
-MK Hyakkishu > Hyakki Gosai,KD,hcf+MK > LPLK,True,True,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,150,200
-HK Hyakkishu > Hyakki Gosai,KD,hcf+HK > LPLK,True,True,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,150,200
-EX Hyakkishu > Hyakki Gosai,KD,hcf+KK> LPLK,True,True,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,180,250
+LK Hyakkishu > Hyakki Gosho,1,hcf+LK > P,True,True,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,100,150
+MK Hyakkishu > Hyakki Gosho,1,hcf+MK > P,True,True,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,100,150
+HK Hyakkishu > Hyakki Gosho,1,hcf+HK > P,True,True,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,100,150
+EX Hyakkishu > Hyakki Gosho,3,hcf+KK > P,True,True,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,120,200
+LK Hyakkishu > Hyakki Gojin,-2,hcf+LK > K,True,True,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,60,100
+MK Hyakkishu > Hyakki Gojin,-2,hcf+MK > K,True,True,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,60,100
+HK Hyakkishu > Hyakki Gojin,-4,hcf+HK > K,True,True,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,60,100
+EX Hyakkishu > Hyakki Gojin,-2,hcf+KK > K,True,True,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,70,100
+LK Hyakkishu > Hyakki Gosai,35,hcf+LK > LPLK,True,True,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,150,200
+MK Hyakkishu > Hyakki Gosai,35,hcf+MK > LPLK,True,True,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,150,200
+HK Hyakkishu > Hyakki Gosai,35,hcf+HK > LPLK,True,True,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,150,200
+EX Hyakkishu > Hyakki Gosai,35,hcf+KK> LPLK,True,True,False,special,900,900,900,600,16,21,0.052,0.036,0.25,0.8,180,250
 Sekia Kuretsuha,-30,"qcf,qcf+P",False,False,True,super,900,900,900,600,16,21,0.052,0.036,0.25,0.8,320,0

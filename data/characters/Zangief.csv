@@ -1,9 +1,9 @@
 Move,onBlock,plnCmd,airmove,followUp,projectile,moveType,health,stun,vgauge1,vgauge2,fDash,bDash,fWalk,bWalk,throwHurt,throwRange,Damage,Stun
 Stand LP,3,LP,False,False,False,normal,1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,40,70
 Stand MP,2,MP,False,False,False,normal,1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,70,100
-Stand HP,0(-4),HP,False,False,False,normal,1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,100,150
-Stand HP (hold),2(3),HP (hold),False,False,False,normal,1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,130,200
-Stand HP (release),0(-4),HP (release),False,False,False,normal,1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,100,150
+Stand HP,0,HP,False,False,False,normal,1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,100,150
+Stand HP (hold),2,HP (hold),False,False,False,normal,1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,130,200
+Stand HP (release),0,HP (release),False,False,False,normal,1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,100,150
 Stand LK,-3,LK,False,False,False,normal,1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,30,70
 Stand MK,-3,MK,False,False,False,normal,1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,70,100
 Stand HK,-2,HK,False,False,False,normal,1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,90,150
@@ -15,11 +15,11 @@ Crouch MK,-4,d+MK,False,False,False,normal,1075,1100,900,900,25,25,0.0305,0.0235
 Crouch HK,-10,d+HK,False,False,False,normal,1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,100,150
 Knee Hammer,-3,f+MK,False,False,False,normal,1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,70,100
 Head Butt,2,f+HP,False,False,False,normal,1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,100,200
-Flying Headbutt,13(14),u+HP during neutral jump,True,False,False,normal,1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,120,200
+Flying Headbutt,13,u+HP during neutral jump,True,False,False,normal,1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,120,200
 Iron Muscle (hold),-2,MP+MK (VS1) (hold),False,False,False,vskill,1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,50,100
 Iron Muscle (release),-2,MP+MK (VS1) (release),False,True,False,vskill,1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,50,100
 Super Russian Kick,-4,MP+MK (VS2),False,False,False,vskill,1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,80,100
-Super Russian Kick (hold),11(GB),MP+MK (VS2) (hold),False,False,False,vskill,1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,100,120
+Super Russian Kick (hold),11,MP+MK (VS2) (hold),False,False,False,vskill,1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,100,120
 Muscle Explosion,-2,f+KKK,False,False,False,alpha,1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,40,0
 Colossal Boot,-2,MK+HP,False,True,False,vbreak,1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,60,0
-Double Lariat,-38,PPP,False,False,False,special,1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,130(100),200
+Double Lariat,-38,PPP,False,False,False,special,1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,100,200

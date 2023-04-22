@@ -1,31 +1,31 @@
 Move,onBlock,plnCmd,airmove,followUp,projectile,moveType,health,stun,vgauge1,vgauge2,fDash,bDash,fWalk,bWalk,throwHurt,throwRange,Damage,Stun
 Stand LP,2,LP,False,False,False,normal,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,30,70
-Stand MP,-3,MP,False,False,False,normal,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,40*20 (60),50*50 (100)
+Stand MP,-3,MP,False,False,False,normal,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,60,100
 Stand HP,-2,HP,False,False,False,normal,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,90,150
 Stand LK,3,LK,False,False,False,normal,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,40,70
-Stand MK,1,MK,False,False,False,normal,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,30*30 (60),50*50 (100)
-Stand HK,1,HK,False,False,False,normal,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,40*75 (115),40*75 (115)
+Stand MK,1,MK,False,False,False,normal,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,60,100
+Stand HK,1,HK,False,False,False,normal,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,115,115
 Crouch LP,1,d+LP,False,False,False,normal,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,30,70
 Crouch MP,-2,d+MP,False,False,False,normal,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,50,100
-Crouch HP,-12*-6,d+HP,False,False,False,normal,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,50*40 (90),75*75 (150)
+Crouch HP,-12,d+HP,False,False,False,normal,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,90,150
 Crouch LK,1,d+LK,False,False,False,normal,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,20,70
-Crouch MK,3,d+MK,False,False,False,normal,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,20*40 (60),50*50 (100)
-Crouch HK,-12,d+HK,False,False,False,normal,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,50*50 9100),75*75 (150)
-Nirenko,-5,df+HP,False,False,False,normal,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,60*40 (100),100*100 (200)
-Senpukuga > Kick,2,d+PPP > K,False,True,False,normal,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,30*40 (70),50*50 (100)
-Sodokubu (Attack),-42,MP+MK (VS2) (Attack),False,True,False,vskill,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,10x3*30 (60),20x3*60 (120)
-LP Nishikyu,-11,"d,u+LP",False,False,True,special,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,20*20 (40),50*50 (100)
-MP Nishikyu,-11,"d,u+MP",False,False,True,special,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,20*20 (40),50*50 (100)
-HP Nishikyu,-11,"d,u+HP",False,False,True,special,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,20*20 (40),50*50 (100)
-EX Nishikyu,-1,"d,u+PP",False,False,True,special,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,45*45 (90),50*50 (100)
-LP Sotoja,-11,"b,f+LP",False,False,False,special,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,40*30 (70),100*100 (200)
-MP Sotoja,-9,"b,f+MP",False,False,False,special,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,40*40 (80),100*100 (200)
-HP Sotoja,-10,"b,f+HP",False,False,False,special,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,50*50 (100),100*100 (200)
-EX Sotoja,-2,"b,f+PP",False,False,False,special,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,50*50 (100),100*100 (200)
-LK Ryobenda,-9,"b,f+LK",False,False,False,special,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,30*30 (60),100*100 (200)
+Crouch MK,3,d+MK,False,False,False,normal,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,60,100
+Crouch HK,-12,d+HK,False,False,False,normal,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,100,150
+Nirenko,-5,df+HP,False,False,False,normal,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,100,200
+Senpukuga > Kick,2,d+PPP > K,False,True,False,normal,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,70,100
+Sodokubu (Attack),-42,MP+MK (VS2) (Attack),False,True,False,vskill,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,60,120
+LP Nishikyu,-11,"d,u+LP",False,False,True,special,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,40,100
+MP Nishikyu,-11,"d,u+MP",False,False,True,special,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,40,100
+HP Nishikyu,-11,"d,u+HP",False,False,True,special,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,40,100
+EX Nishikyu,-1,"d,u+PP",False,False,True,special,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,90,100
+LP Sotoja,-11,"b,f+LP",False,False,False,special,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,70,200
+MP Sotoja,-9,"b,f+MP",False,False,False,special,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,80,200
+HP Sotoja,-10,"b,f+HP",False,False,False,special,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,100,200
+EX Sotoja,-2,"b,f+PP",False,False,False,special,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,100,200
+LK Ryobenda,-9,"b,f+LK",False,False,False,special,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,60,200
 MK Ryobenda,-8,"b,f+MK",False,False,True,special,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,40,100
 MK Ryobenda Trap,16,"b,f+MK",False,False,True,special,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,40,100
 HK Ryobenda,-10,"b,f+HK",False,False,True,special,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,40,100
 HK Ryobenda Trap,10,"b,f+HK",False,False,True,special,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,40,100
-EX Ryobenda,2,"b,f+KK",False,False,False,special,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,30*30 (60),100*100 (200)
-EX Ryobenda Trap,24,"b,f+KK",False,False,True,special,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,20*20 (40),22*22 (44)
+EX Ryobenda,2,"b,f+KK",False,False,False,special,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,60,200
+EX Ryobenda Trap,24,"b,f+KK",False,False,True,special,975,1000,600,900,20,24,0.032,0.028,0.25,0.85,40,44

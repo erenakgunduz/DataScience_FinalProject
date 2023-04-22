@@ -1,42 +1,42 @@
 Move,onBlock,plnCmd,airmove,followUp,projectile,moveType,health,stun,vgauge1,vgauge2,fDash,bDash,fWalk,bWalk,throwHurt,throwRange,Damage,Stun
-Stand LP,2,LP,False,False,False,normal,1050,1075,600,600,19,24,0.04,0.035,0.45,1,30,70
-Stand MP,3,MP,False,False,False,normal,1050,1075,600,600,19,24,0.04,0.035,0.45,1,60,100
-Stand HP,-3,HP,False,False,False,normal,1050,1075,600,600,19,24,0.04,0.035,0.45,1,90,150
-Stand LK,0,LK,False,False,False,normal,1050,1075,600,600,19,24,0.04,0.035,0.45,1,40,70
-Stand MK,-2,MK,False,False,False,normal,1050,1075,600,600,19,24,0.04,0.035,0.45,1,70,100
-Stand HK,-4,HK,False,False,False,normal,1050,1075,600,600,19,24,0.04,0.035,0.45,1,100,150
-Crouch LP,2,d+LP,False,False,False,normal,1050,1075,600,600,19,24,0.04,0.035,0.45,1,30,70
-Crouch MP,-1,d+MP,False,False,False,normal,1050,1075,600,600,19,24,0.04,0.035,0.45,1,70,100
-Crouch HP,-8,d+HP,False,False,False,normal,1050,1075,600,600,19,24,0.04,0.035,0.45,1,60*30 (90),75*75 (150)
-Crouch LK,0,d+LK,False,False,False,normal,1050,1075,600,600,19,24,0.04,0.035,0.45,1,20,70
-Crouch MK,-3,d+MK,False,False,False,normal,1050,1075,600,600,19,24,0.04,0.035,0.45,1,60,100
-Crouch HK,-12,d+HK,False,False,False,normal,1050,1075,600,600,19,24,0.04,0.035,0.45,1,100,150
-Chop,-8,f+MP,False,False,False,normal,1050,1075,600,600,19,24,0.04,0.035,0.45,1,60,100
-Lariat,4,f+HP,False,False,False,normal,1050,1075,600,600,19,24,0.04,0.035,0.45,1,80,150
-Flying Cross Chop,-29(-21),d+HP (air),True,False,False,normal,1050,1075,600,600,19,24,0.04,0.035,0.45,1,90,150
-Face-Crush Chop,KD,LP+LK,False,False,False,throw,1050,1075,600,600,19,24,0.04,0.035,0.45,1,120,120
-Leg Tomahawk,KD,b+LP+LK,False,False,False,throw,1050,1075,600,600,19,24,0.04,0.035,0.45,1,160,200
-War Hammer,-2,MK+HP,False,True,False,vbreak,1050,1075,600,600,19,24,0.04,0.035,0.45,1,60,0
-LP Flash Chop,-4,qcf+LP,False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1,70,150
-MP Flash Chop,-4,qcf+MP,False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1,80,150
-HP Flash Chop,-6,qcf+HP,False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1,90,150
-EX Flash Chop,-2,qcf+PP,False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1,70*70 (140),100*100 (200)
-LK Slash Elbow,-2,"b,f+LK",False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1,80,150
-MK Slash Elbow,-6,"b,f+MK",False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1,90,150
-HK Slash Elbow,-7,"b,f+HK",False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1,100,150
-EX Slash Elbow,-17,"b,f+KK",False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1,75*75 (150),100*100 (200)
-LK Air Knee Smash,KD,"f,d,df+LK",False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1,50*80 (130),200
-MK Air Knee Smash,KD,"f,d,df+MK",False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1,50*80 (130),200
-HK Air Knee Smash,KD,"f,d,df+HK",False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1,50*80 (130),200
-EX Air Knee Smash,-40,"f,d,df+KK",False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1,50*90 (140),200
-LP Power Bomb,KD,hcb+LP,False,False,False,command-grab,1050,1075,600,600,19,24,0.04,0.035,0.45,1,170,200
-MP Power Bomb,KD,hcb+MP,False,False,False,command-grab,1050,1075,600,600,19,24,0.04,0.035,0.45,1,180,230
-HP Power Bomb,KD,hcb+HP,False,False,False,command-grab,1050,1075,600,600,19,24,0.04,0.035,0.45,1,190,250
-EX Power Bomb,KD,hcb+PP,False,False,False,command-grab,1050,1075,600,600,19,24,0.04,0.035,0.45,1,230,250
-Power Drop,KD,hcb+P (opp. turned),False,True,False,command-grab,1050,1075,600,600,19,24,0.04,0.035,0.45,1,120,200
-EX Power Drop,KD,hcb+PP (opp. turned),False,True,False,command-grab,1050,1075,600,600,19,24,0.04,0.035,0.45,1,80*100 (180),250
-LK Air Stampede,-5,"d,u+LK",False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1,120,200
-MK Air Stampede,-5,"d,u+MK",False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1,120,200
-HK Air Stampede,-5,"d,u+HK",False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1,120,200
-EX Air Stampede,2,"d,u+KK",False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1,140,200
-Heavy Hammer,-25,"qcf,qcf+P",False,False,False,super,1050,1075,600,600,19,24,0.04,0.035,0.45,1,340,0*0*0
+Stand LP,2,LP,False,False,False,normal,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,30,70
+Stand MP,3,MP,False,False,False,normal,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,60,100
+Stand HP,-3,HP,False,False,False,normal,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,90,150
+Stand LK,0,LK,False,False,False,normal,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,40,70
+Stand MK,-2,MK,False,False,False,normal,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,70,100
+Stand HK,-4,HK,False,False,False,normal,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,100,150
+Crouch LP,2,d+LP,False,False,False,normal,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,30,70
+Crouch MP,-1,d+MP,False,False,False,normal,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,70,100
+Crouch HP,-8,d+HP,False,False,False,normal,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,90,150
+Crouch LK,0,d+LK,False,False,False,normal,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,20,70
+Crouch MK,-3,d+MK,False,False,False,normal,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,60,100
+Crouch HK,-12,d+HK,False,False,False,normal,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,100,150
+Chop,-8,f+MP,False,False,False,normal,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,60,100
+Lariat,4,f+HP,False,False,False,normal,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,80,150
+Flying Cross Chop,-29,d+HP (air),True,False,False,normal,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,90,150
+Face-Crush Chop,35,LP+LK,False,False,False,throw,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,120,120
+Leg Tomahawk,35,b+LP+LK,False,False,False,throw,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,160,200
+War Hammer,-2,MK+HP,False,True,False,vbreak,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,60,0
+LP Flash Chop,-4,qcf+LP,False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,70,150
+MP Flash Chop,-4,qcf+MP,False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,80,150
+HP Flash Chop,-6,qcf+HP,False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,90,150
+EX Flash Chop,-2,qcf+PP,False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,140,200
+LK Slash Elbow,-2,"b,f+LK",False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,80,150
+MK Slash Elbow,-6,"b,f+MK",False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,90,150
+HK Slash Elbow,-7,"b,f+HK",False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,100,150
+EX Slash Elbow,-17,"b,f+KK",False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,150,200
+LK Air Knee Smash,35,"f,d,df+LK",False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,130,200
+MK Air Knee Smash,35,"f,d,df+MK",False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,130,200
+HK Air Knee Smash,35,"f,d,df+HK",False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,130,200
+EX Air Knee Smash,-40,"f,d,df+KK",False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,140,200
+LP Power Bomb,35,hcb+LP,False,False,False,command-grab,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,170,200
+MP Power Bomb,35,hcb+MP,False,False,False,command-grab,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,180,230
+HP Power Bomb,35,hcb+HP,False,False,False,command-grab,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,190,250
+EX Power Bomb,35,hcb+PP,False,False,False,command-grab,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,230,250
+Power Drop,35,hcb+P (opp. turned),False,True,False,command-grab,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,120,200
+EX Power Drop,35,hcb+PP (opp. turned),False,True,False,command-grab,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,180,250
+LK Air Stampede,-5,"d,u+LK",False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,120,200
+MK Air Stampede,-5,"d,u+MK",False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,120,200
+HK Air Stampede,-5,"d,u+HK",False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,120,200
+EX Air Stampede,2,"d,u+KK",False,False,False,special,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,140,200
+Heavy Hammer,-25,"qcf,qcf+P",False,False,False,super,1050,1075,600,600,19,24,0.04,0.035,0.45,1.0,340,0

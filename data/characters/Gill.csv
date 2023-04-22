@@ -7,35 +7,35 @@ Stand MK,-4,MK,False,False,False,normal,1025,1050,600,600,16,25,0.0412,0.0273,0.
 Stand HK,-4,HK,False,False,False,normal,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,80,150
 Crouch LP,1,d+LP,False,False,False,normal,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,30,70
 Crouch MP,-2,d+MP,False,False,False,normal,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,60,100
-Crouch HP,-9,d+HP,False,False,False,normal,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,40*40,50*100
+Crouch HP,-9,d+HP,False,False,False,normal,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,80,150
 Crouch LK,0,d+LK,False,False,False,normal,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,20,70
 Crouch MK,-2,d+MK,False,False,False,normal,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,60,100
 Crouch HK,-13,d+HK,False,False,False,normal,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,90,120
 Cryo Drop Elbow,-8,f+HP,False,False,False,normal,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,80,150
 Pyro Quarrel Kick,-6,f+HK,False,False,False,normal,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,90,120
 Cryo Rise Kick,-7,b+HK,False,False,False,normal,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,80,150
-Guilty Straight,-5,LP > MP,False,True,False,normal,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,30*54,70*90
-Penalty Break,-8,d+LK > d+MK,False,True,False,normal,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,20*45,70*90
+Guilty Straight,-5,LP > MP,False,True,False,normal,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,84,160
+Penalty Break,-8,d+LK > d+MK,False,True,False,normal,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,65,160
 Divine Comet,15,MP+MK (VS1),False,False,True,vskill,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,60,80
 Radiant Judgement,-2,MK+HP,False,True,False,vbreak,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,60,0
 LP Pyrokinesis,-6,qcf+LP,False,False,True,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,70,80
 MP Pyrokinesis,-6,qcf+MP,False,False,True,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,70,80
-LPMP Pyrokinesis,1,qcf+LPMP,False,False,True,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,40*50 (90),80
-LPHP Pyrokinesis,1,qcf+LPHP,False,False,True,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,40*50 (90),80
+LPMP Pyrokinesis,1,qcf+LPMP,False,False,True,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,90,80
+LPHP Pyrokinesis,1,qcf+LPHP,False,False,True,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,90,80
 LP Cryokinesis,-4,qcb+LP,False,False,True,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,50,120
 MP Cryokinesis,-4,qcb+MP,False,False,True,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,50,120
-LPMP Cryokinesis,3,qcb+LPMP,False,False,True,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,20*30 (50),140
-LPHP Cryokinesis,3,qcb+LPHP,False,False,True,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,20*30 (50),140
-LK Pyro Cyber Lariat,-6,qcf+LK,False,False,False,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,40*40 (80),40*80 (120)
-MK Pyro Cyber Lariat,-6,qcf+MK,False,False,False,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,40*60 (100),40*40 (80)
-HK Pyro Cyber Lariat,-6,qcf+HK,False,False,False,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,40*80 (120),40*40 (80)
-EX Pyro Cyber Lariat,-12,qcf+KK,False,False,False,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,40*80 (120),40*40 (80)
-LK Cryo Cyber Lariat,-6,qcb+LK,False,False,False,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,30*30 (60),40*80 (120)
-MK Cryo Cyber Lariat,-6,qcb+MK,False,False,False,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,30*30 (60),60*80 (140)
-HK Cryo Cyber Lariat,-6,qcb+HK,False,False,False,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,30*30 (60),60*100 (160)
-EX Cryo Cyber Lariat,-12,qcb+KK,False,False,False,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,30*30 (60),60*100 (160)
-LK Moonsault Knee Drop,-2/14,"f,d,df+LK",True,False,False,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,100,120
-MK Moonsault Knee Drop,-2/14,"f,d,df+MK",True,False,False,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,100,120
-HK Moonsault Knee Drop,-2/14,"f,d,df+HK",True,False,False,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,100,120
-EX Moonsault Knee Drop,-2(1),"f,d,df+KK",True,False,False,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,100,140
+LPMP Cryokinesis,3,qcb+LPMP,False,False,True,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,50,140
+LPHP Cryokinesis,3,qcb+LPHP,False,False,True,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,50,140
+LK Pyro Cyber Lariat,-6,qcf+LK,False,False,False,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,80,120
+MK Pyro Cyber Lariat,-6,qcf+MK,False,False,False,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,100,80
+HK Pyro Cyber Lariat,-6,qcf+HK,False,False,False,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,120,80
+EX Pyro Cyber Lariat,-12,qcf+KK,False,False,False,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,120,80
+LK Cryo Cyber Lariat,-6,qcb+LK,False,False,False,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,60,120
+MK Cryo Cyber Lariat,-6,qcb+MK,False,False,False,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,60,140
+HK Cryo Cyber Lariat,-6,qcb+HK,False,False,False,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,60,160
+EX Cryo Cyber Lariat,-12,qcb+KK,False,False,False,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,60,160
+LK Moonsault Knee Drop,-2,"f,d,df+LK",True,False,False,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,100,120
+MK Moonsault Knee Drop,-2,"f,d,df+MK",True,False,False,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,100,120
+HK Moonsault Knee Drop,-2,"f,d,df+HK",True,False,False,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,100,120
+EX Moonsault Knee Drop,-2,"f,d,df+KK",True,False,False,special,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,100,140
 Seraphic Wing,-32,"qcf,qcf+P",False,False,False,super,1025,1050,600,600,16,25,0.0412,0.0273,0.25,0.85,340,0

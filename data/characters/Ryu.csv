@@ -11,32 +11,32 @@ Crouch HP,-10,d+HP,False,False,False,normal,1025,1050,600,600,16,21,0.047,0.032,
 Crouch LK,1,d+LK,False,False,False,normal,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,20,70
 Crouch MK,-1,d+MK,False,False,False,normal,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,50,100
 Crouch HK,-11,d+HK,False,False,False,normal,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,90,150
-Collarbone Breaker,-7,f+MP,False,False,False,normal,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,30*30,60*40
-Solar Plexus Strike,-2,f+HP,False,False,False,normal,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,40*40,75*75
-Axe Kick,-2,b+HK,False,False,False,normal,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,40*40,60*90
-Jodan Sanrengeki 1st,-9,MP > HP,False,True,False,normal,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,60*63 (123),100*90 (190)
-Jodan Sanrengeki 2nd,-7,MP > HP > HK,False,True,False,normal,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,60*63*56 (179),100*90*80 (270)
-Jodan Nirengeki,-7,HP > HK,False,True,False,normal,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,90*63 (153),150*90 (240)
-Shoulder Throw,KD,LP+LK,False,False,False,throw,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,130,150
-Somersault Throw,KD,b+LP+LK,False,False,False,throw,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,150,200
-Thrust Strike,-4,MP+MK (VS2),False,False,False,vskill,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,70(120),100(200)
+Collarbone Breaker,-7,f+MP,False,False,False,normal,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,60,100
+Solar Plexus Strike,-2,f+HP,False,False,False,normal,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,80,150
+Axe Kick,-2,b+HK,False,False,False,normal,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,80,150
+Jodan Sanrengeki 1st,-9,MP > HP,False,True,False,normal,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,123,190
+Jodan Sanrengeki 2nd,-7,MP > HP > HK,False,True,False,normal,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,179,270
+Jodan Nirengeki,-7,HP > HK,False,True,False,normal,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,153,240
+Shoulder Throw,35,LP+LK,False,False,False,throw,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,130,150
+Somersault Throw,35,b+LP+LK,False,False,False,throw,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,150,200
+Thrust Strike,-4,MP+MK (VS2),False,False,False,vskill,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,120,200
 Hashogeki,-2,f+PPP,False,False,False,alpha,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,60,0
 Fumikomi Joden Kagizuki,-2,MK+HP,False,True,False,vbreak,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,60,0
 LP Hadoken,-6,qcf+LP,False,False,True,special,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,60,100
 MP Hadoken,-6,qcf+MP,False,False,True,special,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,60,100
 HP Hadoken,-6,qcf+HP,False,False,True,special,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,60,100
-EX Hadoken,2,qcf+PP,False,False,True,special,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,40*60,0*150
-LP Shoryuken,-24,"f,d,df+LP",False,False,False,special,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,110(60),150(100)
-MP Shoryuken,-32,"f,d,df+MP",False,False,False,special,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,120(60),150(100)
-HP Shoryuken,-36,"f,d,df+HP",False,False,False,special,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,130(60),150
-EX Shoryuken,-37,"f,d,df+PP",False,False,False,special,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,80*80 (160),200
+EX Hadoken,2,qcf+PP,False,False,True,special,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,100,150
+LP Shoryuken,-24,"f,d,df+LP",False,False,False,special,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,60,100
+MP Shoryuken,-32,"f,d,df+MP",False,False,False,special,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,60,100
+HP Shoryuken,-36,"f,d,df+HP",False,False,False,special,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,60,150
+EX Shoryuken,-37,"f,d,df+PP",False,False,False,special,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,160,200
 LK Tatsumaki Senpukyaku,-10,qcb+LK,False,False,False,special,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,80,150
 MK Tatsumaki Senpukyaku,-12,qcb+MK,False,False,False,special,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,90,150
 HK Tatsumaki Senpukyaku,-13,qcb+HK,False,False,False,special,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,100,150
-EX Tatsumaki Senpukyaku,-19,qcb+KK,False,False,False,special,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,28x5 (140),150
-LK Air Tatsumaki Senpukyaku,-3(2),qcb+LK (air),True,False,False,special,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,100,200
-MK Air Tatsumaki Senpukyaku,-3(2),qcb+MK (air),True,False,False,special,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,100,200
-HK Air Tatsumaki Senpukyaku,-3(2),qcb+HK (air),True,False,False,special,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,100,200
+EX Tatsumaki Senpukyaku,-19,qcb+KK,False,False,False,special,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,140,150
+LK Air Tatsumaki Senpukyaku,-3,qcb+LK (air),True,False,False,special,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,100,200
+MK Air Tatsumaki Senpukyaku,-3,qcb+MK (air),True,False,False,special,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,100,200
+HK Air Tatsumaki Senpukyaku,-3,qcb+HK (air),True,False,False,special,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,100,200
 LK Jodan Sokutou Geri,-15,hcf+LK,False,False,False,special,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,90,150
 MK Jodan Sokutou Geri,-15,hcf+MK,False,False,False,special,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,100,150
 HK Jodan Sokutou Geri,-15,hcf+HK,False,False,False,special,1025,1050,600,600,16,21,0.047,0.032,0.25,0.8,110,150

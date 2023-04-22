@@ -10,7 +10,7 @@ Crouch MP,2,d+MP,False,False,False,normal,975,975,900,600,18,25,0.052,0.033,0.25
 Crouch HP,-4,d+HP,False,False,False,normal,975,975,900,600,18,25,0.052,0.033,0.25,0.8,90,150
 Crouch LK,0,d+LK,False,False,False,normal,975,975,900,600,18,25,0.052,0.033,0.25,0.8,20,70
 Crouch MK,-4,d+MK,False,False,False,normal,975,975,900,600,18,25,0.052,0.033,0.25,0.8,60,100
-Crouch HK,-13,d+HK,False,False,False,normal,975,975,900,600,18,25,0.052,0.033,0.25,0.8,90(70),150(100)
+Crouch HK,-13,d+HK,False,False,False,normal,975,975,900,600,18,25,0.052,0.033,0.25,0.8,70,100
 Guile High Kick,-3,df+HK,False,False,False,normal,975,975,900,600,18,25,0.052,0.033,0.25,0.8,80,150
 Knee Bazooka,-3,b or f+LK,False,False,False,normal,975,975,900,600,18,25,0.052,0.033,0.25,0.8,50,100
 Rolling Sobat,-4,b or f+MK,False,False,False,normal,975,975,900,600,18,25,0.052,0.033,0.25,0.8,60,100
@@ -19,23 +19,23 @@ Reverse Spin Kick,-2,f+HK,False,False,False,normal,975,975,900,600,18,25,0.052,0
 Burn Straight,-1,b+HP,False,False,False,normal,975,975,900,600,18,25,0.052,0.033,0.25,0.8,80,150
 Full Bullet Magnum,-7,f+MP,False,False,False,normal,975,975,900,600,18,25,0.052,0.033,0.25,0.8,60,100
 Drake Fang,-7,d+MK > f+MP,False,True,False,normal,975,975,900,600,18,25,0.052,0.033,0.25,0.8,60,100
-Tall Edge,-8,d+LK > MP,False,True,False,normal,975,975,900,600,18,25,0.052,0.033,0.25,0.8,20*54 (74),70*90(160)
-Bullet Revolver,-8,d+LK > MP > f+HP,False,True,False,normal,975,975,900,600,18,25,0.052,0.033,0.25,0.8,20*54*56 (130),70*90*120 (280)
-Swing Out,-8,MP > f+HP,False,True,False,normal,975,975,900,600,18,25,0.052,0.033,0.25,0.8,60*63 (123),100*135 (235)
-Taurus Combination,-4,LK > MK,False,True,False,normal,975,975,900,600,18,25,0.052,0.033,0.25,0.8,30*45 (75),70*72 (142)
+Tall Edge,-8,d+LK > MP,False,True,False,normal,975,975,900,600,18,25,0.052,0.033,0.25,0.8,74,160
+Bullet Revolver,-8,d+LK > MP > f+HP,False,True,False,normal,975,975,900,600,18,25,0.052,0.033,0.25,0.8,130,280
+Swing Out,-8,MP > f+HP,False,True,False,normal,975,975,900,600,18,25,0.052,0.033,0.25,0.8,123,235
+Taurus Combination,-4,LK > MK,False,True,False,normal,975,975,900,600,18,25,0.052,0.033,0.25,0.8,75,142
 Sonic Blade,-14,MP+MK (VS1),False,False,False,vskill,975,975,900,600,18,25,0.052,0.033,0.25,0.8,40,50
 Dive Sonic,-7,MP+MK (VS2),True,False,True,vskill,975,975,900,600,18,25,0.052,0.033,0.25,0.8,40,50
 Ambush Kick,-2,MK+HP,False,True,False,vbreak,975,975,900,600,18,25,0.052,0.033,0.25,0.8,60,0
 LP Sonic Boom,0,"b,f+LP",False,False,True,special,975,975,900,600,18,25,0.052,0.033,0.25,0.8,60,50
 MP Sonic Boom,0,"b,f+MP",False,False,True,special,975,975,900,600,18,25,0.052,0.033,0.25,0.8,60,50
 HP Sonic Boom,0,"b,f+HP",False,False,True,special,975,975,900,600,18,25,0.052,0.033,0.25,0.8,60,50
-EX Sonic Boom,4,"b,f+PP",False,False,True,special,975,975,900,600,18,25,0.052,0.033,0.25,0.8,50*50 (100),50*50 (100)
-LK Somersault Kick,-28,"d,u+LK",False,False,False,special,975,975,900,600,18,25,0.052,0.033,0.25,0.8,130 (100),200
-MK Somersault Kick,-28,"d,u+MK",False,False,False,special,975,975,900,600,18,25,0.052,0.033,0.25,0.8,130 (100),200
-HK Somersault Kick,-30,"d,u+HK",False,False,False,special,975,975,900,600,18,25,0.052,0.033,0.25,0.8,130 (100),200
-EX Somersault Kick,-37,"d,u+KK",False,False,False,special,975,975,900,600,18,25,0.052,0.033,0.25,0.8,90*60 (60*60),100*100
-LP Sonic Cross,12,"MP+MK > b,f+LP",False,True,True,special,975,975,900,600,18,25,0.052,0.033,0.25,0.8,40*40 (80),50*50 (100)
-MP Sonic Cross,14,"MP+MK > b,f+MP",False,True,True,special,975,975,900,600,18,25,0.052,0.033,0.25,0.8,40*40 (80),50*50 (100)
-HP Sonic Cross,14,"MP+MK > b,f+HP",False,True,True,special,975,975,900,600,18,25,0.052,0.033,0.25,0.8,40*40 (80),50*50 (100)
-EX Sonic Cross,21,"MP+MK > b,f,PP",False,True,True,special,975,975,900,600,18,25,0.052,0.033,0.25,0.8,40*50*50 (140),50*25*75 (150)
+EX Sonic Boom,4,"b,f+PP",False,False,True,special,975,975,900,600,18,25,0.052,0.033,0.25,0.8,100,100
+LK Somersault Kick,-28,"d,u+LK",False,False,False,special,975,975,900,600,18,25,0.052,0.033,0.25,0.8,100,200
+MK Somersault Kick,-28,"d,u+MK",False,False,False,special,975,975,900,600,18,25,0.052,0.033,0.25,0.8,100,200
+HK Somersault Kick,-30,"d,u+HK",False,False,False,special,975,975,900,600,18,25,0.052,0.033,0.25,0.8,100,200
+EX Somersault Kick,-37,"d,u+KK",False,False,False,special,975,975,900,600,18,25,0.052,0.033,0.25,0.8,150,200
+LP Sonic Cross,12,"MP+MK > b,f+LP",False,True,True,special,975,975,900,600,18,25,0.052,0.033,0.25,0.8,80,100
+MP Sonic Cross,14,"MP+MK > b,f+MP",False,True,True,special,975,975,900,600,18,25,0.052,0.033,0.25,0.8,80,100
+HP Sonic Cross,14,"MP+MK > b,f+HP",False,True,True,special,975,975,900,600,18,25,0.052,0.033,0.25,0.8,80,100
+EX Sonic Cross,21,"MP+MK > b,f,PP",False,True,True,special,975,975,900,600,18,25,0.052,0.033,0.25,0.8,140,150
 Sonic Hurricane,-39,"b,f,b,f+P",False,False,True,super,975,975,900,600,18,25,0.052,0.033,0.25,0.8,320,0

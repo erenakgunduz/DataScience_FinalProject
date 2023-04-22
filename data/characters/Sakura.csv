@@ -14,29 +14,29 @@ Crouch HK,-13,d+HK,False,False,False,normal,975,1000,600,600,16,23,0.0527,0.047,
 Flower Kick,-7,f+MK,False,False,False,normal,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,70,100
 Furiko Upper,-7,b+HP,False,False,False,normal,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,80,150
 Chin Buster Kick,2,df+HK,False,False,False,normal,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,80,150
-Sakura Otoshi,-3(9),MP+MK (VS1) > P,True,True,False,vskill,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,50,40
-Sakura Otoshi 2nd,-3(9),MP+MK (VS1) > P > P,True,True,False,vskill,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,50*45 (95),40*72 (112)
-Oukakyaku,-2(7),MP+MK (VS1) > K,True,True,False,vskill,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,80,100
+Sakura Otoshi,-3,MP+MK (VS1) > P,True,True,False,vskill,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,50,40
+Sakura Otoshi 2nd,-3,MP+MK (VS1) > P > P,True,True,False,vskill,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,95,112
+Oukakyaku,-2,MP+MK (VS1) > K,True,True,False,vskill,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,80,100
 Haru Hayate (attack),-7,MP+MK (VS2) (hold),False,True,False,vskill,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,70,100
 Floral Spin,-2,f+KKK,False,False,False,alpha,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,60,0
 Floral Side-Kick,-2,MK+HP,False,True,False,vbreak,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,60,0
 LP Hadoken,-8,qcf+LP,False,False,True,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,50,100
 MP Hadoken,-8,qcf+MP,False,False,True,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,50,100
 HP Hadoken,-8,qcf+HP,False,False,True,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,60,100
-Hadoken lvl 2,3,qcf+P (hold),False,False,True,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,40*40 (80),150
-EX Hadoken,1,qcf+PP,False,False,True,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,50*50 (100),150
+Hadoken lvl 2,3,qcf+P (hold),False,False,True,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,80,150
+EX Hadoken,1,qcf+PP,False,False,True,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,100,150
 Tengyo Hadoken,4,qcf+K,False,False,True,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,60,100
-Tengyo Hadoken lvl 2,1,qcf+K (hold),False,False,True,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,40*60 (100),150
-EX Tengyo Hadoken,-1,qcf+KK,False,False,True,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,40*60 (100),150
-LP Shouoken,-31,"f,d,df+LP",False,False,False,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,20*20*60 (100),100
-MP Shouoken,-32,"f,d,df+MP",False,False,False,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,15x3*5*60 (110),150
-HP Shouoken,-37,"f,d,df+HP",False,False,False,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,30x2*5x4*40 (120),150
-EX Shouoken,-45,"f,d,df+PP",False,False,False,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,10x3*30*10x4*50 (150),200
+Tengyo Hadoken lvl 2,1,qcf+K (hold),False,False,True,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,100,150
+EX Tengyo Hadoken,-1,qcf+KK,False,False,True,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,100,150
+LP Shouoken,-31,"f,d,df+LP",False,False,False,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,100,100
+MP Shouoken,-32,"f,d,df+MP",False,False,False,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,110,150
+HP Shouoken,-37,"f,d,df+HP",False,False,False,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,120,150
+EX Shouoken,-45,"f,d,df+PP",False,False,False,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,150,200
 LK Shunpukyaku,-2,qcb+LK,True,False,False,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,60,150
-MK Shunpukyaku,-6,qcb+MK,True,False,False,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,40*40 (70),50*100 (150)
-HK Shunpukyaku,-2,qcb+HK,True,False,False,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,30*30*40 (100),45*45*60 (150)
-EX Shunpukyaku,-2,qcb+KK,False,False,False,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,20x3*60 (120),150
-LK Airborne Shunpukyaku,-5(-1),qcb+LK (air),True,False,False,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,100,150
-MK Airborne Shunpukyaku,-6(-1),qcb+MK (air),True,False,False,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,100,150
-HK Airborne Shunpukyaku,-6(0),qcb+HK (air),True,False,False,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,100,150
-Sakura Rain,-23,"qcf,qcf+P",False,False,False,super,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,330 (250),0
+MK Shunpukyaku,-6,qcb+MK,True,False,False,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,70,150
+HK Shunpukyaku,-2,qcb+HK,True,False,False,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,100,150
+EX Shunpukyaku,-2,qcb+KK,False,False,False,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,120,150
+LK Airborne Shunpukyaku,-5,qcb+LK (air),True,False,False,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,100,150
+MK Airborne Shunpukyaku,-6,qcb+MK (air),True,False,False,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,100,150
+HK Airborne Shunpukyaku,-6,qcb+HK (air),True,False,False,special,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,100,150
+Sakura Rain,-23,"qcf,qcf+P",False,False,False,super,975,1000,600,600,16,23,0.0527,0.047,0.25,0.8,250,0

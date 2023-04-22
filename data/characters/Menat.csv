@@ -1,29 +1,29 @@
 Move,onBlock,plnCmd,airmove,followUp,projectile,moveType,health,stun,vgauge1,vgauge2,fDash,bDash,fWalk,bWalk,throwHurt,throwRange,Damage,Stun
 Stand LP,3,LP,False,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,20,70
-Stand LP orb,3(6),LP orb,False,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,30,70
+Stand LP orb,3,LP orb,False,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,30,70
 Stand MP,2,MP,False,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,50,100
-Stand MP orb,-8(-3),MP orb,False,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,60,100
+Stand MP orb,-8,MP orb,False,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,60,100
 Stand HP,-2,HP,False,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,80,150
-Stand HP orb,-10(-2),HP orb,False,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,80,150
+Stand HP orb,-10,HP orb,False,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,80,150
 Stand LK,1,LK,False,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,30,70
 Stand MK,-2,MK,False,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,60,100
 Stand HK,2,HK,False,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,80,150
 Stand HK orb,-8,HK orb,False,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,90,150
 Crouch LP,2,d+LP,False,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,20,70
-Crouch LP orb,2(5),d+LP orb,False,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,30,70
+Crouch LP orb,2,d+LP orb,False,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,30,70
 Crouch MP,2,d+MP,False,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,50,100
-Crouch MP orb,-3(2),d+MP orb,False,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,60,100
+Crouch MP orb,-3,d+MP orb,False,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,60,100
 Crouch HP,-3,d+HP,False,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,80,150
 Crouch HP orb,-5,d+HP orb,False,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,80,150
 Crouch LK,1,d+LK,False,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,20,70
 Crouch MK,2,d+MK,False,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,50,100
 Crouch HK,-11,d+HK,False,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,80,150
-Crouch HK orb,-16(-14),d+HK orb,False,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,90,150
+Crouch HK orb,-16,d+HK orb,False,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,90,150
 Judgement of Anubis,-10,df+MK,False,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,50,100
-Divine Retribution,-12 * -7,f+MK,False,True,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,30*30,50*50
-LK Khamun Kick,-6(5),d+LK or db+LK or df+LK (air),True,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,60,70
-MK Khamun Kick,-2(6),d+MK or db+MK or df+MK (air),True,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,60,70
-HK Khamun Kick,-2(6),d+HK or db+HK or df+HK (air),True,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,60,70
+Divine Retribution,-19,f+MK,False,True,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,60,100
+LK Khamun Kick,-6,d+LK or db+LK or df+LK (air),True,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,60,70
+MK Khamun Kick,-2,d+MK or db+MK or df+MK (air),True,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,60,70
+HK Khamun Kick,-2,d+HK or db+HK or df+HK (air),True,False,False,normal,950,950,900,600,20,24,0.04,0.032,0.25,0.85,60,70
 Soul Reflect: Kamal,-6,MP+MK (VS1),False,False,True,vskill,950,950,900,600,20,24,0.04,0.032,0.25,0.85,80,150
 Soul Reflect: Stella,-3,d+MP+MK (VS1),False,False,True,vskill,950,950,900,600,20,24,0.04,0.032,0.25,0.85,80,150
 Soul Reflect: Kamal (Orb),-18,MP+MK (VS1) (Orb),False,False,True,vskill,950,950,900,600,20,24,0.04,0.032,0.25,0.85,80,150
@@ -35,9 +35,9 @@ Soul Spark,3,qcf+K,False,False,True,special,950,950,900,600,20,24,0.04,0.032,0.2
 LP Soul Sphere,-8,qcf+LP,False,False,True,special,950,950,900,600,20,24,0.04,0.032,0.25,0.85,40,70
 MP Soul Sphere,-11,qcf+MP,False,False,True,special,950,950,900,600,20,24,0.04,0.032,0.25,0.85,40,70
 HP Soul Sphere,-4,qcf+HP,False,False,True,special,950,950,900,600,20,24,0.04,0.032,0.25,0.85,40,70
-LPMP Soul Sphere,3,qcf+LPMP,False,False,True,special,950,950,900,600,20,24,0.04,0.032,0.25,0.85,30*30 (60),0
-LPHP Soul Sphere,-10,qcf+LPHP,False,False,True,special,950,950,900,600,20,24,0.04,0.032,0.25,0.85,20*130 (150),0*200
+LPMP Soul Sphere,3,qcf+LPMP,False,False,True,special,950,950,900,600,20,24,0.04,0.032,0.25,0.85,60,0
+LPHP Soul Sphere,-10,qcf+LPHP,False,False,True,special,950,950,900,600,20,24,0.04,0.032,0.25,0.85,150,200
 MPHP Soul Sphere,-9,qcf+MPHP,False,False,True,special,950,950,900,600,20,24,0.04,0.032,0.25,0.85,40,70
-MPHP Soul Sphere Air,-9,qcf+MPHP Air,False,False,True,special,950,950,900,600,20,24,0.04,0.032,0.25,0.85,20*130 (150),0*200
-Soul Sphere Ankh,3+,qcf+P (recall),False,True,True,special,950,950,900,600,20,24,0.04,0.032,0.25,0.85,40,70
+MPHP Soul Sphere Air,-9,qcf+MPHP Air,False,False,True,special,950,950,900,600,20,24,0.04,0.032,0.25,0.85,150,200
+Soul Sphere Ankh,3,qcf+P (recall),False,True,True,special,950,950,900,600,20,24,0.04,0.032,0.25,0.85,40,70
 The Nefertem,-46,"qcf,qcf+P",False,False,False,super,950,950,900,600,20,24,0.04,0.032,0.25,0.85,330,0

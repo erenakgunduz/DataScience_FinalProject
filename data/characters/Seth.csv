@@ -4,7 +4,7 @@ Stand MP,-2,MP,False,False,False,normal,900,900,600,600,16,23,0.047,0.032,0.25,0
 Stand HP,-4,HP,False,False,False,normal,900,900,600,600,16,23,0.047,0.032,0.25,0.8,80,150
 Stand LK,3,LK,False,False,False,normal,900,900,600,600,16,23,0.047,0.032,0.25,0.8,40,70
 Stand MK,-2,MK,False,False,False,normal,900,900,600,600,16,23,0.047,0.032,0.25,0.8,70,100
-Stand HK,-6(-10),HK,False,False,False,normal,900,900,600,600,16,23,0.047,0.032,0.25,0.8,40*40 (80),70*80 (150)
+Stand HK,-6,HK,False,False,False,normal,900,900,600,600,16,23,0.047,0.032,0.25,0.8,80,150
 Crouch LP,2,d+LP,False,False,False,normal,900,900,600,600,16,23,0.047,0.032,0.25,0.8,30,70
 Crouch MP,2,d+MP,False,False,False,normal,900,900,600,600,16,23,0.047,0.032,0.25,0.8,60,100
 Crouch HP,-10,d+HP,False,False,False,normal,900,900,600,600,16,23,0.047,0.032,0.25,0.8,80,150
@@ -15,26 +15,26 @@ Step Shoot,-2,f+MP,False,False,False,normal,900,900,600,600,16,23,0.047,0.032,0.
 Hazard Blow,-4,f+HP,False,False,False,normal,900,900,600,600,16,23,0.047,0.032,0.25,0.8,90,150
 Head Hunter,-7,f+HK,False,False,False,normal,900,900,600,600,16,23,0.047,0.032,0.25,0.8,80,150
 Turning Slicer,-2,df+HK,False,False,False,normal,900,900,600,600,16,23,0.047,0.032,0.25,0.8,90,150
-Twin Claw,-12,MP > HP,False,True,False,normal,900,900,600,600,16,23,0.047,0.032,0.25,0.8,50*54 (104),100*90 (190)
-Shoot Slicer,-8,f+MP > HK,False,True,False,normal,900,900,600,600,16,23,0.047,0.032,0.25,0.8,60*54 (114),100*72 (172)
-Fatal Rush,-12,f+MP > HK > HP,False,True,False,normal,900,900,600,600,16,23,0.047,0.032,0.25,0.8,60*54*56 (170),100*72*80 (252)
+Twin Claw,-12,MP > HP,False,True,False,normal,900,900,600,600,16,23,0.047,0.032,0.25,0.8,104,190
+Shoot Slicer,-8,f+MP > HK,False,True,False,normal,900,900,600,600,16,23,0.047,0.032,0.25,0.8,114,172
+Fatal Rush,-12,f+MP > HK > HP,False,True,False,normal,900,900,600,600,16,23,0.047,0.032,0.25,0.8,170,252
 Tanden Maneuver,-3,HP+HK (VT2 Activation),False,False,True,vtrigger,900,900,600,600,16,23,0.047,0.032,0.25,0.8,25,30
 Tanden Explode,8,HP+HK (VT2 Explosion),False,True,True,vtrigger,900,900,600,600,16,23,0.047,0.032,0.25,0.8,50,50
 Tanden Engine,-2,MP+MK (VS1),False,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,10,0
-Tanden Install,-16,MP+MK > P (VS1),False,True,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,10*54 (64),0
-Install Art | [Abigail] Abigail Punch,-16,MP+MK (Abigail),False,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,120(140),120(150)
-Install Art | [Akuma] Sekia Goshoha,-4,MP+MK (Akuma),False,False,True,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,30x2*40 (100),50x3 (150)
+Tanden Install,-16,MP+MK > P (VS1),False,True,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,64,0
+Install Art | [Abigail] Abigail Punch,-16,MP+MK (Abigail),False,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,140,150
+Install Art | [Akuma] Sekia Goshoha,-4,MP+MK (Akuma),False,False,True,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,100,150
 Install Art | [Alex] Air Stampede,-5,MP+MK (Alex),False,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,120,200
 Install Art | [Birdie] Bull Head,-10,MP+MK (Birdie),False,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,110,150
 Install Art | [Blanka] Rolling Attack,-21,MP+MK (Blanka),True,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,100,150
 Install Art | [Boxer] Turn Punch,-2,MP+MK (Boxer),False,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,100,120
-Install Art | [Cammy] Spiral Arrow,-12,MP+MK (Cammy),False,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,30*70 (100),50*100 (150)
-Install Art | [Chun-Li] Hyakuretsukyaku ,-8,MP+MK (Chun-Li),False,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,15x4 (60),20x4 (80)
+Install Art | [Cammy] Spiral Arrow,-12,MP+MK (Cammy),False,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,100,150
+Install Art | [Chun-Li] Hyakuretsukyaku ,-8,MP+MK (Chun-Li),False,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,60,80
 Install Art | [Cody] Zonk Knuckle,-2,MP+MK (Cody),False,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,80,100
-Install Art | [Dan] Dankukyaku,-4,MP+MK (Dan),False,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,20*30*40 (90),20*50*50 (120)
+Install Art | [Dan] Dankukyaku,-4,MP+MK (Dan),False,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,90,120
 Install Art | [Dhalsim] Yoga Flame,-5,MP+MK (Dhalsim),False,False,True,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,70,150
 Install Art | [Ed] Psycho Upper,-16,MP+MK (Ed),False,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,100,150
-Install Art | [E.Honda] Sumo Headbutt,-4,MP+MK (E.Honda),False,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,120(100),150(100)
+Install Art | [E.Honda] Sumo Headbutt,-4,MP+MK (E.Honda),False,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,100,100
 Install Art | [Falke] Psycho Kugel,3,MP+MK (Falke),False,False,True,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,80,120
 Install Art | [F.A.N.G] Ryobenda,-10,MP+MK (F.A.N.G),False,False,True,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,40,100
 Install Art | [F.A.N.G] Ryobenda Trap,10,MP+MK (F.A.N.G) (Trap),False,False,True,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,40,100
@@ -45,49 +45,49 @@ Install Art | [Kage] Ryusokyaku ,3,MP+MK (Kage),False,False,False,vskill,900,900
 Install Art | [Karin] Just Frame Tenko,-10,MP+MK (Karin Just Frame Tenko),False,True,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,70,100
 Install Art | [Karin] Late Tenko,-10,MP+MK (Karin Late Tenko),False,True,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,60,100
 Install Art | [Karin] Orochi,-2,MP+MK (Karin Orochi),False,True,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,80,150
-Install Art | [Ken] Shoryuken,-34,MP+MK (Ken),False,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,70*50*20 (140),50x3 (150)
+Install Art | [Ken] Shoryuken,-34,MP+MK (Ken),False,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,140,150
 Install Art | [Kolin] Silver Edge,-10,MP+MK (Kolin Silver Edge),False,True,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,100,150
 Install Art | [Laura] Thunder Clap lvl 1,-5,MP+MK (Laura Fireball lvl 1),False,False,True,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,60,60
-Install Art | [Laura] Thunder Clap lvl 2,0,MP+MK (Laura Fireball lvl 2),False,False,True,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,60*30 (90),60*30 (90)
-Install Art | [Laura] Thunder Clap lvl 3,18,MP+MK (Laura Fireball lvl 3),False,False,True,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,60*30*30 (120),60*30*30 (120)
+Install Art | [Laura] Thunder Clap lvl 2,0,MP+MK (Laura Fireball lvl 2),False,False,True,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,90,90
+Install Art | [Laura] Thunder Clap lvl 3,18,MP+MK (Laura Fireball lvl 3),False,False,True,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,120,120
 Install Art | [Lucia] Fire Spinner,-4,MP+MK (Lucia),False,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,80,100
-Install Art | [M. Bison] Double Knee Press,-2,MP+MK (Dictator),False,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,50*50 (100),50*100 (150)
+Install Art | [M. Bison] Double Knee Press,-2,MP+MK (Dictator),False,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,100,150
 Install Art | [Menat] Soul Sphere,-8,MP+MK (Menat Soul Sphere),False,False,True,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,40,70
-Install Art | [Menat] Soul Sphere: Ankh,1+,MP+MK (Menat Soul Sphere: Ankh),False,True,True,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,40,70
+Install Art | [Menat] Soul Sphere: Ankh,1,MP+MK (Menat Soul Sphere: Ankh),False,True,True,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,40,70
 Install Art | [Nash] Sonic Scythe,-10,MP+MK (Nash),False,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,100,100
 Install Art | [Necalli] The Disc's Guidance,-6,MP+MK (Necalli Lunge),True,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,120,150
-Install Art | [Necalli] The Disc's Guidance (V-Trigger),-6,MP+MK (Necalli Lunge (V-Trigger)),True,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,20*120 (140),150
+Install Art | [Necalli] The Disc's Guidance (V-Trigger),-6,MP+MK (Necalli Lunge (V-Trigger)),True,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,140,150
 Install Art | [Poison] Love Me Tender,-4,MP+MK (Poison),True,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,70,100
 Install Art | [Rashid] Eagle Spike,-20,MP+MK (Rashid),True,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,100,150
 Install Art | [R.Mika] Shooting Peach,-12,MP+MK (R.Mika),True,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,100,150
 Install Art | [Ryu] Hadoken,-6,MP+MK (Ryu),False,False,True,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,60,100
-Install Art | [Sagat] Tiger Knee,-7(3),MP+MK (Sagat),True,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,100,150
-Install Art | [Sakura] Shunpukyaku ,-2,MP+MK (Sakura),True,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,30x2*40 (100),45x2*60 (150)
+Install Art | [Sagat] Tiger Knee,-7,MP+MK (Sagat),True,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,100,150
+Install Art | [Sakura] Shunpukyaku ,-2,MP+MK (Sakura),True,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,100,150
 Install Art | [Seth] Brutal Impact,-13,MP+MK (Seth),False,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,120,150
 Install Art | [Urien] Chariot Tackle,-5,MP+MK (Urien),False,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,70,150
-Install Art | [Vega] Crimson Terror,-6,MP+MK (Claw),False,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,20*60 (80),20*130 (150)
+Install Art | [Vega] Crimson Terror,-6,MP+MK (Claw),False,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,80,150
 Install Art | [Zeku - Old] Bushin Gram - Teki,-14,MP+MK (Zeku - Old),False,False,True,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,70,100
-Install Art | [Zeku - Old] Bushin Gram - Teki (Projectile),-4(7),MP+MK (Zeku - Old) (Gram Projectile),False,False,True,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,70,100
+Install Art | [Zeku - Old] Bushin Gram - Teki (Projectile),-4,MP+MK (Zeku - Old) (Gram Projectile),False,False,True,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,70,100
 Install Art | [Zeku - Young] Hozanto,-6,MP+MK (Zeku - Young),False,False,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,70,150
-Hecatoncheires Glide,-2,MP+MK (VS2) > qcf+P,False,True,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,10x7*30 (100),10x7*50 (120)
-Mad Spiral,-39,"MP+MK (VS2) > f,df,f+P",False,True,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,20*10x7*30 (120),0*0x7*150 (150)
-Spin Pendulum,-9,MP+MK (VS2) > qcb+K,False,True,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,10x5*30 (80),10x5*70 (120)
+Hecatoncheires Glide,-2,MP+MK (VS2) > qcf+P,False,True,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,100,120
+Mad Spiral,-39,"MP+MK (VS2) > f,df,f+P",False,True,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,120,150
+Spin Pendulum,-9,MP+MK (VS2) > qcb+K,False,True,False,vskill,900,900,600,600,16,23,0.047,0.032,0.25,0.8,80,120
 Calamity Shutter,-2,f+PPP,False,False,False,alpha,900,900,600,600,16,23,0.047,0.032,0.25,0.8,60,0
 Hell's Punishment,-2,MK+HP,False,True,False,vbreak,900,900,600,600,16,23,0.047,0.032,0.25,0.8,60,0
-LP Hecatoncheires,-4,qcf+LP,False,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,10x3*50 (80),20x3*60 (120)
-MP Hecatoncheires,-4,qcf+MP,False,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,10x5*40 (90),10x5*70 (120)
-HP Hecatoncheires,-2,qcf+HP,False,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,10x7*30 (100),10x7*50 (120)
-EX Hecatoncheires,-2,qcf+PP,False,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,5x6*20*30*40 (120),150
-LP Mad Cradle,-25,"f,d,df+LP",False,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,90(60),150(100)
-MP Mad Cradle,-33,"f,d,df+MP",False,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,110(60),150(100)
-HP Mad Cradle,-41,"f,d,df+HP",False,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,120(60),150
-EX Mad Cradle,-35(-40),"f,d,df+PP",False,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,60*20x3*30 (150),150
+LP Hecatoncheires,-4,qcf+LP,False,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,80,120
+MP Hecatoncheires,-4,qcf+MP,False,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,90,120
+HP Hecatoncheires,-2,qcf+HP,False,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,100,120
+EX Hecatoncheires,-2,qcf+PP,False,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,120,150
+LP Mad Cradle,-25,"f,d,df+LP",False,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,60,100
+MP Mad Cradle,-33,"f,d,df+MP",False,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,60,100
+HP Mad Cradle,-41,"f,d,df+HP",False,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,60,150
+EX Mad Cradle,-35,"f,d,df+PP",False,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,150,150
 LK Cruel Disaster,-8,qcb+LK,False,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,80,100
 MK Cruel Disaster,-4,qcb+MK,False,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,90,120
 HK Cruel Disaster,2,qcb+HK,False,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,100,150
-EX Cruel Disaster,-12,qcb+KK,False,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,60*40 (100),150
-LK Annihilate Sword,-4(0),qcb+LK (air),True,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,70,150
-MK Annihilate Sword,0(-5),qcb+MK (air),True,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,80,150
-HK Annihilate Sword,-5(0),qcb+HK (air),True,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,90,150
-EX Annihilate Sword,-7(-1),qcb+KK (air),True,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,50*80 (130),50*150 (200)
+EX Cruel Disaster,-12,qcb+KK,False,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,100,150
+LK Annihilate Sword,-4,qcb+LK (air),True,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,70,150
+MK Annihilate Sword,0,qcb+MK (air),True,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,80,150
+HK Annihilate Sword,-5,qcb+HK (air),True,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,90,150
+EX Annihilate Sword,-7,qcb+KK (air),True,False,False,special,900,900,600,600,16,23,0.047,0.032,0.25,0.8,130,200
 Tanden Destruction,-30,"qcf,qcf+P",False,False,False,super,900,900,600,600,16,23,0.047,0.032,0.25,0.8,330,0

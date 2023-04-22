@@ -18,14 +18,14 @@ Psycho Swing,-6,MP+MK (VS2),False,False,False,vskill,1025,1050,600,900,16,23,0.0
 Psycho Swing (hold),-2,MP+MK (VS2) (hold),False,False,False,vskill,1025,1050,600,900,16,23,0.047,0.034,0.25,0.8,80,120
 Psycho Smash,-6,d+MP+MK (VS2),False,False,False,vskill,1025,1050,600,900,16,23,0.047,0.034,0.25,0.8,70,100
 Psycho Smash (hold),3,d+MP+MK (VS2) (hold),False,False,False,vskill,1025,1050,600,900,16,23,0.047,0.034,0.25,0.8,90,120
-Psycho Cannon,~48,HP+HK (VT1),False,False,True,vtrigger,1025,1050,600,900,16,23,0.047,0.034,0.25,0.8,20x7 (140),25x7 (175)
+Psycho Cannon,48,HP+HK (VT1),False,False,True,vtrigger,1025,1050,600,900,16,23,0.047,0.034,0.25,0.8,140,175
 Psycho Split,-2,MK+HP,False,True,False,vbreak,1025,1050,600,900,16,23,0.047,0.034,0.25,0.8,60,0
 Psycho Knuckle,-2,HP (hold),False,False,False,special,1025,1050,600,900,16,23,0.047,0.034,0.25,0.8,100,150
 Psycho Spark,-2,f+MP,False,False,False,special,1025,1050,600,900,16,23,0.047,0.034,0.25,0.8,50,80
 Psycho Shot,-4,P (after f+MP),False,True,True,special,1025,1050,600,900,16,23,0.047,0.034,0.25,0.8,50,70
-EX Psycho Shot,8,PP (after f+MP),False,True,True,special,1025,1050,600,900,16,23,0.047,0.034,0.25,0.8,40*60 (100),0*150
+EX Psycho Shot,8,PP (after f+MP),False,True,True,special,1025,1050,600,900,16,23,0.047,0.034,0.25,0.8,100,150
 Psycho Upper,-16,PP,False,False,False,special,1025,1050,600,900,16,23,0.047,0.034,0.25,0.8,120,150
-EX Psycho Upper,-20,PPP,False,False,False,special,1025,1050,600,900,16,23,0.047,0.034,0.25,0.8,80*60 (140),150*50 (200)
-Psycho Flicker,-2,P (mash),False,False,False,special,1025,1050,600,900,16,23,0.047,0.034,0.25,0.8,20*20*40 (80),50*50*50 (150)
-Psycho Rising,-38,KK,False,False,False,special,1025,1050,600,900,16,23,0.047,0.034,0.25,0.8,30*20 (50),50*50 (100)
+EX Psycho Upper,-20,PPP,False,False,False,special,1025,1050,600,900,16,23,0.047,0.034,0.25,0.8,140,200
+Psycho Flicker,-2,P (mash),False,False,False,special,1025,1050,600,900,16,23,0.047,0.034,0.25,0.8,80,150
+Psycho Rising,-38,KK,False,False,False,special,1025,1050,600,900,16,23,0.047,0.034,0.25,0.8,50,100
 Psycho Barrage,-21,"qcf,qcf+P",False,False,False,super,1025,1050,600,900,16,23,0.047,0.034,0.25,0.8,340,0

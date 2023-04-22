@@ -12,30 +12,30 @@ Crouch LK,2,d+LK,False,False,False,normal,1000,1000,600,600,17,22,0.054,0.035,0.
 Crouch MK,-3,d+MK,False,False,False,normal,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,50,100
 Crouch HK,-13,d+HK,False,False,False,normal,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,90,150
 Crouch HK late hit,-10,d+HK,False,False,False,normal,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,60,150
-Kubi Kudaki,-7,f+HP,False,False,False,normal,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,40*40 (80),50*50 (100)
-Kaeshi Saiha,-12,HP > HP,False,True,False,normal,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,80*54 (134),150*90 (240)
-Kaeshi Urasaiha,-10,d+HP > d+HP,False,True,False,normal,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,80*54 (134),150*90 (240)
-Bushin Soukosou,-6,MP > HP,False,True,False,normal,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,60*45 (105),100*72 (172)
-Bushin Gokusanken - Ni,-7,LP > MP,False,True,False,normal,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,30*45 (75),70*72 (142)
-Bushin Gokusanken - San,-11,LP > MP > HP,False,True,False,normal,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,30*45*24*32 (131),70*72*40*40 (222)
-Bushin Gokusanken - Shu,-16,LP > MP > HP > HK,False,True,False,normal,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,30*45*24*32*56 (187),70*72*40*40*70 (292)
-Tenpo Kari,-7,MP+MK (VS1),False,False,False,vskill,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,50*40,150
-Kuchiyose - Bii,17(20),MP+MK (VS2),False,False,False,vskill,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,60,80
+Kubi Kudaki,-7,f+HP,False,False,False,normal,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,80,100
+Kaeshi Saiha,-12,HP > HP,False,True,False,normal,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,134,240
+Kaeshi Urasaiha,-10,d+HP > d+HP,False,True,False,normal,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,134,240
+Bushin Soukosou,-6,MP > HP,False,True,False,normal,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,105,172
+Bushin Gokusanken - Ni,-7,LP > MP,False,True,False,normal,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,75,142
+Bushin Gokusanken - San,-11,LP > MP > HP,False,True,False,normal,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,131,222
+Bushin Gokusanken - Shu,-16,LP > MP > HP > HK,False,True,False,normal,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,187,292
+Tenpo Kari,-7,MP+MK (VS1),False,False,False,vskill,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,90,150
+Kuchiyose - Bii,17,MP+MK (VS2),False,False,False,vskill,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,60,80
 Bushin Seiryukyaku,-2,HP+HK attack (VT1),False,False,False,vtrigger,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,160,200
-Karura Tenzan,-28,HP+HK (VT2),False,False,False,vtrigger,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,40*20x2*60 (140),150
-Karura Tenzan (Secondary),-28,HP+HK (VT2) (secondary),False,False,False,vtrigger,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,40*20x2*60 (140),100
+Karura Tenzan,-28,HP+HK (VT2),False,False,False,vtrigger,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,140,150
+Karura Tenzan (Secondary),-28,HP+HK (VT2) (secondary),False,False,False,vtrigger,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,140,100
 Toushi,-2,f+PPP,False,False,False,alpha,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,40,0
 Habakiri,-2,MK+HP,False,True,False,vbreak,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,60,0
 LP Bushin Sho,-4,qcf+LP,False,False,False,special,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,60,150
-MP Bushin Sho,-2,qcf+MP,False,False,False,special,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,50*40,100*50
-HP Bushin Sho,2,qcf+HP,False,False,False,special,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,30*30*60,50*50*100
+MP Bushin Sho,-2,qcf+MP,False,False,False,special,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,90,150
+HP Bushin Sho,2,qcf+HP,False,False,False,special,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,120,200
 EX Bushin Sho,2,qcf+PP,False,False,False,special,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,80,150
 LP Hozanto,-6,qcb+LP,False,False,False,special,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,60,100
 MP Hozanto,-6,qcb+MP,False,False,False,special,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,70,100
 HP Hozanto,-6,qcb+HP,False,False,False,special,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,90,100
-EX Hozanto,-6,qcb+PP,False,False,False,special,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,50*50 (100),150
+EX Hozanto,-6,qcb+PP,False,False,False,special,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,100,150
 Ashikari,-21,qcf+K > MK,False,True,False,special,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,100,120
-Gekkou,-5,qcf+K > HK,False,True,False,special,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,70*50 (120),100*50 (150)
+Gekkou,-5,qcf+K > HK,False,True,False,special,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,120,150
 Ashikari EX,-21,qcf+KK > MK,False,True,False,special,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,130,200
-Gekkou EX,-2,qcf+KK > HK,False,True,False,special,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,100*50 (150),100x2 (200)
+Gekkou EX,-2,qcf+KK > HK,False,True,False,special,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,150,200
 Batsuzan Gaisei,-33,"qcf,qcf+K",False,False,False,super,1000,1000,600,600,17,22,0.054,0.035,0.3,0.8,340,0
