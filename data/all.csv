@@ -153,7 +153,7 @@
 "Balrog","Stand HK",3,"HK","False","False","False","normal",1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,80,150
 "Balrog","Crouch LP",3,"d+LP","False","False","False","normal",1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,30,70
 "Balrog","Crouch MP",2,"d+MP","False","False","False","normal",1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,60,100
-"Balrog","Crouch HP",-5,"d+HP","False","False","False","normal",1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,80,150
+"Balrog","Crouch HP",-5,"d+HP","False","False","False","normal",1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,85,150
 "Balrog","Crouch LK",1,"d+LK","False","False","False","normal",1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,20,70
 "Balrog","Crouch MK",-2,"d+MK","False","False","False","normal",1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,60,100
 "Balrog","Crouch HK",-14,"d+HK","False","False","False","normal",1025,1050,900,600,17,24,0.048,0.03,0.35,0.85,100,150
@@ -349,7 +349,7 @@
 "Chun-Li","Hoyokusen",-20,"qcf,qcf+K","False","False","False","super",975,1000,600,900,15,21,0.0535,0.034,0.3511,0.8461,330,0
 "Cody","Stand LP",1,"LP","False","False","False","normal",1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,30,70
 "Cody","Stand MP",0,"MP","False","False","False","normal",1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,60,100
-"Cody","Stand HP",-9,"HP","False","False","False","normal",1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,120,170
+"Cody","Stand HP",-10,"HP","False","False","False","normal",1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,120,170
 "Cody","Stand LK",3,"LK","False","False","False","normal",1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,40,70
 "Cody","Stand MK",3,"MK","False","False","False","normal",1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,60,100
 "Cody","Stand HK",-4,"HK","False","False","False","normal",1025,1050,600,600,17,23,0.047,0.0289,0.25,0.8,80,150
@@ -465,10 +465,10 @@
 "Dhalsim","Yoga Sunburst lvl 3",39,"qcf,qcf+P (can hold)","False","False","True","super",950,950,600,600,21,25,0.022,0.02,0.25,0.85,400,0
 "E.Honda","Stand LP",3,"LP","False","False","False","normal",1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,40,90
 "E.Honda","Stand MP",2,"MP","False","False","False","normal",1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,70,120
-"E.Honda","Stand HP",-7,"HP","False","False","False","normal",1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,80,150
+"E.Honda","Stand HP",-7,"HP","False","False","False","normal",1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,85,150
 "E.Honda","Stand LK",2,"LK","False","False","False","normal",1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,40,90
 "E.Honda","Stand MK",4,"MK","False","False","False","normal",1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,60,120
-"E.Honda","Stand HK",2,"HK","False","False","False","normal",1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,80,150
+"E.Honda","Stand HK",-1,"HK","False","False","False","normal",1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,85,150
 "E.Honda","Crouch LP",2,"d+LP","False","False","False","normal",1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,40,90
 "E.Honda","Crouch MP",2,"d+MP","False","False","False","normal",1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,60,120
 "E.Honda","Crouch HP",-5,"d+HP","False","False","False","normal",1050,1075,900,600,20,24,0.044,0.027,0.25,0.9,100,150
@@ -684,7 +684,7 @@
 "Guile","Crouch HP",-4,"d+HP","False","False","False","normal",975,975,900,600,18,25,0.052,0.033,0.25,0.8,90,150
 "Guile","Crouch LK",0,"d+LK","False","False","False","normal",975,975,900,600,18,25,0.052,0.033,0.25,0.8,20,70
 "Guile","Crouch MK",-4,"d+MK","False","False","False","normal",975,975,900,600,18,25,0.052,0.033,0.25,0.8,60,100
-"Guile","Crouch HK",-13,"d+HK","False","False","False","normal",975,975,900,600,18,25,0.052,0.033,0.25,0.8,70,100
+"Guile","Crouch HK",-13,"d+HK","False","False","False","normal",975,975,900,600,18,25,0.052,0.033,0.25,0.8,80,125
 "Guile","Guile High Kick",-3,"df+HK","False","False","False","normal",975,975,900,600,18,25,0.052,0.033,0.25,0.8,80,150
 "Guile","Knee Bazooka",-3,"b or f+LK","False","False","False","normal",975,975,900,600,18,25,0.052,0.033,0.25,0.8,50,100
 "Guile","Rolling Sobat",-4,"b or f+MK","False","False","False","normal",975,975,900,600,18,25,0.052,0.033,0.25,0.8,60,100
@@ -764,17 +764,17 @@
 "Ibuki","HP Kunai Ikkinage",-1,"Hold + Release HP","False","False","True","special",925,950,900,600,16,21,0.052,0.034,0.25,0.8,120,120
 "Ibuki","Kachofugetsu",-20,"qcf,qcf+K","False","False","False","super",925,950,900,600,16,21,0.052,0.034,0.25,0.8,340,356
 "Juri","Stand LP",2,"LP","False","False","False","normal",975,1000,600,600,16,24,0.05,0.033,0.25,0.8,30,70
-"Juri","Stand MP",2,"MP","False","False","False","normal",975,1000,600,600,16,24,0.05,0.033,0.25,0.8,60,100
-"Juri","Stand HP",-3,"HP","False","False","False","normal",975,1000,600,600,16,24,0.05,0.033,0.25,0.8,80,150
+"Juri","Stand MP",-1,"MP","False","False","False","normal",975,1000,600,600,16,24,0.05,0.033,0.25,0.8,60,100
+"Juri","Stand HP",-6,"HP","False","False","False","normal",975,1000,600,600,16,24,0.05,0.033,0.25,0.8,80,150
 "Juri","Stand LK",1,"LK","False","False","False","normal",975,1000,600,600,16,24,0.05,0.033,0.25,0.8,30,70
-"Juri","Stand MK",-4,"MK","False","False","False","normal",975,1000,600,600,16,24,0.05,0.033,0.25,0.8,70,100
-"Juri","Stand HK",-4,"HK","False","False","False","normal",975,1000,600,600,16,24,0.05,0.033,0.25,0.8,80,150
+"Juri","Stand MK",-7,"MK","False","False","False","normal",975,1000,600,600,16,24,0.05,0.033,0.25,0.8,70,100
+"Juri","Stand HK",-7,"HK","False","False","False","normal",975,1000,600,600,16,24,0.05,0.033,0.25,0.8,80,150
 "Juri","Crouch LP",2,"d+LP","False","False","False","normal",975,1000,600,600,16,24,0.05,0.033,0.25,0.8,30,70
-"Juri","Crouch MP",0,"d+MP","False","False","False","normal",975,1000,600,600,16,24,0.05,0.033,0.25,0.8,60,100
-"Juri","Crouch HP",-5,"d+HP","False","False","False","normal",975,1000,600,600,16,24,0.05,0.033,0.25,0.8,90,150
+"Juri","Crouch MP",-1,"d+MP","False","False","False","normal",975,1000,600,600,16,24,0.05,0.033,0.25,0.8,60,100
+"Juri","Crouch HP",-8,"d+HP","False","False","False","normal",975,1000,600,600,16,24,0.05,0.033,0.25,0.8,90,150
 "Juri","Crouch LK",0,"d+LK","False","False","False","normal",975,1000,600,600,16,24,0.05,0.033,0.25,0.8,20,70
-"Juri","Crouch MK",-2,"d+MK","False","False","False","normal",975,1000,600,600,16,24,0.05,0.033,0.25,0.8,50,100
-"Juri","Crouch HK",-12,"d+HK","False","False","False","normal",975,1000,600,600,16,24,0.05,0.033,0.25,0.8,100,150
+"Juri","Crouch MK",-5,"d+MK","False","False","False","normal",975,1000,600,600,16,24,0.05,0.033,0.25,0.8,50,100
+"Juri","Crouch HK",-15,"d+HK","False","False","False","normal",975,1000,600,600,16,24,0.05,0.033,0.25,0.8,100,150
 "Juri","Senkaikyaku",-7,"f+MK","False","False","False","normal",975,1000,600,600,16,24,0.05,0.033,0.25,0.8,60,100
 "Juri","Korenzan",-2,"b+HK","False","False","False","normal",975,1000,600,600,16,24,0.05,0.033,0.25,0.8,80,150
 "Juri","Kyoretsushu",-12,"s.MP > b or f.HP","False","True","False","normal",975,1000,600,600,16,24,0.05,0.033,0.25,0.8,116,190
@@ -1421,7 +1421,7 @@
 "Sagat","Stand HP",-2,"HP","False","False","False","normal",1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,90,150
 "Sagat","Stand LK",1,"LK","False","False","False","normal",1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,40,70
 "Sagat","Stand MK",-2,"MK","False","False","False","normal",1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,70,100
-"Sagat","Stand HK",-1,"HK","False","False","False","normal",1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,80,150
+"Sagat","Stand HK",-3,"HK","False","False","False","normal",1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,80,150
 "Sagat","Crouch LP",1,"d+LP","False","False","False","normal",1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,30,70
 "Sagat","Crouch MP",1,"d+MP","False","False","False","normal",1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,65,100
 "Sagat","Crouch HP",-1,"d+HP","False","False","False","normal",1025,1050,900,600,20,24,0.0365,0.0277,0.25,0.85,90,150
@@ -1503,7 +1503,7 @@
 "Seth","Stand HP",-4,"HP","False","False","False","normal",900,900,600,600,16,23,0.047,0.032,0.25,0.8,80,150
 "Seth","Stand LK",3,"LK","False","False","False","normal",900,900,600,600,16,23,0.047,0.032,0.25,0.8,40,70
 "Seth","Stand MK",-2,"MK","False","False","False","normal",900,900,600,600,16,23,0.047,0.032,0.25,0.8,70,100
-"Seth","Stand HK",-6,"HK","False","False","False","normal",900,900,600,600,16,23,0.047,0.032,0.25,0.8,80,150
+"Seth","Stand HK",-10,"HK","False","False","False","normal",900,900,600,600,16,23,0.047,0.032,0.25,0.8,80,150
 "Seth","Crouch LP",2,"d+LP","False","False","False","normal",900,900,600,600,16,23,0.047,0.032,0.25,0.8,30,70
 "Seth","Crouch MP",2,"d+MP","False","False","False","normal",900,900,600,600,16,23,0.047,0.032,0.25,0.8,60,100
 "Seth","Crouch HP",-10,"d+HP","False","False","False","normal",900,900,600,600,16,23,0.047,0.032,0.25,0.8,80,150
@@ -1586,7 +1586,7 @@
 "Seth","HK Cruel Disaster",2,"qcb+HK","False","False","False","special",900,900,600,600,16,23,0.047,0.032,0.25,0.8,100,150
 "Seth","EX Cruel Disaster",-12,"qcb+KK","False","False","False","special",900,900,600,600,16,23,0.047,0.032,0.25,0.8,100,150
 "Seth","LK Annihilate Sword",-4,"qcb+LK (air)","True","False","False","special",900,900,600,600,16,23,0.047,0.032,0.25,0.8,70,150
-"Seth","MK Annihilate Sword",0,"qcb+MK (air)","True","False","False","special",900,900,600,600,16,23,0.047,0.032,0.25,0.8,80,150
+"Seth","MK Annihilate Sword",-5,"qcb+MK (air)","True","False","False","special",900,900,600,600,16,23,0.047,0.032,0.25,0.8,80,150
 "Seth","HK Annihilate Sword",-5,"qcb+HK (air)","True","False","False","special",900,900,600,600,16,23,0.047,0.032,0.25,0.8,90,150
 "Seth","EX Annihilate Sword",-7,"qcb+KK (air)","True","False","False","special",900,900,600,600,16,23,0.047,0.032,0.25,0.8,130,200
 "Seth","Tanden Destruction",-30,"qcf,qcf+P","False","False","False","super",900,900,600,600,16,23,0.047,0.032,0.25,0.8,330,0
@@ -1607,7 +1607,7 @@
 "Urien","Stand HK (hold) (crouch)",2,"HK (hold)","False","False","False","normal",1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,100,150
 "Urien","Crouch LP",1,"d+LP","False","False","False","normal",1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,30,70
 "Urien","Crouch MP",0,"d+MP","False","False","False","normal",1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,60,100
-"Urien","Crouch HP",-9,"d+HP","False","False","False","normal",1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,90,150
+"Urien","Crouch HP",-17,"d+HP","False","False","False","normal",1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,90,150
 "Urien","Crouch LK",1,"d+LK","False","False","False","normal",1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,20,70
 "Urien","Crouch MK",-2,"d+MK","False","False","False","normal",1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,60,100
 "Urien","Crouch HK",-14,"d+HK","False","False","False","normal",1025,1050,900,600,16,25,0.0435,0.03,0.25,0.85,100,150
@@ -1697,9 +1697,9 @@
 "Vega","Bloody Rain",-25,"qcf,qcf+P or qcb,qcb+P","False","False","False","super",1025,975,600,600,17,21,0.055,0.045,0.4087,0.8557,330,0
 "Zangief","Stand LP",3,"LP","False","False","False","normal",1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,40,70
 "Zangief","Stand MP",2,"MP","False","False","False","normal",1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,70,100
-"Zangief","Stand HP",0,"HP","False","False","False","normal",1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,100,150
+"Zangief","Stand HP",-4,"HP","False","False","False","normal",1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,100,150
 "Zangief","Stand HP (hold)",2,"HP (hold)","False","False","False","normal",1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,130,200
-"Zangief","Stand HP (release)",0,"HP (release)","False","False","False","normal",1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,100,150
+"Zangief","Stand HP (release)",-4,"HP (release)","False","False","False","normal",1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,100,150
 "Zangief","Stand LK",-3,"LK","False","False","False","normal",1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,30,70
 "Zangief","Stand MK",-3,"MK","False","False","False","normal",1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,70,100
 "Zangief","Stand HK",-2,"HK","False","False","False","normal",1075,1100,900,900,25,25,0.0305,0.0235,0.4,0.9,90,150
