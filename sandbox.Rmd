@@ -1,7 +1,7 @@
 ---
 title: "Sandbox"
 author: "Eren Akgunduz"
-date: "22 April 2023"
+date: "25 April 2023"
 output:
   pdf_document: default
 ---
@@ -10,30 +10,83 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## The data
+# The data, wrangled and cleaned/tidied
 
 ```{r, message=FALSE}
 library(tidyverse)
+df <- read.csv("data/all.csv", stringsAsFactors = FALSE)
 ```
 
-### Make sure it's clean
+## Make sure it's clean
 
 ```{r}
-df <- read.csv("data/all.csv", stringsAsFactors = FALSE)
 # Check for missing values
 na_rows <- df[!complete.cases(df), ]
 na_rows
-nrow(df)
-ncol(df)
 ```
 
-### KDE
+## Validate before we really begin
 
 ```{r}
-ggplot(df, aes(onBlock)) +
-  geom_density()
-ggplot(df, aes(Damage)) +
-  geom_density()
-ggplot(df, aes(Stun)) +
-  geom_density()
+c(nrow(df), ncol(df))
+dim(df) # same thing
+summary(df)
+str(df)
 ```
+\
+
+# Module 1: Information (description)
+
+Descriptive stats, here mainly seeking to answer the question: how do the distributions look?
+
+## All characters
+
+```{r, message=FALSE}
+library(tidyverse)
+df <- read.csv("data/all.csv", stringsAsFactors = FALSE)
+```
+
+### Character numerical features summary (averages)
+
+```{r}
+colMeans(df[9:18])
+```
+
+### Attack categorical features summary tables
+
+```{r}
+# define the function to create each summary table
+summary_tb <- function(feature) {
+  df %>%
+    group_by({{ feature }}) %>%
+    summarise(
+      count = n(),
+      average_damage = mean(Damage),
+      average_stun = mean(Stun)
+    ) %>%
+    arrange(desc(average_damage))
+}
+```
+
+```{r}
+# call for each feature with its name as argument
+summary_tb(plnCmd)
+summary_tb(moveType)
+summary_tb(airmove)
+summary_tb(followUp)
+summary_tb(projectile)
+```
+
+### Kernel density estimates (KDEs)
+
+```{r}
+# user will be able to adjust bandwidth with slider
+ggplot(df, aes(onBlock)) +
+  geom_density(adjust = 1)
+ggplot(df, aes(Damage)) +
+  geom_density(adjust = 1)
+ggplot(df, aes(Stun)) +
+  geom_density(adjust = 1)
+```
+
+## Individual character
