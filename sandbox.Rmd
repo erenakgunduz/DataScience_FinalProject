@@ -132,21 +132,21 @@ character_info <- function(datafile, char_name, img_path, kde_color) {
 
   print(desc(df$onBlock))
   # user will be able to adjust bandwidth with slider
-  print(ggplot(df, aes(onBlock)) +
+  (ggplot(df, aes(onBlock)) +
     geom_density(
       alpha = 0.2, adjust = 1, linewidth = 1.6,
       lineend = "round", fill = kde_color, color = kde_color
     ))
 
   print(desc(df$Damage))
-  print(ggplot(df, aes(Damage)) +
+  (ggplot(df, aes(Damage)) +
     geom_density(
       alpha = 0.2, adjust = 1, linewidth = 1.6,
       lineend = "round", fill = kde_color, color = kde_color
     ))
 
   print(desc(df$Stun))
-  print(ggplot(df, aes(Stun)) +
+  (ggplot(df, aes(Stun)) +
     geom_density(
       alpha = 0.2, adjust = 1, linewidth = 1.6,
       lineend = "round", fill = kde_color, color = kde_color
@@ -447,10 +447,7 @@ df_tile <- df %>%
 cmap_bins <- length(levels(df_tile$oB_bins))
 
 tilemap <- function(responses, custompal) {
-  print(ggplot(
-    df_tile,
-    aes(x = {{ responses }}, y = character_name, fill = oB_bins)
-  ) +
+  print(ggplot(df_tile, aes({{ responses }}, character_name, fill = oB_bins)) +
     geom_tile(width = 10, color = "white", linewidth = 0.2) +
     coord_fixed(ratio = 10) +
     guides(fill = guide_legend(title = "Frames\non block")) +
@@ -483,4 +480,248 @@ tilemap <- function(responses, custompal) {
 
 tilemap(Damage, "YlGnBu") # will give user option to change to YlOrRd
 tilemap(Stun, "YlGnBu")
+```
+
+## Scatter plots with linear fit
+
+```{r}
+library(viridisLite)
+
+scatterplot <- function(datafile, char_name, clr) {
+  df <- read.csv(datafile, stringsAsFactors = FALSE)
+
+  print(cor.test(df$onBlock, df$Damage))
+  print(lm(Damage ~ onBlock, data = df))
+  print(ggplot(df, aes(onBlock, Damage)) +
+    geom_point(aes(color = Damage)) +
+    scale_color_gradientn(colors = viridis(max(df$Damage), option = "C")) +
+    geom_smooth(method = "lm", color = clr, fill = clr, alpha = 0.15))
+
+  print(cor.test(df$onBlock, df$Stun))
+  print(lm(Stun ~ onBlock, data = df))
+  print(ggplot(df, aes(onBlock, Stun)) +
+    geom_point(aes(color = Stun)) +
+    scale_color_gradientn(colors = viridis(max(df$Stun), option = "D")) +
+    geom_smooth(method = "lm", color = clr, fill = clr, alpha = 0.15))
+}
+```
+
+### Put it to the test
+
+```{r}
+scatterplot(
+  "data/all.csv",
+  "All characters",
+  "#0000ff"
+)
+scatterplot(
+  "data/characters/abigail.csv",
+  "Abigail",
+  "#af33b4"
+)
+scatterplot(
+  "data/characters/akuma.csv",
+  "Akuma",
+  "#a52e28"
+)
+scatterplot(
+  "data/characters/alex.csv",
+  "Alex",
+  "#48683d"
+)
+scatterplot(
+  "data/characters/balrog.csv",
+  "Balrog",
+  "#235dbb"
+)
+scatterplot(
+  "data/characters/birdie.csv",
+  "Birdie",
+  "#d7a23e"
+)
+scatterplot(
+  "data/characters/blanka.csv",
+  "Blanka",
+  "#b36732"
+)
+scatterplot(
+  "data/characters/cammy.csv",
+  "Cammy",
+  "#67b600"
+)
+scatterplot(
+  "data/characters/chun-li.csv",
+  "Chun-Li",
+  "#37659b"
+)
+scatterplot(
+  "data/characters/cody.csv",
+  "Cody",
+  "#521f15"
+)
+scatterplot(
+  "data/characters/dan.csv",
+  "Dan",
+  "#bf6072"
+)
+scatterplot(
+  "data/characters/dhalsim.csv",
+  "Dhalsim",
+  "#e0602b"
+)
+scatterplot(
+  "data/characters/e_honda.csv",
+  "E. Honda",
+  "#5197a3"
+)
+scatterplot(
+  "data/characters/ed.csv",
+  "Ed",
+  "#51bcd0"
+)
+scatterplot(
+  "data/characters/f_a_n_g.csv",
+  "F.A.N.G",
+  "#3040a0"
+)
+scatterplot(
+  "data/characters/falke.csv",
+  "Falke",
+  "#191b44"
+)
+scatterplot(
+  "data/characters/g.csv",
+  "G",
+  "#3d453a"
+)
+scatterplot(
+  "data/characters/gill.csv",
+  "Gill",
+  "#bf423b"
+)
+scatterplot(
+  "data/characters/guile.csv",
+  "Guile",
+  "#597c00"
+)
+scatterplot(
+  "data/characters/ibuki.csv",
+  "Ibuki",
+  "#4b1d40"
+)
+scatterplot(
+  "data/characters/juri.csv",
+  "Juri",
+  "#983190"
+)
+scatterplot(
+  "data/characters/kage.csv",
+  "Kage",
+  "#553fad"
+)
+scatterplot(
+  "data/characters/karin.csv",
+  "Karin",
+  "#e93824"
+)
+scatterplot(
+  "data/characters/ken.csv",
+  "Ken",
+  "#ff0000"
+)
+scatterplot(
+  "data/characters/kolin.csv",
+  "Kolin",
+  "#394057"
+)
+scatterplot(
+  "data/characters/laura.csv",
+  "Laura",
+  "#80dc00"
+)
+scatterplot(
+  "data/characters/lucia.csv",
+  "Lucia",
+  "#3e77b1"
+)
+scatterplot(
+  "data/characters/m_bison.csv",
+  "M. Bison",
+  "#480e07"
+)
+scatterplot(
+  "data/characters/menat.csv",
+  "Menat",
+  "#3d224b"
+)
+scatterplot(
+  "data/characters/nash.csv",
+  "Nash",
+  "#3a8455"
+)
+scatterplot(
+  "data/characters/necalli.csv",
+  "Necalli",
+  "#581e0d"
+)
+scatterplot(
+  "data/characters/poison.csv",
+  "Poison",
+  "#d14461"
+)
+scatterplot(
+  "data/characters/r_mika.csv",
+  "R. Mika",
+  "#68e6f7"
+)
+scatterplot(
+  "data/characters/rashid.csv",
+  "Rashid",
+  "#375963"
+)
+scatterplot(
+  "data/characters/ryu.csv",
+  "Ryu",
+  "#457272"
+)
+scatterplot(
+  "data/characters/sagat.csv",
+  "Sagat",
+  "#a16a46"
+)
+scatterplot(
+  "data/characters/sakura.csv",
+  "Sakura",
+  "#ff83fa"
+)
+scatterplot(
+  "data/characters/seth.csv",
+  "Seth",
+  "#6d7293"
+)
+scatterplot(
+  "data/characters/urien.csv",
+  "Urien",
+  "#714661"
+)
+scatterplot(
+  "data/characters/vega.csv",
+  "Vega",
+  "#ed5971"
+)
+scatterplot(
+  "data/characters/zangief.csv",
+  "Zangief",
+  "#e52a0e"
+)
+scatterplot(
+  "data/characters/zeku_old.csv",
+  "Zeku (Old)",
+  "#545345"
+)
+scatterplot(
+  "data/characters/zeku_young.csv",
+  "Zeku (Young)",
+  "#351f0a"
+)
 ```
