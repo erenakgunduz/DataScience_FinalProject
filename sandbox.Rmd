@@ -80,13 +80,27 @@ summary_tb(projectile)
 ### Kernel density estimates (KDEs)
 
 ```{r}
+desc <- function(variable) {
+  sprintf(
+    "Median: %.2f  |  Mean: %.2f  |  Standard deviation: %.2f",
+    median(variable),
+    mean(variable),
+    sd(variable)
+  )
+}
+
+desc(df$onBlock)
 # user will be able to adjust bandwidth with slider
 ggplot(df, aes(onBlock)) +
   geom_density(adjust = 1)
+
+desc(df$Damage)
 ggplot(df, aes(Damage)) +
   geom_density(adjust = 1)
+
+desc(df$Stun)
 ggplot(df, aes(Stun)) +
   geom_density(adjust = 1)
 ```
 
-## Individual character
+## Each character
