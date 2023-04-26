@@ -1,7 +1,7 @@
 ---
 title: "Sandbox"
 author: "Eren Akgunduz"
-date: "25 April 2023"
+date: "26 April 2023"
 output:
   pdf_document: default
 ---
@@ -39,7 +39,7 @@ str(df)
 
 Descriptive stats, here mainly seeking to answer the question: how do the distributions look?
 
-## All characters
+## Attacks for all characters
 
 ```{r, message=FALSE}
 library(tidyverse)
@@ -49,7 +49,8 @@ df <- read.csv("data/all.csv", stringsAsFactors = FALSE)
 ### Character numerical features summary (averages)
 
 ```{r}
-colMeans(df[9:18])
+# transpose so we print vertically
+t(colMeans(df[9:18]))
 ```
 
 ### Attack categorical features summary tables
@@ -92,15 +93,330 @@ desc <- function(variable) {
 desc(df$onBlock)
 # user will be able to adjust bandwidth with slider
 ggplot(df, aes(onBlock)) +
-  geom_density(adjust = 1)
+  geom_density(adjust = 1, linewidth = 1, lineend = "round")
 
 desc(df$Damage)
 ggplot(df, aes(Damage)) +
-  geom_density(adjust = 1)
+  geom_density(adjust = 1, linewidth = 1, lineend = "round")
 
 desc(df$Stun)
 ggplot(df, aes(Stun)) +
-  geom_density(adjust = 1)
+  geom_density(adjust = 1, linewidth = 1, lineend = "round")
 ```
 
-## Each character
+## Attacks for each character
+
+```{r, message=FALSE}
+library(tidyverse)
+```
+
+### Putting it all together
+
+```{r}
+character_info <- function(datafile, char_name, img_path, kde_color) {
+  df <- read.csv(datafile, stringsAsFactors = FALSE)
+
+  # h1(char_name)
+  # Counterclockwise on grid starting here, top left: display image
+  # img(src = img_path)
+
+  # Bottom left: KDEs
+  desc <- function(variable) {
+    sprintf(
+      "Median: %.2f  |  Mean: %.2f  |  Standard deviation: %.2f",
+      median(variable),
+      mean(variable),
+      sd(variable)
+    )
+  }
+
+  print(desc(df$onBlock))
+  # user will be able to adjust bandwidth with slider
+  print(ggplot(df, aes(onBlock)) +
+    geom_density(
+      alpha = 0.2, adjust = 1, linewidth = 1.6,
+      lineend = "round", fill = kde_color, color = kde_color
+    ))
+
+  print(desc(df$Damage))
+  print(ggplot(df, aes(Damage)) +
+    geom_density(
+      alpha = 0.2, adjust = 1, linewidth = 1.6,
+      lineend = "round", fill = kde_color, color = kde_color
+    ))
+
+  print(desc(df$Stun))
+  print(ggplot(df, aes(Stun)) +
+    geom_density(
+      alpha = 0.2, adjust = 1, linewidth = 1.6,
+      lineend = "round", fill = kde_color, color = kde_color
+    ))
+
+  # Bottom right: all attack attributes (9 columns)
+  print(head(df[c(1:7, 18:19)])) # head only temporary to see if working
+
+  # Top right: all character facts (10 columns but printed row-wise)
+  print(t(df[1, 8:17])) # same idea as earlier
+}
+```
+
+### Let's test em out
+
+```{r}
+# used Pika app to pick colors from images
+character_info(
+  "data/characters/abigail.csv",
+  "Abigail",
+  "img/abigail.png",
+  "#af33b4"
+)
+character_info(
+  "data/characters/akuma.csv",
+  "Akuma",
+  "img/akuma.png",
+  "#a52e28"
+)
+character_info(
+  "data/characters/alex.csv",
+  "Alex",
+  "img/alex.png",
+  "#48683d"
+)
+character_info(
+  "data/characters/balrog.csv",
+  "Balrog",
+  "img/balrog.png",
+  "#235dbb"
+)
+character_info(
+  "data/characters/birdie.csv",
+  "Birdie",
+  "img/birdie.png",
+  "#d7a23e"
+)
+character_info(
+  "data/characters/blanka.csv",
+  "Blanka",
+  "img/blanka.png",
+  "#b36732"
+)
+character_info(
+  "data/characters/cammy.csv",
+  "Cammy",
+  "img/cammy.png",
+  "#67b600"
+)
+character_info(
+  "data/characters/chun-li.csv",
+  "Chun-Li",
+  "img/chun-li.png",
+  "#37659b"
+)
+character_info(
+  "data/characters/cody.csv",
+  "Cody",
+  "img/cody.png",
+  "#521f15"
+)
+character_info(
+  "data/characters/dan.csv",
+  "Dan",
+  "img/dan.png",
+  "#bf6072"
+)
+character_info(
+  "data/characters/dhalsim.csv",
+  "Dhalsim",
+  "img/dhalsim.png",
+  "#e0602b"
+)
+character_info(
+  "data/characters/e_honda.csv",
+  "E. Honda",
+  "img/e_honda.png",
+  "#5197a3"
+)
+character_info(
+  "data/characters/ed.csv",
+  "Ed",
+  "img/ed.png",
+  "#51bcd0"
+)
+character_info(
+  "data/characters/f_a_n_g.csv",
+  "F.A.N.G",
+  "img/f_a_n_g.png",
+  "#3040a0"
+)
+character_info(
+  "data/characters/falke.csv",
+  "Falke",
+  "img/falke.png",
+  "#191b44"
+)
+character_info(
+  "data/characters/g.csv",
+  "G",
+  "img/g.png",
+  "#3d453a"
+)
+character_info(
+  "data/characters/gill.csv",
+  "Gill",
+  "img/gill.png",
+  "#bf423b"
+)
+character_info(
+  "data/characters/guile.csv",
+  "Guile",
+  "img/guile.png",
+  "#597c00"
+)
+character_info(
+  "data/characters/ibuki.csv",
+  "Ibuki",
+  "img/ibuki.png",
+  "#4b1d40"
+)
+character_info(
+  "data/characters/juri.csv",
+  "Juri",
+  "img/juri.png",
+  "#983190"
+)
+character_info(
+  "data/characters/kage.csv",
+  "Kage",
+  "img/kage.png",
+  "#553fad"
+)
+character_info(
+  "data/characters/karin.csv",
+  "Karin",
+  "img/karin.png",
+  "#e93824"
+)
+character_info(
+  "data/characters/ken.csv",
+  "Ken",
+  "img/ken.png",
+  "#ff0000"
+)
+character_info(
+  "data/characters/kolin.csv",
+  "Kolin",
+  "img/kolin.png",
+  "#394057"
+)
+character_info(
+  "data/characters/laura.csv",
+  "Laura",
+  "img/laura.png",
+  "#80dc00"
+)
+character_info(
+  "data/characters/lucia.csv",
+  "Lucia",
+  "img/lucia.png",
+  "#3e77b1"
+)
+character_info(
+  "data/characters/m_bison.csv",
+  "M. Bison",
+  "img/m_bison.png",
+  "#480e07"
+)
+character_info(
+  "data/characters/menat.csv",
+  "Menat",
+  "img/menat.png",
+  "#3d224b"
+)
+character_info(
+  "data/characters/nash.csv",
+  "Nash",
+  "img/nash.png",
+  "#3a8455"
+)
+character_info(
+  "data/characters/necalli.csv",
+  "Necalli",
+  "img/necalli.png",
+  "#581e0d"
+)
+character_info(
+  "data/characters/poison.csv",
+  "Poison",
+  "img/poison.png",
+  "#d14461"
+)
+character_info(
+  "data/characters/r_mika.csv",
+  "R. Mika",
+  "img/r_mika.png",
+  "#68e6f7"
+)
+character_info(
+  "data/characters/rashid.csv",
+  "Rashid",
+  "img/rashid.png",
+  "#375963"
+)
+character_info(
+  "data/characters/ryu.csv",
+  "Ryu",
+  "img/ryu.png",
+  "#457272"
+)
+character_info(
+  "data/characters/sagat.csv",
+  "Sagat",
+  "img/sagat.png",
+  "#a16a46"
+)
+character_info(
+  "data/characters/sakura.csv",
+  "Sakura",
+  "img/sakura.png",
+  "#ff83fa"
+)
+character_info(
+  "data/characters/seth.csv",
+  "Seth",
+  "img/seth.png",
+  "#6d7293"
+)
+character_info(
+  "data/characters/urien.csv",
+  "Urien",
+  "img/urien.png",
+  "#714661"
+)
+character_info(
+  "data/characters/vega.csv",
+  "Vega",
+  "img/vega.png",
+  "#ed5971"
+)
+character_info(
+  "data/characters/zangief.csv",
+  "Zangief",
+  "img/zangief.png",
+  "#e52a0e"
+)
+character_info(
+  "data/characters/zeku_old.csv",
+  "Zeku (Old)",
+  "img/zeku_old.png",
+  "#545345"
+)
+character_info(
+  "data/characters/zeku_young.csv",
+  "Zeku (Young)",
+  "img/zeku_young.png",
+  "#351f0a"
+)
+```
+\
+
+# Module 2: Visualization
