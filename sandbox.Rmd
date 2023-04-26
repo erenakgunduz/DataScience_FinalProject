@@ -420,3 +420,67 @@ character_info(
 \
 
 # Module 2: Visualization
+
+Are frames on block and damage+stun correlated? Let's find out.
+
+```{r, message=FALSE}
+library(tidyverse)
+library(RColorBrewer)
+df <- read.csv("data/all.csv", stringsAsFactors = FALSE)
+```
+
+## Tilemaps
+
+```{r}
+df_tile <- df %>%
+  # convert to factor and reverse level order so it looks right on plot
+  mutate(character_name = factor(Character,
+    levels = rev(sort(unique(Character)))
+  )) %>%
+  # create intervals for plotting/colormap and similar to before, reverse order
+  mutate(oB_bins = cut(onBlock,
+    breaks = seq(from = -100, to = max(onBlock, na.rm = TRUE) + 2, by = 25)
+  )) %>%
+  mutate(oB_bins = factor(as.character(oB_bins), levels = rev(levels(oB_bins))))
+
+# make sure the set of colors matches the number of bins
+cmap_bins <- length(levels(df_tile$oB_bins))
+
+tilemap <- function(responses, custompal) {
+  print(ggplot(
+    df_tile,
+    aes(x = {{ responses }}, y = character_name, fill = oB_bins)
+  ) +
+    geom_tile(width = 10, color = "white", linewidth = 0.2) +
+    coord_fixed(ratio = 10) +
+    guides(fill = guide_legend(title = "Frames\non block")) +
+    labs(y = "") +
+    # removes extra space
+    scale_y_discrete(expand = c(0, 0)) +
+    # define new breaks on x-axis
+    scale_x_continuous(
+      expand = c(0, 0),
+      limits = c(-10, 410),
+      breaks = seq(from = 0, to = 400, by = 50)
+    ) +
+    scale_fill_manual(values = rev(brewer.pal(cmap_bins, custompal))) +
+    # set a base size for all fonts
+    theme_grey(base_size = 9) +
+    # styling to make it my own
+    theme(
+      legend.title = element_text(color = "#292F36"),
+      legend.text = element_text(size = 7, color = "#292F36"),
+      legend.key.height = grid::unit(0.8, "cm"),
+      legend.key.width = grid::unit(0.3, "cm"),
+      axis.title.x = element_text(margin = margin(t = 8), color = "#292F36"),
+      axis.text.x = element_text(color = "#292F36"),
+      axis.text.y = element_text(color = "#292F36"),
+      axis.ticks = element_line(linewidth = 0.4), # thickness of axis ticks
+      plot.background = element_blank(), # rm background
+      panel.border = element_blank() # rm outer border
+    ))
+}
+
+tilemap(Damage, "YlGnBu") # will give user option to change to YlOrRd
+tilemap(Stun, "YlGnBu")
+```
