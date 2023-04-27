@@ -11,7 +11,7 @@ from sklearn.model_selection import KFold, cross_val_score, train_test_split
 from sklearn.preprocessing import OrdinalEncoder, StandardScaler
 
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.WARNING)
 logging.getLogger("matplotlib").setLevel(logging.WARNING)
 
 fh = logging.StreamHandler()
@@ -163,9 +163,9 @@ def plot_parameters(X, y, cols) -> None:
         plt.savefig(f"{file_path}/img/regr/{cols[-1]}_params_{index}.png", dpi=200)
 
 
-def cross_validation(X, y, kf, cols) -> tuple:
+def cross_validation(X, y, kf, cols, scorer: str = "mse") -> tuple:
     "Based on cross-validation scores, plot them and retrieve optimal tuning parameters"
-    cv_error = elastic_net(X, y, lambdas, alphas, kf, True)
+    cv_error = elastic_net(X, y, lambdas, alphas, kf, True, scorer)
     plt.figure(figsize=(8, 6))
     plt.xscale("log")
     [
@@ -174,7 +174,9 @@ def cross_validation(X, y, kf, cols) -> tuple:
     ]
     plt.xticks(lambdas)
     plt.xlabel(r"Tuning parameter ($\lambda$)")
-    plt.ylabel(r"$CV_{(5)}$ negative mean squared error")
+    plt.ylabel(
+        r"$CV_{(5)}$ negative mean squared error"
+    ) if scorer == "mse" else plt.ylabel(r"$CV_{(5)}$ $R^2$ value")
     plt.legend(title=r"$\alpha$", fontsize="small")
     plt.savefig(f"{file_path}/img/regr/{cols[-1]}_cv.png", dpi=200)
 
@@ -191,7 +193,7 @@ def cross_validation(X, y, kf, cols) -> tuple:
     return (l_optimal, a_optimal)
 
 
-def testing(train, test, mean, lmbd, a):
+def testing(train: tuple, test: tuple, mean: float, lmbd: float, a: float) -> None:
     lr_r2 = (
         LinearRegression()
         .fit(train[0][:, 0].reshape(-1, 1), train[1])
