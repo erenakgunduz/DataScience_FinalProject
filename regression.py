@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from sklearn.linear_model import ElasticNet, LinearRegression
+from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import KFold, cross_val_score, train_test_split
 from sklearn.preprocessing import OrdinalEncoder, StandardScaler
 
@@ -190,8 +191,36 @@ def cross_validation(X, y, kf, cols) -> tuple:
     return (l_optimal, a_optimal)
 
 
-def testing():
-    pass
+def testing(train, test, mean, lmbd, a):
+    lr_r2 = (
+        LinearRegression()
+        .fit(train[0][:, 0].reshape(-1, 1), train[1])
+        .score(test[0][:, 0].reshape(-1, 1), test[1])
+    )
+    lr_preds = (
+        LinearRegression()
+        .fit(train[0][:, 0].reshape(-1, 1), train[1])
+        .predict(test[0][:, 0].reshape(-1, 1))
+    )
+    lr_mse = mean_squared_error(test[1] + mean, lr_preds + mean)
+    lr_table = np.hstack(
+        (test[2], (lr_preds + mean).reshape(-1, 1), (test[1] + mean).reshape(-1, 1))
+    )
+    print(lr_r2, lr_mse, lr_table.shape, lr_table)
+
+    en_r2 = (
+        ElasticNet(alpha=lmbd, l1_ratio=a)
+        .fit(train[0], train[1])
+        .score(test[0], test[1])
+    )
+    en_preds = (
+        ElasticNet(alpha=lmbd, l1_ratio=a).fit(train[0], train[1]).predict(test[0])
+    )
+    en_mse = mean_squared_error(test[1] + mean, en_preds + mean)
+    en_table = np.hstack(
+        (test[2], (en_preds + mean).reshape(-1, 1), (test[1] + mean).reshape(-1, 1))
+    )
+    print(en_r2, en_mse, en_table.shape, en_table)
 
 
 def main():
@@ -200,14 +229,15 @@ def main():
     cols = columns[2:]
     plot_parameters(train[0], train[1], cols)
     l_optimal, a_optimal = cross_validation(train[0], train[1], kf, cols)
+    print(l_optimal, a_optimal)
     # --- Playing around with simple LR ---
-
     lm_cv = simple_lr(train[0][:, 0], train[1], kf, True)  # standardized
     slope = simple_lr(train[0][:, 0], train[1])
     print(lm_cv, slope)
-    slope = simple_lr(data[:, 2], data[:, 18])  # same data, but not standardized
     lm_cv = simple_lr(data[:, 2], data[:, 18], kf, True)
+    slope = simple_lr(data[:, 2], data[:, 18])  # same data, but not standardized
     print(lm_cv, slope)
+    testing(train, test, data[:, 18].mean(), l_optimal, a_optimal)
 
 
 if __name__ == "__main__":
