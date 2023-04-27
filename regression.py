@@ -201,6 +201,7 @@ def main():
     plot_parameters(train[0], train[1], cols)
     l_optimal, a_optimal = cross_validation(train[0], train[1], kf, cols)
     # --- Playing around with simple LR ---
+
     lm_cv = simple_lr(train[0][:, 0], train[1], kf, True)  # standardized
     slope = simple_lr(train[0][:, 0], train[1])
     print(lm_cv, slope)
