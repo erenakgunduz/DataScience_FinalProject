@@ -495,14 +495,20 @@ scatterplot <- function(datafile, char_name, clr) {
   print(ggplot(df, aes(onBlock, Damage)) +
     geom_point(aes(color = Damage)) +
     scale_color_gradientn(colors = viridis(max(df$Damage), option = "C")) +
-    geom_smooth(method = "lm", color = clr, fill = clr, alpha = 0.15))
+    geom_smooth(
+      method = "lm", formula = y ~ x,
+      color = clr, fill = clr, alpha = 0.15
+    ))
 
   print(cor.test(df$onBlock, df$Stun))
   print(lm(Stun ~ onBlock, data = df))
   print(ggplot(df, aes(onBlock, Stun)) +
     geom_point(aes(color = Stun)) +
     scale_color_gradientn(colors = viridis(max(df$Stun), option = "D")) +
-    geom_smooth(method = "lm", color = clr, fill = clr, alpha = 0.15))
+    geom_smooth(
+      method = "lm", formula = y ~ x,
+      color = clr, fill = clr, alpha = 0.15
+    ))
 }
 ```
 
@@ -725,3 +731,6 @@ scatterplot(
   "#351f0a"
 )
 ```
+\
+
+# Module 3: Prediction (regression)
