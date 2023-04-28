@@ -126,19 +126,34 @@ prediction_ui <- function(id) {
   list(sidebar = sidebar, main = main)
 }
 
-information_server <- function(input, output, session) {
-  # how do the distributions look?
+information_server <- function(id) {
+  moduleServer(
+    id,
+    function(input, output, session) {
+      # how do the distributions look?
+    }
+  )
 }
 
-visualization_server <- function(input, output, session) {
-  # are onBlock and damage+stun correlated?
+visualization_server <- function(id) {
+  moduleServer(
+    id,
+    function(input, output, session) {
+      # are onBlock and damage+stun correlated?
+    }
+  )
 }
 
-prediction_server <- function(input, output, session) {
-  # which regression will win: simple linear or elastic net?
+prediction_server <- function(id) {
+  moduleServer(
+    id,
+    function(input, output, session) {
+      # which regression will win: simple linear or elastic net?
+    }
+  )
 }
 
-server <- function(input, output) {
+server <- function(input, output, session) {
   output$sidebar_options <- renderUI({
     tab <- switch(input$tab,
       "Information" = information_ui("Information")$sidebar,
@@ -157,9 +172,9 @@ server <- function(input, output) {
     tab
   })
 
-  callModule(information_server, "Information")
-  callModule(visualization_server, "Visualization")
-  callModule(prediction_server, "Prediction")
+  information_server("info")
+  visualization_server("visl")
+  prediction_server("pred")
 }
 
 
