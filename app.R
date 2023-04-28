@@ -1,4 +1,4 @@
-library(shiny)
+source("global.R")
 
 
 ui <- fluidPage(
