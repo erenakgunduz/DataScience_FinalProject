@@ -1,7 +1,7 @@
 ---
 title: "Sandbox"
 author: "Eren Akgunduz"
-date: "26 April 2023"
+date: "28 April 2023"
 output:
   pdf_document: default
 ---
@@ -734,3 +734,67 @@ scatterplot(
 \
 
 # Module 3: Prediction (regression)
+
+Which regression model will make more accurate predictions of damage+stun, and/or be a better fit: simple linear or elastic net?
+
+```{r, message=FALSE}
+library(reticulate)
+use_virtualenv("sfv_attacks", required = TRUE)
+```
+
+```{r}
+py_config()
+```
+
+## Python version
+
+```{python}
+import regression
+
+columns, data, train, test, kf = regression.data_splits("all.csv", "d", True, True)
+cols = columns[2:]
+regression.plot_parameters(train[0], train[1], cols)
+l_optimal, a_optimal = regression.cross_validation(train[0], train[1], kf, cols)
+print(l_optimal, a_optimal)
+# --- Playing around with simple LR ---
+lm_cv = regression.simple_lr(train[0][:, 0], train[1], kf, True)  # standardized
+slope = regression.simple_lr(train[0][:, 0], train[1])
+print(lm_cv, slope)
+lm_cv = regression.simple_lr(data[:, 2], data[:, 18], kf, True)
+slope = regression.simple_lr(data[:, 2], data[:, 18])  # same data, but notstandardized
+print(lm_cv, slope)
+scores, tables = regression.testing(train, test, data[:, 18].mean(), l_optimal, a_optimal)
+print(scores)
+print(tables.shape)
+```
+
+## Exact same thing, but with R
+
+```{r}
+regression <- import("regression")
+np <- import("numpy")
+plt <- import("matplotlib.pyplot")
+
+v <- regression$data_splits("all.csv", "d", TRUE, TRUE)
+v[[3]][[2]] <- np$array(as.numeric(v[[3]][[2]]))
+v[[4]][[2]] <- np$array(as.numeric(v[[4]][[2]]))
+train_X <- np$array(v[[3]][[1]])
+train_y <- v[[3]][[2]]
+cols <- np$array(v[[1]][3:19])
+regression$plot_parameters(train_X, train_y, cols)
+t <- regression$cross_validation(train_X, train_y, v[[5]], cols)
+print(c(t[[1]], t[[2]]))
+# --- Playing around with simple LR ---
+train_x <- np$array(train_X[, 1])
+lm_cv <- regression$simple_lr(train_x, train_y, v[[5]], TRUE)
+slope <- regression$simple_lr(train_x, train_y)
+print(c(lm_cv, slope))
+og_x <- np$array(v[[2]][, 3])
+og_y <- np$array(v[[2]][, 19])
+lm_cv <- regression$simple_lr(og_x, og_y, v[[5]], TRUE)
+slope <- regression$simple_lr(og_x, og_y)
+print(c(lm_cv, slope))
+results <- regression$testing(v[[3]], v[[4]], mean(og_y), t[[1]], t[[2]])
+print(results[[1]])
+print(dim(results[[2]]))
+```

@@ -79,8 +79,11 @@ def standardize(data) -> tuple:
     return (X, y, names)
 
 
-def data_splits(data, seed_test: bool = False, seed_cv: bool = False) -> tuple:
+def data_splits(
+    filename: str, response: str, seed_test: bool = False, seed_cv: bool = False
+) -> tuple:
     "Divide data into training & test sets, then establish five folds for train set CV"
+    columns, data = preprocess_data(filename, response)
     X, y, names = standardize(data)
     train_X, test_X, train_y, test_y, names_train, names_test = train_test_split(
         X, y, names, test_size=0.2, random_state=0 if seed_test else None
@@ -92,7 +95,7 @@ def data_splits(data, seed_test: bool = False, seed_cv: bool = False) -> tuple:
     logger.debug([k.shape for k in test])
 
     kf = KFold(n_splits=5, shuffle=True, random_state=0 if seed_cv else None)
-    return (train, test, kf)
+    return (columns, data, train, test, kf)
 
 
 def simple_lr(x, y, kf=None, cv: bool = False, scorer: str = "mse"):
@@ -193,7 +196,7 @@ def cross_validation(X, y, kf, cols, scorer: str = "mse") -> tuple:
     return (l_optimal, a_optimal)
 
 
-def testing(train: tuple, test: tuple, mean: float, lmbd: float, a: float) -> None:
+def testing(train: tuple, test: tuple, mean: float, lmbd: float, a: float) -> tuple:
     lr_r2 = (
         LinearRegression()
         .fit(train[0][:, 0].reshape(-1, 1), train[1])
@@ -208,8 +211,6 @@ def testing(train: tuple, test: tuple, mean: float, lmbd: float, a: float) -> No
     lr_table = np.hstack(
         (test[2], (lr_preds + mean).reshape(-1, 1), (test[1] + mean).reshape(-1, 1))
     )
-    print(lr_r2, lr_mse, lr_table.shape, lr_table)
-
     en_r2 = (
         ElasticNet(alpha=lmbd, l1_ratio=a)
         .fit(train[0], train[1])
@@ -222,12 +223,14 @@ def testing(train: tuple, test: tuple, mean: float, lmbd: float, a: float) -> No
     en_table = np.hstack(
         (test[2], (en_preds + mean).reshape(-1, 1), (test[1] + mean).reshape(-1, 1))
     )
-    print(en_r2, en_mse, en_table.shape, en_table)
+
+    scores = np.array([[lr_r2, lr_mse], [en_r2, en_mse]])
+    tables = np.array([lr_table, en_table])
+    return (scores, tables)
 
 
 def main():
-    columns, data = preprocess_data("all.csv", "d")
-    train, test, kf = data_splits(data, True, True)
+    columns, data, train, test, kf = data_splits("all.csv", "d", True, True)
     cols = columns[2:]
     plot_parameters(train[0], train[1], cols)
     l_optimal, a_optimal = cross_validation(train[0], train[1], kf, cols)
@@ -239,7 +242,8 @@ def main():
     lm_cv = simple_lr(data[:, 2], data[:, 18], kf, True)
     slope = simple_lr(data[:, 2], data[:, 18])  # same data, but not standardized
     print(lm_cv, slope)
-    testing(train, test, data[:, 18].mean(), l_optimal, a_optimal)
+    scores, tables = testing(train, test, data[:, 18].mean(), l_optimal, a_optimal)
+    print(scores, tables.shape)
 
 
 if __name__ == "__main__":
