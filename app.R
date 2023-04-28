@@ -4,9 +4,15 @@ df <- read.csv("data/all.csv", stringsAsFactors = FALSE)
 
 
 ui <- fluidPage(
+  tags$head(tags$style(
+    type = "text/css",
+    "img {max-width: 100%; width: 100%; height: auto}"
+  )),
   titlePanel("Analysis of Street Fighter V Attacks"),
+  br(),
   sidebarLayout(
     sidebarPanel(
+      width = 3,
       uiOutput("sidebar_options")
     ),
     mainPanel(
@@ -17,13 +23,14 @@ ui <- fluidPage(
         tabPanel("Visualization"),
         tabPanel("Prediction")
       ),
+      uiOutput("main_display")
     )
   )
 )
 
 information_ui <- function(id) {
   ns <- NS(id)
-  tagList(
+  sidebar <- tagList(
     selectInput(ns("character"), "Select character:",
       choices = c("All", unique(df$Character))
     ),
@@ -31,11 +38,33 @@ information_ui <- function(id) {
       choices = c("Frames on block", "Damage", "Stun")
     )
   )
+  main <- tagList(
+    h2("Chun-Li"),
+    br(),
+    fluidRow(
+      column(
+        6,
+        img(src = "img/chun-li.png")
+      ),
+      column(
+        6,
+        h3(style = "margin-top: 0px", "Tables")
+      )
+    ),
+    br(),
+    fluidRow(
+      column(
+        12,
+        h3("Kernel density estimate")
+      )
+    )
+  )
+  list(sidebar = sidebar, main = main)
 }
 
 visualization_ui <- function(id) {
   ns <- NS(id)
-  tagList(
+  sidebar <- tagList(
     selectInput(ns("character"), "Select character:",
       choices = c("All", unique(df$Character))
     ),
@@ -43,15 +72,58 @@ visualization_ui <- function(id) {
       choices = c("Both", "Damage", "Stun")
     )
   )
+  main <- tagList(
+    h2("Chun-Li"),
+    br(),
+    fluidRow(
+      column(12,
+        align = "center", offset = 0,
+        h3("Heatmap goes here")
+      )
+    ),
+    if (TRUE) {
+      fluidRow(
+        column(12,
+          align = "center", offset = 0,
+          h3("Scatterplot goes here")
+        )
+      )
+    } else {
+      fluidRow(
+        column(6,
+          align = "center", offset = 0,
+          h3("Scatterplot goes here")
+        ),
+        column(6,
+          align = "center", offset = 0,
+          h3("Scatterplot goes here")
+        )
+      )
+    }
+  )
+  list(sidebar = sidebar, main = main)
 }
 
 prediction_ui <- function(id) {
   ns <- NS(id)
-  tagList(
+  sidebar <- tagList(
     selectInput(ns("response_var"), "Want to predict:",
       choices = c("Damage", "Stun")
     )
   )
+  main <- tagList(
+    fluidRow(
+      column(6,
+        align = "center", offset = 0,
+        h3("Simple linear regression")
+      ),
+      column(6,
+        align = "center", offset = 0,
+        h3("Elastic net")
+      )
+    )
+  )
+  list(sidebar = sidebar, main = main)
 }
 
 information_server <- function(input, output, session) {
@@ -68,10 +140,19 @@ prediction_server <- function(input, output, session) {
 
 server <- function(input, output) {
   output$sidebar_options <- renderUI({
-    tab <- switch(as.character(input$tab),
-      "Information" = information_ui("Information"),
-      "Visualization" = visualization_ui("Visualization"),
-      "Prediction" = prediction_ui("Prediction")
+    tab <- switch(input$tab,
+      "Information" = information_ui("Information")$sidebar,
+      "Visualization" = visualization_ui("Visualization")$sidebar,
+      "Prediction" = prediction_ui("Prediction")$sidebar
+    )
+    tab
+  })
+
+  output$main_display <- renderUI({
+    tab <- switch(input$tab,
+      "Information" = information_ui("Information")$main,
+      "Visualization" = visualization_ui("Visualization")$main,
+      "Prediction" = prediction_ui("Prediction")$main
     )
     tab
   })
