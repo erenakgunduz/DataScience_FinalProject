@@ -210,7 +210,7 @@ visualization_ui <- function(id) {
     ),
   )
   main <- tagList(
-    h2("Chun-Li"),
+    h2(textOutput(ns("ch_nombre"))),
     br(),
     fluidRow(
       column(12,
@@ -542,6 +542,7 @@ visualization_server <- function(id) {
         )
       })
 
+      output$ch_nombre <- renderText(ch_name())
       output$correlate <- renderPrint({
         correlation(ch_data(), input$vislize_var)
       })
