@@ -1,5 +1,4 @@
 source("global.R")
-use_virtualenv("sfv_attacks", required = TRUE)
 
 df <- read.csv("data/all.csv", stringsAsFactors = FALSE)
 
