@@ -163,7 +163,7 @@ def plot_parameters(X, y, cols) -> None:
         plt.xlabel(r"Tuning parameter ($\lambda$)")
         plt.ylabel(r"Regression coefficients ($\hat{\beta}$)")
         plt.legend(title="Features", fontsize="small", loc="upper right")
-        plt.savefig(f"{file_path}/img/regr/{cols[-1]}_params_{index}.png", dpi=200)
+        plt.savefig(f"{file_path}/www/img/regr/{cols[-1]}_params_{index}.png", dpi=200)
 
 
 def cross_validation(X, y, kf, cols, scorer: str = "mse") -> tuple:
@@ -181,7 +181,7 @@ def cross_validation(X, y, kf, cols, scorer: str = "mse") -> tuple:
         r"$CV_{(5)}$ negative mean squared error"
     ) if scorer == "mse" else plt.ylabel(r"$CV_{(5)}$ $R^2$ value")
     plt.legend(title=r"$\alpha$", fontsize="small")
-    plt.savefig(f"{file_path}/img/regr/{cols[-1]}_cv.png", dpi=200)
+    plt.savefig(f"{file_path}/www/img/regr/{cols[-1]}_cv.png", dpi=200)
 
     logger.debug(cv_error.argmax())
     logger.debug(cv_error.max())
