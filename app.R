@@ -15,25 +15,12 @@ summary_tb <- function(feature) {
 }
 
 all_kde <- function(variable) {
-  sprintf(
-    "Median: %.2f  |  Mean: %.2f  |  Standard deviation: %.2f",
-    median(variable),
-    mean(variable),
-    sd(variable)
-  )
   ggplot(df, aes(variable)) +
     geom_density(adjust = 1, linewidth = 1, lineend = "round")
 }
 
-character_kde <- function(variable, kde_color) {
-  sprintf(
-    "Median: %.2f  |  Mean: %.2f  |  Standard deviation: %.2f",
-    median(variable),
-    mean(variable),
-    sd(variable)
-  )
-  # user will be able to adjust bandwidth with slider
-  ggplot(df, aes(variable)) +
+kde <- function(df, variable, kde_color) {
+  ggplot(df, aes({{ variable }})) +
     geom_density(
       alpha = 0.2, adjust = 1, linewidth = 1.6,
       lineend = "round", fill = kde_color, color = kde_color
@@ -140,32 +127,60 @@ information_ui <- function(id) {
   ns <- NS(id)
   sidebar <- tagList(
     selectInput(ns("character"), "Select character:",
-      choices = c("All", unique(df$Character))
+      choices = c("All", unique(df$Character)), selected = "Chun-Li"
     ),
     selectInput(ns("examine_var"), "Variable to examine:",
       choices = c("Frames on block", "Damage", "Stun")
     )
   )
   main <- tagList(
-    h2("Chun-Li"),
+    h2(textOutput(ns("c_name"))),
     br(),
-    fluidRow(
-      column(
-        6,
-        img(src = "img/chun-li.png")
-      ),
-      column(
-        6,
-        h3(style = "margin-top: 0px", "Tables")
+    conditionalPanel(
+      condition = sprintf("input['%s'] == 'All'", ns("character")),
+      h3(style = "margin-top: 0px", "Tables"),
+      fluidRow(
+        column(
+          6,
+          h4("Attack categorical features summary tables"),
+          div(verbatimTextOutput(ns("summary_plnCmd")),
+            style = "height:500px; overflow-y:scroll"
+          ),
+          verbatimTextOutput(ns("summary_moveType")),
+          verbatimTextOutput(ns("summary_airmove")),
+          verbatimTextOutput(ns("summary_followUp")),
+          verbatimTextOutput(ns("summary_projectile"))
+        ),
+        column(
+          6,
+          h4("Character numerical attributes on average"),
+          verbatimTextOutput(ns("char_summary"))
+        )
+      )
+    ),
+    conditionalPanel(
+      condition = sprintf("input['%s'] != 'All'", ns("character")),
+      fluidRow(
+        column(
+          6,
+          uiOutput(ns("c_img"))
+        ),
+        column(
+          6,
+          h3(style = "margin-top: 0px", "Tables"),
+          h4("Character stats used for predictions"),
+          verbatimTextOutput(ns("char_stats")),
+          h4("All attacks and their specific features"),
+          div(verbatimTextOutput(ns("attack_fts")),
+            style = "height:300px; overflow-y:scroll"
+          )
+        )
       )
     ),
     br(),
-    fluidRow(
-      column(
-        12,
-        h3("Kernel density estimate")
-      )
-    )
+    h3("Kernel density estimate"),
+    verbatimTextOutput(ns("description")),
+    plotOutput(ns("full_kde"))
   )
   list(sidebar = sidebar, main = main)
 }
@@ -183,7 +198,8 @@ visualization_ui <- function(id) {
   main <- tagList(
     h2("Chun-Li"),
     br(),
-    if (FALSE) {
+    conditionalPanel(
+      condition = sprintf("input['%s'] != 'Both'", ns("vislize_var")),
       fluidRow(
         column(12,
           align = "center", offset = 0,
@@ -191,7 +207,9 @@ visualization_ui <- function(id) {
           # Gotta use unique(as.character(character_name))[index] for each
         )
       )
-    } else {
+    ),
+    conditionalPanel(
+      condition = sprintf("input['%s'] == 'Both'", ns("vislize_var")),
       fluidRow(
         column(6,
           align = "center", offset = 0,
@@ -202,15 +220,18 @@ visualization_ui <- function(id) {
           h3("Heatmap goes here")
         )
       )
-    },
-    if (FALSE) {
+    ),
+    conditionalPanel(
+      condition = sprintf("input['%s'] != 'Both'", ns("vislize_var")),
       fluidRow(
         column(12,
           align = "center", offset = 0,
           h3("Scatterplot goes here")
         )
       )
-    } else {
+    ),
+    conditionalPanel(
+      condition = sprintf("input['%s'] == 'Both'", ns("vislize_var")),
       fluidRow(
         column(6,
           align = "center", offset = 0,
@@ -221,7 +242,7 @@ visualization_ui <- function(id) {
           h3("Scatterplot goes here")
         )
       )
-    }
+    )
   )
   list(sidebar = sidebar, main = main)
 }
@@ -277,7 +298,7 @@ prediction_ui <- function(id) {
       column(12,
         align = "center", offset = 0,
         h4("Choose elastic net tuning parameters for testing:"),
-        checkboxInput("best", "Choose best based on CV", TRUE),
+        checkboxInput("best", "Choose best based on cross-validation", TRUE),
         sliderInput("l_slider",
           label = p("Lambda (amount of penalty to apply):"), min = -1e4,
           max = 1e4, value = 1, step = 1000
@@ -323,7 +344,139 @@ information_server <- function(id) {
   moduleServer(
     id,
     function(input, output, session) {
-      # how do the distributions look?
+      char_name <- reactive({
+        if (input$character == "All") {
+          return("All characters")
+        } else {
+          return(input$character)
+        }
+      })
+      char_data <- reactive({
+        filename <- gsub("\\.", "_", tolower(input$character))
+        if (filename == "all") {
+          return(df)
+        } else if (filename == "zeku (old)") {
+          char_df <- read.csv("data/characters/zeku_old.csv",
+            stringsAsFactors = FALSE
+          )
+        } else if (filename == "zeku (young)") {
+          char_df <- read.csv("data/characters/zeku_young.csv",
+            stringsAsFactors = FALSE
+          )
+        } else {
+          char_file <- paste0("data/characters/", filename, ".csv")
+          char_df <- read.csv(char_file, stringsAsFactors = FALSE)
+          return(char_df)
+        }
+      })
+      char_color <- reactive({
+        switch(input$character,
+          "All" = "#000000",
+          "Abigail" = "#af33b4",
+          "Akuma" = "#a52e28",
+          "Alex" = "#48683d",
+          "Balrog" = "#235dbb",
+          "Birdie" = "#d7a23e",
+          "Blanka" = "#b36732",
+          "Cammy" = "#67b600",
+          "Chun-Li" = "#37659b",
+          "Cody" = "#521f15",
+          "Dan" = "#bf6072",
+          "Dhalsim" = "#e0602b",
+          "E.Honda" = "#5197a3",
+          "Ed" = "#51bcd0",
+          "F.A.N.G" = "#3040a0",
+          "Falke" = "#191b44",
+          "G" = "#3d453a",
+          "Gill" = "#bf423b",
+          "Guile" = "#597c00",
+          "Ibuki" = "#4b1d40",
+          "Juri" = "#983190",
+          "Kage" = "#553fad",
+          "Karin" = "#e93824",
+          "Ken" = "#ff0000",
+          "Kolin" = "#394057",
+          "Laura" = "#80dc00",
+          "Lucia" = "#3e77b1",
+          "M.Bison" = "#480e07",
+          "Menat" = "#3d224b",
+          "Nash" = "#3a8455",
+          "Necalli" = "#581e0d",
+          "Poison" = "#d14461",
+          "R.Mika" = "#68e6f7",
+          "Rashid" = "#375963",
+          "Ryu" = "#457272",
+          "Sagat" = "#a16a46",
+          "Sakura" = "#ff83fa",
+          "Seth" = "#6d7293",
+          "Urien" = "#714661",
+          "Vega" = "#ed5971",
+          "Zangief" = "#e52a0e",
+          "Zeku (Old)" = "#545345",
+          "Zeku (Young)" = "#351f0a",
+        )
+      })
+
+      output$c_img <- renderUI({
+        filename <- gsub("\\.", "_", tolower(input$character))
+        if (filename == "all") {
+          return(NULL)
+        } else if (filename == "zeku (old)") {
+          return(tags$img(src = "img/zeku_old.png"))
+        } else if (filename == "zeku (young)") {
+          return(tags$img(src = "img/zeku_young.png"))
+        } else {
+          return(tags$img(src = paste0("img/", filename, ".png")))
+        }
+      })
+      output$c_name <- renderText(char_name())
+      output$test <- renderPrint(head(char_data()))
+      output$char_summary <- renderPrint(colMeans(df[9:18]))
+      output$summary_plnCmd <- renderPrint(print(summary_tb(plnCmd), n = Inf))
+      output$summary_moveType <- renderPrint(summary_tb(moveType))
+      output$summary_airmove <- renderPrint(summary_tb(airmove))
+      output$summary_followUp <- renderPrint(summary_tb(followUp))
+      output$summary_projectile <- renderPrint(summary_tb(projectile))
+      output$description <- renderPrint({
+        switch(input$examine_var,
+          "Frames on block" = sprintf(
+            "Median: %.2f  |  Mean: %.2f  |  Standard deviation: %.2f",
+            median(char_data()$onBlock),
+            mean(char_data()$onBlock),
+            sd(char_data()$onBlock)
+          ),
+          "Damage" = sprintf(
+            "Median: %.2f  |  Mean: %.2f  |  Standard deviation: %.2f",
+            median(char_data()$Damage),
+            mean(char_data()$Damage),
+            sd(char_data()$Damage)
+          ),
+          "Stun" = sprintf(
+            "Median: %.2f  |  Mean: %.2f  |  Standard deviation: %.2f",
+            median(char_data()$Stun),
+            mean(char_data()$Stun),
+            sd(char_data()$Stun)
+          )
+        )
+      })
+      output$full_kde <- renderPlot({
+        switch(input$examine_var,
+          "Frames on block" = kde(char_data(), onBlock, char_color()) +
+            labs(title = "Frames on block") +
+            theme(plot.title = element_text(size = 16)),
+          "Damage" = kde(char_data(), Damage, char_color()) +
+            labs(title = "Damage") +
+            theme(plot.title = element_text(size = 16)),
+          "Stun" = kde(char_data(), Stun, char_color()) +
+            labs(title = "Stun") +
+            theme(plot.title = element_text(size = 16))
+        )
+      })
+      output$char_stats <- renderPrint(print(t(char_data()[1, 8:17])))
+      output$attack_fts <- renderPrint(print(char_data()[c(1:7, 18:19)]))
+      # observeEvent(input$character, {
+      #   print(input$character)
+      # })
     }
   )
 }
