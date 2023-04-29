@@ -245,34 +245,48 @@ prediction_ui <- function(id) {
         h3("Simple linear regression"),
         h4("It's literally just y = a + bx, equation should look familiar ;D"),
         br(),
+        br(),
+        br(),
+        br(),
+        br(),
+        br(),
         p("This will be a scatterplot"),
-        p("Show coefficients button"),
-        p("The y = a + bx formula"),
+        actionButton("lr_coef", label = "Show coefficients"),
+        h4("The y = a + bx formula"),
         p("CV score"),
-        p("Get CV score button"),
+        actionButton("lr_cv", label = "Get cross-validation score"),
         br()
       ),
       column(6,
         align = "center", offset = 0,
         h3("Elastic net regression"),
-        h4("16 predictors with penalties to help figure out which matter more"),
-        p("Slider goes here"),
-        p("This will be the parameter plot, adjustable with slider"),
-        p("Show coefficients button (calls function to make plots)"),
-        br(),
+        h4("16 predictors, use penalties to help figure out which matter more"),
+        sliderInput("a_slider_c",
+          label = h4("Select alpha value:"), min = 0,
+          max = 1, value = 0.4, step = 0.2
+        ),
+        p("This will be the parameter plot, cycleable with slider"),
+        actionButton("en_coef", label = "Show coefficients"),
+        h4(br()),
         p("CV scores plot"),
-        p("Get CV score button"),
-        p("Best tuning parameters: l_optimal, a_optimal")
+        actionButton("en_cv", label = "Get cross-validation score"),
+        p(strong("Best tuning parameters:"), "l_optimal, a_optimal")
       )
     ),
     fluidRow(
       column(12,
         align = "center", offset = 0,
         h4("Choose elastic net tuning parameters for testing:"),
-        p("Checkbox for choose Best, only show sliders if unchecked"),
-        p("Slider for lambda"),
-        p("Slider for alpha"),
-        p("Big ass 'Test em!' button")
+        checkboxInput("best", "Choose best based on CV", TRUE),
+        sliderInput("l_slider",
+          label = p("Lambda (amount of penalty to apply):"), min = -1e4,
+          max = 1e4, value = 1, step = 1000
+        ),
+        sliderInput("a_slider_t",
+          label = p("Alpha (L1 ratio; 0 pure ridge, 1 pure lasso):"),
+          min = 0, max = 1, value = 0.4, step = 0.2
+        ),
+        actionButton("test", label = "Test em!"),
       )
     ),
     fluidRow(
@@ -288,7 +302,7 @@ prediction_ui <- function(id) {
     fluidRow(
       column(12,
         align = "center", offset = 0,
-        p("Checkbox for Show test results")
+        checkboxInput("show_results", "Show testing results", FALSE)
       )
     ),
     fluidRow(
