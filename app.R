@@ -253,7 +253,7 @@ prediction_ui <- function(id) {
   main <- tagList(
     fluidRow(
       column(6,
-        style = "padding-right: 0px",
+        style = "padding-right: 5px",
         align = "center", offset = 0,
         h3("Simple linear regression"),
         h4("Nothing more to it than y = a + bx, equation may look familiar ;D"),
@@ -264,7 +264,6 @@ prediction_ui <- function(id) {
         br(),
         br(),
         plotOutput(ns("scattrp")),
-        br(),
         br(),
         actionButton(ns("lr_coef"), label = "Show coefficients"),
         h3(""),
@@ -286,14 +285,16 @@ prediction_ui <- function(id) {
         uiOutput(ns("coef_plot")),
         actionButton(ns("en_coef"), label = "Show coefficients"),
         uiOutput(ns("cv_plot")),
+        br(),
         actionButton(ns("en_cv"), label = "Get cross-validation scores"),
         h3(""),
-        p(strong("Best tuning parameters:"), uiOutput(ns("best_params")))
+        uiOutput(ns("best_params"))
       )
     ),
     fluidRow(
       column(12,
         align = "center", offset = 0,
+        br(),
         h4("Choose elastic net tuning parameters for testing:"),
         checkboxInput(
           ns("best"),
@@ -317,25 +318,17 @@ prediction_ui <- function(id) {
       br(),
       column(6,
         align = "center", offset = 0,
-        br(),
-        h4(textOutput(ns("lr_test_score"))),
-        br()
+        uiOutput(ns("lr_test_score"))
       ),
       column(6,
         align = "center", offset = 0,
-        div(
-          style = "background-color: #ccff66; border-radius: 11px",
-          br(),
-          h4(textOutput(ns("en_test_score"))),
-          br()
-        )
+        uiOutput(ns("en_test_score"))
       )
     ),
     fluidRow(
       column(12,
         align = "center", offset = 0,
-        checkboxInput(ns("show_results"), "Show testing results", FALSE),
-        verbatimTextOutput(ns("wtf"))
+        checkboxInput(ns("show_results"), "Show testing results", FALSE)
       )
     ),
     conditionalPanel(
@@ -343,10 +336,12 @@ prediction_ui <- function(id) {
       fluidRow(
         column(6,
           align = "center", offset = 0,
+          h5("Simple LR"),
           tableOutput(ns("lr_pred_tb"))
         ),
         column(6,
           align = "center", offset = 0,
+          h5("Elastic net"),
           tableOutput(ns("en_pred_tb"))
         )
       )
@@ -673,10 +668,13 @@ prediction_server <- function(id) {
         })
 
         output$best_params <- renderUI({
-          pre(sprintf(
-            "Lambda: %.4f  |  Alpha: %.1f",
-            tuning_params$t[[1]], tuning_params$t[[2]]
-          ))
+          p(
+            strong("Best tuning parameters:"),
+            pre(sprintf(
+              "Lambda: %.4f  |  Alpha: %.1f",
+              tuning_params$t[[1]], tuning_params$t[[2]]
+            ))
+          )
         })
       })
 
@@ -696,16 +694,62 @@ prediction_server <- function(id) {
           mean(og_y), as.numeric(input$l_slider), input$a_slider_t
         )
 
-        output$lr_test_score <- renderText({
-          paste0("Test score:  ", round(ifelse(input$best,
-            results_best[[1]][1, score_metr], results_custom[[1]][1, score_metr]
-          ), 3))
+        lrts <- reactive({
+          if (input$best) {
+            results_best[[1]][1, score_metr]
+          } else {
+            results_custom[[1]][1, score_metr]
+          }
         })
 
-        output$en_test_score <- renderText({
-          paste0("Test score:  ", round(ifelse(input$best,
-            results_best[[1]][2, score_metr], results_custom[[1]][2, score_metr]
-          ), 3))
+        ents <- reactive({
+          if (input$best) {
+            results_best[[1]][2, score_metr]
+          } else {
+            results_custom[[1]][2, score_metr]
+          }
+        })
+
+        output$lr_test_score <- renderUI({
+          scr_text <- sprintf("Test score: %.3f", lrts())
+          win <- div(
+            style = "background-color: #ccff66; border-radius: 11px",
+            br(),
+            h4(scr_text),
+            br()
+          )
+          if (score_metr == 1 && lrts() > ents()) {
+            win
+          } else if (score_metr == 2 && lrts() < ents()) {
+            win
+          } else {
+            div(
+              br(),
+              h4(scr_text),
+              br()
+            )
+          }
+        })
+
+        output$en_test_score <- renderUI({
+          scr_text <- sprintf("Test score: %.3f", ents())
+          win <- div(
+            style = "background-color: #ccff66; border-radius: 11px",
+            br(),
+            h4(scr_text),
+            br()
+          )
+          if (score_metr == 1 && ents() > lrts()) {
+            win
+          } else if (score_metr == 2 && ents() < lrts()) {
+            win
+          } else {
+            div(
+              br(),
+              h4(scr_text),
+              br()
+            )
+          }
         })
 
         lr_pred <- as.data.frame(results_best[[2]][1, , ])
