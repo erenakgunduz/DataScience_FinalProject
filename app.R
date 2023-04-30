@@ -1,5 +1,15 @@
 source("global.R")
-use_virtualenv("sfv_attacks", required = TRUE)
+
+# To run locally
+# use_virtualenv("sfv_attacks", required = TRUE)
+# For deployment
+virtualenv_dir <- Sys.getenv("VIRTUALENV_NAME")
+python_path <- Sys.getenv("PYTHON_PATH")
+requirements <- readLines("requirements.txt")
+dependencies <- unlist(lapply(requirements, function(x) gsub("[>=].*$", "", x)))
+virtualenv_create(envname = virtualenv_dir, python = python_path)
+virtualenv_install(virtualenv_dir, packages = dependencies)
+use_virtualenv(virtualenv_dir, required = TRUE)
 
 df <- read.csv("data/all.csv", stringsAsFactors = FALSE)
 
