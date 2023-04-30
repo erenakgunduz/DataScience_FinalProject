@@ -127,6 +127,7 @@ scatterplot <- function(df, variable, clr) {
 
 # ----- UIs -----
 ui <- fluidPage(
+  theme = shinythemes::shinytheme("united"),
   tags$head(tags$style(
     type = "text/css",
     "img {max-width: 100%; width: 100%; height: auto} h4 {font-weight: normal}"
@@ -321,7 +322,7 @@ prediction_ui <- function(id) {
             min = 0, max = 1, value = 0.4, step = 0.2
           ),
         ),
-        actionButton(ns("test"), label = "Test em!"),
+        actionButton(ns("test"), class = "btn-success", label = "Test em!"),
       )
     ),
     fluidRow(
