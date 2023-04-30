@@ -25,7 +25,7 @@ file_path = os.path.dirname(os.path.realpath(__file__))
 
 # --- all tuning parameters ---
 lambdas = np.logspace(-4, 4, 9)  # from 1e-4 to 1e4, and with nine total samples
-alphas = np.linspace(1, 0, 6)  # from 1 to 0, now with six evenly spaced samples
+alphas = np.linspace(0, 1, 6)  # from 0 to 1, now with six evenly spaced samples
 
 
 def preprocess_data(filename: str, response: str) -> tuple:

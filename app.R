@@ -1,4 +1,5 @@
 source("global.R")
+use_virtualenv("sfv_attacks", required = TRUE)
 
 df <- read.csv("data/all.csv", stringsAsFactors = FALSE)
 
@@ -240,8 +241,8 @@ prediction_ui <- function(id) {
     selectInput(ns("scorer"), "Scoring metric",
       choices = c("Mean squared error", "R-squared")
     ),
-    checkboxInput("seed_test", "Set seed for train-test split", TRUE),
-    checkboxInput("seed_cv", "Set seed for cross-validation folds", TRUE)
+    checkboxInput(ns("seed_test"), "Set seed for train-test split", TRUE),
+    checkboxInput(ns("seed_cv"), "Set seed for cross-validation folds", TRUE)
   )
   main <- tagList(
     fluidRow(
@@ -255,43 +256,54 @@ prediction_ui <- function(id) {
         br(),
         br(),
         br(),
-        p("This will be a scatterplot"),
-        actionButton("lr_coef", label = "Show coefficients"),
-        h4("The y = a + bx formula"),
-        p("CV score"),
-        actionButton("lr_cv", label = "Get cross-validation score"),
+        plotOutput(ns("scattrp")),
+        br(),
+        br(),
+        actionButton(ns("lr_coef"), label = "Show coefficients"),
+        h3(""),
+        textOutput(ns("lr_formula")),
+        br(),
+        textOutput(ns("cv_score")),
+        br(),
+        actionButton(ns("lr_cv"), label = "Get cross-validation score"),
         br()
       ),
       column(6,
         align = "center", offset = 0,
         h3("Elastic net regression"),
         h4("16 predictors, use penalties to help figure out which matter more"),
-        sliderInput("a_slider_c",
+        sliderInput(ns("a_slider_c"),
           label = h4("Select alpha value:"), min = 0,
           max = 1, value = 0.4, step = 0.2
         ),
-        p("This will be the parameter plot, cycleable with slider"),
-        actionButton("en_coef", label = "Show coefficients"),
-        h4(br()),
-        p("CV scores plot"),
-        actionButton("en_cv", label = "Get cross-validation score"),
-        p(strong("Best tuning parameters:"), "l_optimal, a_optimal")
+        uiOutput(ns("coef_plot")),
+        actionButton(ns("en_coef"), label = "Show coefficients"),
+        uiOutput(ns("cv_plot")),
+        actionButton(ns("en_cv"), label = "Get cross-validation scores"),
+        h3(""),
+        p(strong("Best tuning parameters:"), textOutput(ns("best_params")))
       )
     ),
     fluidRow(
       column(12,
         align = "center", offset = 0,
         h4("Choose elastic net tuning parameters for testing:"),
-        checkboxInput("best", "Choose best based on cross-validation", TRUE),
-        sliderInput("l_slider",
-          label = p("Lambda (amount of penalty to apply):"), min = -1e4,
-          max = 1e4, value = 1, step = 1000
+        checkboxInput(
+          ns("best"),
+          "Go with the best (highest CV scores)", TRUE
         ),
-        sliderInput("a_slider_t",
-          label = p("Alpha (L1 ratio; 0 pure ridge, 1 pure lasso):"),
-          min = 0, max = 1, value = 0.4, step = 0.2
+        conditionalPanel(
+          condition = sprintf("!input['%s']", ns("best")),
+          sliderInput(ns("l_slider"),
+            label = p("Lambda (amount of penalty to apply):"), min = -1e4,
+            max = 1e4, value = 1, step = 1000
+          ),
+          sliderInput(ns("a_slider_t"),
+            label = p("Alpha (L1 ratio; 0 pure ridge, 1 pure lasso):"),
+            min = 0, max = 1, value = 0.4, step = 0.2
+          ),
         ),
-        actionButton("test", label = "Test em!"),
+        actionButton(ns("test"), label = "Test em!"),
       )
     ),
     fluidRow(
@@ -307,7 +319,7 @@ prediction_ui <- function(id) {
     fluidRow(
       column(12,
         align = "center", offset = 0,
-        checkboxInput("show_results", "Show testing results", FALSE)
+        checkboxInput(ns("show_results"), "Show testing results", FALSE)
       )
     ),
     fluidRow(
@@ -730,7 +742,101 @@ prediction_server <- function(id) {
   moduleServer(
     id,
     function(input, output, session) {
-      # which regression will win: simple linear or elastic net?
+      regression <- import("regression")
+      np <- import("numpy")
+      plt <- import("matplotlib.pyplot")
+
+      v <- reactive({
+        regression$data_splits(
+          "all.csv", tolower(input$response_var),
+          input$seed_test, input$seed_cv
+        )
+      })
+      score_dem <- reactive({
+        ifelse(input$scorer == "R-squared", return("r2"), return("mse"))
+      })
+
+      train <- reactiveValues(X = NULL, x = NULL, y = NULL)
+      slr <- reactiveValues(coefs = NULL, cv = NULL)
+      tuning_params <- reactiveValues(t = NULL)
+
+      observeEvent(input$en_coef, {
+        vec <- v()
+        vec[[3]][[2]] <- np$array(as.numeric(vec[[3]][[2]]))
+        vec[[4]][[2]] <- np$array(as.numeric(vec[[4]][[2]]))
+        train$X <- np$array(vec[[3]][[1]])
+        train$y <- vec[[3]][[2]]
+        cols <- np$array(vec[[1]][3:19])
+
+        regression$plot_parameters(train$X, train$y, cols)
+
+        output$coef_plot <- renderUI({
+          img_path <- paste0("img/regr/", input$response_var, "_params_")
+          img_path <- paste0(img_path, input$a_slider_c * 5, ".png")
+          print(img_path)
+          img(src = img_path)
+        })
+      })
+
+      observeEvent(input$lr_coef, {
+        vec <- v()
+        vec[[3]][[2]] <- np$array(as.numeric(vec[[3]][[2]]))
+        vec[[4]][[2]] <- np$array(as.numeric(vec[[4]][[2]]))
+        train$X <- np$array(vec[[3]][[1]])
+        train$y <- vec[[3]][[2]]
+        train$x <- np$array(train$X[, 1])
+
+        slr$coefs <- regression$simple_lr(train$x, train$y)
+
+        output$lr_formula <- renderText({
+          paste0(slr$coefs[[1]], " | ", slr$coefs[[2]])
+        })
+      })
+
+      observeEvent(input$lr_cv, {
+        vec <- v()
+        vec[[3]][[2]] <- np$array(as.numeric(vec[[3]][[2]]))
+        vec[[4]][[2]] <- np$array(as.numeric(vec[[4]][[2]]))
+        train$X <- np$array(vec[[3]][[1]])
+        train$y <- vec[[3]][[2]]
+        train$x <- np$array(train$X[, 1])
+
+        slr$cv <- regression$simple_lr(
+          train$x, train$y,
+          vec[[5]], TRUE, score_dem()
+        )
+
+        output$cv_score <- renderText({
+          as.character(slr$cv)
+        })
+      })
+
+      observeEvent(input$en_cv, {
+        vec <- v()
+        vec[[3]][[2]] <- np$array(as.numeric(vec[[3]][[2]]))
+        vec[[4]][[2]] <- np$array(as.numeric(vec[[4]][[2]]))
+        train$X <- np$array(vec[[3]][[1]])
+        train$y <- vec[[3]][[2]]
+        cols <- np$array(vec[[1]][3:19])
+
+        t <- regression$cross_validation(
+          train$X, train$y,
+          vec[[5]], cols, score_dem()
+        )
+        tuning_params$t <- t
+
+        output$cv_plot <- renderUI({
+          img(src = paste0("img/regr/", input$response_var, "_cv.png"))
+        })
+
+        output$best_params <- renderText({
+          paste0(tuning_params$t[[1]], " | ", tuning_params$t[[2]])
+        })
+      })
+
+      output$scattrp <- renderPlot({
+        scatterplot(df, input$response_var, "#000fff")
+      })
     }
   )
 }
