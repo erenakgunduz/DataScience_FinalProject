@@ -42,11 +42,21 @@ df_tile <- df %>%
 # make sure the set of colors matches the number of bins
 cmap_bins <- length(levels(df_tile$oB_bins))
 
-tilemap <- function(responses, cn, custompal) {
-  if (responses == "Damage") {
-    tm <- ggplot(df_tile, aes(Damage, {{ cn }}, fill = oB_bins))
+tilemap <- function(response, character, custompal) {
+  df_char <- df_tile %>%
+    filter(Character == character)
+  if (character == "All") {
+    if (response == "Damage") {
+      tm <- ggplot(df_tile, aes(Damage, character_name, fill = oB_bins))
+    } else {
+      tm <- ggplot(df_tile, aes(Stun, character_name, fill = oB_bins))
+    }
   } else {
-    tm <- ggplot(df_tile, aes(Stun, {{ cn }}, fill = oB_bins))
+    if (response == "Damage") {
+      tm <- ggplot(df_char, aes(Damage, character, fill = oB_bins))
+    } else {
+      tm <- ggplot(df_char, aes(Stun, character, fill = oB_bins))
+    }
   }
   tm +
     geom_tile(width = 10, color = "white", linewidth = 0.2) +
@@ -91,22 +101,18 @@ correlation <- function(df, variable) {
 
 scatterplot <- function(df, variable, clr) {
   if (variable == "Damage") {
-    ggplot(df, aes(onBlock, Damage)) +
+    sp <- ggplot(df, aes(onBlock, Damage)) +
       geom_point(aes(color = Damage)) +
-      scale_color_gradientn(colors = viridis(max(df$Damage), option = "C")) +
-      geom_smooth(
-        method = "lm", formula = y ~ x,
-        color = clr, fill = clr, alpha = 0.15
-      )
+      scale_color_gradientn(colors = viridis(max(df$Damage), option = "C"))
   } else {
-    ggplot(df, aes(onBlock, Stun)) +
+    sp <- ggplot(df, aes(onBlock, Stun)) +
       geom_point(aes(color = Stun)) +
-      scale_color_gradientn(colors = viridis(max(df$Stun), option = "D")) +
-      geom_smooth(
-        method = "lm", formula = y ~ x,
-        color = clr, fill = clr, alpha = 0.15
-      )
+      scale_color_gradientn(colors = viridis(max(df$Stun), option = "D"))
   }
+  sp + geom_smooth(
+    method = "lm", formula = y ~ x,
+    color = clr, fill = clr, alpha = 0.15
+  )
 }
 
 # ----- UIs -----
@@ -247,9 +253,10 @@ prediction_ui <- function(id) {
   main <- tagList(
     fluidRow(
       column(6,
+        style = "padding-right: 0px",
         align = "center", offset = 0,
         h3("Simple linear regression"),
-        h4("It's literally just y = a + bx, equation should look familiar ;D"),
+        h4("Nothing more to it than y = a + bx, equation may look familiar ;D"),
         br(),
         br(),
         br(),
@@ -261,9 +268,9 @@ prediction_ui <- function(id) {
         br(),
         actionButton(ns("lr_coef"), label = "Show coefficients"),
         h3(""),
-        textOutput(ns("lr_formula")),
+        h4(textOutput(ns("lr_formula"))),
         br(),
-        textOutput(ns("cv_score")),
+        h4(textOutput(ns("cv_score"))),
         br(),
         actionButton(ns("lr_cv"), label = "Get cross-validation score"),
         br()
@@ -281,7 +288,7 @@ prediction_ui <- function(id) {
         uiOutput(ns("cv_plot")),
         actionButton(ns("en_cv"), label = "Get cross-validation scores"),
         h3(""),
-        p(strong("Best tuning parameters:"), textOutput(ns("best_params")))
+        p(strong("Best tuning parameters:"), uiOutput(ns("best_params")))
       )
     ),
     fluidRow(
@@ -483,9 +490,6 @@ information_server <- function(id) {
       })
       output$char_stats <- renderPrint(print(t(char_data()[1, 8:17])))
       output$attack_fts <- renderPrint(print(char_data()[c(1:7, 18:19)]))
-      # observeEvent(input$character, {
-      #   print(input$character)
-      # })
     }
   )
 }
@@ -575,177 +579,7 @@ visualization_server <- function(id) {
         scatterplot(ch_data(), input$vislize_var, ch_color())
       })
       output$tilemaps <- renderPlot({
-        switch(input$char,
-          "All" = tilemap(input$vislize_var, character_name, input$palcolor),
-          "Abigail" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[1], input$palcolor
-          ),
-          "Akuma" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[2], input$palcolor
-          ),
-          "Alex" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[3], input$palcolor
-          ),
-          "Balrog" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[4], input$palcolor
-          ),
-          "Birdie" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[5], input$palcolor
-          ),
-          "Blanka" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[6], input$palcolor
-          ),
-          "Cammy" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[7], input$palcolor
-          ),
-          "Chun-Li" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[8], input$palcolor
-          ),
-          "Cody" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[9], input$palcolor
-          ),
-          "Dan" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[10], input$palcolor
-          ),
-          "Dhalsim" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[11], input$palcolor
-          ),
-          "E.Honda" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[12], input$palcolor
-          ),
-          "Ed" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[13], input$palcolor
-          ),
-          "F.A.N.G" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[15], input$palcolor
-          ),
-          "Falke" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[14], input$palcolor
-          ),
-          "G" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[16], input$palcolor
-          ),
-          "Gill" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[17], input$palcolor
-          ),
-          "Guile" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[18], input$palcolor
-          ),
-          "Ibuki" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[19], input$palcolor
-          ),
-          "Juri" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[20], input$palcolor
-          ),
-          "Kage" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[21], input$palcolor
-          ),
-          "Karin" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[22], input$palcolor
-          ),
-          "Ken" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[23], input$palcolor
-          ),
-          "Kolin" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[24], input$palcolor
-          ),
-          "Laura" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[25], input$palcolor
-          ),
-          "Lucia" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[26], input$palcolor
-          ),
-          "M.Bison" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[27], input$palcolor
-          ),
-          "Menat" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[28], input$palcolor
-          ),
-          "Nash" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[29], input$palcolor
-          ),
-          "Necalli" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[30], input$palcolor
-          ),
-          "Poison" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[31], input$palcolor
-          ),
-          "R.Mika" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[32], input$palcolor
-          ),
-          "Rashid" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[33], input$palcolor
-          ),
-          "Ryu" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[34], input$palcolor
-          ),
-          "Sagat" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[35], input$palcolor
-          ),
-          "Sakura" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[36], input$palcolor
-          ),
-          "Seth" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[37], input$palcolor
-          ),
-          "Urien" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[38], input$palcolor
-          ),
-          "Vega" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[39], input$palcolor
-          ),
-          "Zangief" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[40], input$palcolor
-          ),
-          "Zeku (Old)" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[41], input$palcolor
-          ),
-          "Zeku (Young)" = tilemap(
-            input$vislize_var,
-            unique(as.character(character_name))[42], input$palcolor
-          ),
-        )
+        tilemap(input$vislize_var, input$char, input$palcolor)
       })
     }
   )
@@ -838,8 +672,11 @@ prediction_server <- function(id) {
           img(src = paste0("img/regr/", input$response_var, "_cv.png"))
         })
 
-        output$best_params <- renderText({
-          paste0(tuning_params$t[[1]], " | ", tuning_params$t[[2]])
+        output$best_params <- renderUI({
+          pre(sprintf(
+            "Lambda: %.4f  |  Alpha: %.1f",
+            tuning_params$t[[1]], tuning_params$t[[2]]
+          ))
         })
       })
 
