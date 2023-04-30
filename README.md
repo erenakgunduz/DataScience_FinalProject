@@ -8,6 +8,10 @@ For this project, the purpose was to have some fun breaking down the SFV data fo
 - Next, to see how the data and relationships within it "look" through the second tab: **Visualization**.
 - And ultimately, to put statistical regression models and machine learning techniques to use in the **Prediction** tab. This way, we can make predictions about a portion of our data (20%) our models don’t train on and only see at the last step (testing), see how "on point" these predictions are and play around with different parameter values to see how they affect the performance of the more complex model (elastic net) on the test data, and compare the performances of the two models.
 
+![Information module]("https://raw.githubusercontent.com/erenakgunduz/SFV_Attacks_Analysis/main/https://raw.githubusercontent.com/erenakgunduz/SFV_Attacks_Analysis/main/www/img/screenshots/information.png")
+![Visualization module]("https://raw.githubusercontent.com/erenakgunduz/SFV_Attacks_Analysis/main/https://raw.githubusercontent.com/erenakgunduz/SFV_Attacks_Analysis/main/www/img/screenshots/viz.png")
+![Prediction module]("https://raw.githubusercontent.com/erenakgunduz/SFV_Attacks_Analysis/main/https://raw.githubusercontent.com/erenakgunduz/SFV_Attacks_Analysis/main/www/img/screenshots/pred.png")
+
 ## Abstract
 
 The user should be able to see and freely tinker with the three aforementioned tabs as the "modules" of the app. The full data frame has about 1,800 moves (our observations) and 20 columns --- of these, two are tags so we know which move is what, 16 are features that our models will fit/train on, and two are responses (the Damage and Stun inflicted on opponent). Of the features, six are categorical and particular to each move, and ten are numerical stats for the characters performing the moves. Most of it is self-explanatory once you have a look, but I’d like to point out that plnCmd is just the [motion input](https://www.youtube.com/watch?v=1qEguZXyWjw) the player has to perform for the attack to execute --- many share these, so I was able to numerically encode them with each belonging to one of 545 unique inputs, as you will see in the app.
@@ -43,3 +47,8 @@ The Visualization tab mainly aims to see if, and to what extent, frames on block
 These two modules are then followed by the Prediction module, with a set of interactive elements like checkboxes for controlling the randomness of shuffling for splits by setting a seed (resulting in consistent shuffles and splits if checked), buttons to perform training/fitting of the model, then to perform five-fold cross-validation to determine exactly how features could potentially be selected more advantageously for fitting thus far unseen test data by looking the plot of errors, and finally to test the performance on the testing set --- which, as mentioned, consists of 20% of the original full set of observations (moves) in the data. Un-centering the response vectors for the elastic net also makes it possible for the user to compare tables for both models side-by-side containing the names of the attacks in the test dataset, the predicted values ($\hat{Y}$), and the actual values (Y, the truth).
 
 ## Gallery
+
+![Visualization for stun]("https://raw.githubusercontent.com/erenakgunduz/SFV_Attacks_Analysis/main/www/img/screenshots/viz_stun.png")
+![Scatter plot and Pearson correlation]("https://raw.githubusercontent.com/erenakgunduz/SFV_Attacks_Analysis/main/www/img/screenshots/sp.png")
+![Scores output]("https://raw.githubusercontent.com/erenakgunduz/SFV_Attacks_Analysis/main/www/img/screenshots/scores.png")
+![Sliders and tables in Prediction module]("https://raw.githubusercontent.com/erenakgunduz/SFV_Attacks_Analysis/main/www/img/screenshots/sliders_tables.png")
