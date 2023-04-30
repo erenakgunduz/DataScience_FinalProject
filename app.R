@@ -757,7 +757,6 @@ prediction_server <- function(id) {
     function(input, output, session) {
       regression <- import("regression")
       np <- import("numpy")
-      plt <- import("matplotlib.pyplot")
 
       v <- reactive({
         regression$data_splits(
