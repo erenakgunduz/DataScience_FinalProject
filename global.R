@@ -1,5 +1,7 @@
 if (!require(shiny)) install.packages("shiny")
 library(shiny)
+if (!require(shinyWidgets)) install.packages("shiny")
+library(shinyWidgets)
 if (!require(shinythemes)) install.packages("shinythemes")
 library(shinythemes)
 if (!require(tidyverse)) install.packages("tidyverse")

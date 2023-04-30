@@ -3,7 +3,7 @@ use_virtualenv("sfv_attacks", required = TRUE)
 
 df <- read.csv("data/all.csv", stringsAsFactors = FALSE)
 
-# Generate summary table for attack categorical features
+# ----- Functions -----
 summary_tb <- function(feature) {
   df %>%
     group_by({{ feature }}) %>%
@@ -109,7 +109,7 @@ scatterplot <- function(df, variable, clr) {
   }
 }
 
-
+# ----- UIs -----
 ui <- fluidPage(
   tags$head(tags$style(
     type = "text/css",
@@ -290,13 +290,13 @@ prediction_ui <- function(id) {
         h4("Choose elastic net tuning parameters for testing:"),
         checkboxInput(
           ns("best"),
-          "Go with the best (highest CV scores)", TRUE
+          'Go with the "best" (highest CV scores)', TRUE
         ),
         conditionalPanel(
           condition = sprintf("!input['%s']", ns("best")),
-          sliderInput(ns("l_slider"),
-            label = p("Lambda (amount of penalty to apply):"), min = -1e4,
-            max = 1e4, value = 1, step = 1000
+          sliderTextInput(ns("l_slider"),
+            label = p("Lambda (amount of penalty to apply):"),
+            grid = TRUE, choices = sprintf("%g", 10^seq(-4, 4, length.out = 9))
           ),
           sliderInput(ns("a_slider_t"),
             label = p("Alpha (L1 ratio; 0 pure ridge, 1 pure lasso):"),
@@ -307,35 +307,48 @@ prediction_ui <- function(id) {
       )
     ),
     fluidRow(
+      br(),
       column(6,
         align = "center", offset = 0,
-        h4("Test score: ~~~~")
+        br(),
+        h4(textOutput(ns("lr_test_score"))),
+        br()
       ),
       column(6,
         align = "center", offset = 0,
-        h4("Test score: ~~~~")
+        div(
+          style = "background-color: #ccff66; border-radius: 11px",
+          br(),
+          h4(textOutput(ns("en_test_score"))),
+          br()
+        )
       )
     ),
     fluidRow(
       column(12,
         align = "center", offset = 0,
-        checkboxInput(ns("show_results"), "Show testing results", FALSE)
+        checkboxInput(ns("show_results"), "Show testing results", FALSE),
+        verbatimTextOutput(ns("wtf"))
       )
     ),
-    fluidRow(
-      column(6,
-        align = "center", offset = 0,
-        h4("Simple LR prediction table")
-      ),
-      column(6,
-        align = "center", offset = 0,
-        h4("Elastic net prediction table")
+    conditionalPanel(
+      condition = sprintf("input['%s']", ns("show_results")),
+      fluidRow(
+        column(6,
+          align = "center", offset = 0,
+          tableOutput(ns("lr_pred_tb"))
+        ),
+        column(6,
+          align = "center", offset = 0,
+          tableOutput(ns("en_pred_tb"))
+        )
       )
     )
   )
   list(sidebar = sidebar, main = main)
 }
 
+# ----- Servers -----
 information_server <- function(id) {
   moduleServer(
     id,
@@ -780,34 +793,31 @@ prediction_server <- function(id) {
 
       observeEvent(input$lr_coef, {
         vec <- v()
-        vec[[3]][[2]] <- np$array(as.numeric(vec[[3]][[2]]))
-        vec[[4]][[2]] <- np$array(as.numeric(vec[[4]][[2]]))
-        train$X <- np$array(vec[[3]][[1]])
-        train$y <- vec[[3]][[2]]
-        train$x <- np$array(train$X[, 1])
+        og_x <- np$array(vec[[2]][, 3])
+        og_y <- np$array(vec[[2]][, 19])
 
-        slr$coefs <- regression$simple_lr(train$x, train$y)
+        slr$coefs <- regression$simple_lr(og_x, og_y)
 
         output$lr_formula <- renderText({
-          paste0(slr$coefs[[1]], " | ", slr$coefs[[2]])
+          paste0(
+            "Predicted y = ", round(slr$coefs[[1]], 3),
+            " + ", round(slr$coefs[[2]], 3), "x"
+          )
         })
       })
 
       observeEvent(input$lr_cv, {
         vec <- v()
-        vec[[3]][[2]] <- np$array(as.numeric(vec[[3]][[2]]))
-        vec[[4]][[2]] <- np$array(as.numeric(vec[[4]][[2]]))
-        train$X <- np$array(vec[[3]][[1]])
-        train$y <- vec[[3]][[2]]
-        train$x <- np$array(train$X[, 1])
+        og_x <- np$array(vec[[2]][, 3])
+        og_y <- np$array(vec[[2]][, 19])
 
         slr$cv <- regression$simple_lr(
-          train$x, train$y,
+          og_x, og_y,
           vec[[5]], TRUE, score_dem()
         )
 
         output$cv_score <- renderText({
-          as.character(slr$cv)
+          as.character(round(slr$cv, 3))
         })
       })
 
@@ -832,6 +842,49 @@ prediction_server <- function(id) {
         output$best_params <- renderText({
           paste0(tuning_params$t[[1]], " | ", tuning_params$t[[2]])
         })
+      })
+
+      observeEvent(input$test, {
+        vec <- v()
+        vec[[3]][[2]] <- np$array(as.numeric(vec[[3]][[2]]))
+        vec[[4]][[2]] <- np$array(as.numeric(vec[[4]][[2]]))
+        og_y <- np$array(vec[[2]][, 19])
+        score_metr <- ifelse(score_dem() == "r2", 1, 2)
+
+        results_best <- regression$testing(
+          vec[[3]], vec[[4]],
+          mean(og_y), tuning_params$t[[1]], tuning_params$t[[2]]
+        )
+        results_custom <- regression$testing(
+          vec[[3]], vec[[4]],
+          mean(og_y), as.numeric(input$l_slider), input$a_slider_t
+        )
+
+        output$lr_test_score <- renderText({
+          paste0("Test score:  ", round(ifelse(input$best,
+            results_best[[1]][1, score_metr], results_custom[[1]][1, score_metr]
+          ), 3))
+        })
+
+        output$en_test_score <- renderText({
+          paste0("Test score:  ", round(ifelse(input$best,
+            results_best[[1]][2, score_metr], results_custom[[1]][2, score_metr]
+          ), 3))
+        })
+
+        lr_pred <- as.data.frame(results_best[[2]][1, , ])
+
+        if (input$best) {
+          en_pred <- as.data.frame(results_best[[2]][2, , ])
+        } else {
+          en_pred <- as.data.frame(results_custom[[2]][2, , ])
+        }
+
+        colnames(lr_pred) <- c("Character", "Attack", "Predicted", "Actual")
+        colnames(en_pred) <- c("Character", "Attack", "Predicted", "Actual")
+
+        output$lr_pred_tb <- renderTable(lr_pred)
+        output$en_pred_tb <- renderTable(en_pred)
       })
 
       output$scattrp <- renderPlot({
