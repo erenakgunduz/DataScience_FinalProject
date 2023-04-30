@@ -220,7 +220,7 @@ visualization_ui <- function(id) {
     selectInput(ns("char"), "Select character:",
       choices = c("All", unique(df$Character))
     ),
-    selectInput(ns("vislize_var"), "Variable(s)",
+    selectInput(ns("vislize_var"), "Variable",
       choices = c("Damage", "Stun")
     ),
     selectInput(ns("palcolor"), "Tilemap color palette",
