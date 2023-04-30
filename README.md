@@ -8,9 +8,9 @@ For this project, the purpose was to have some fun breaking down the SFV data fo
 - Next, to see how the data and relationships within it "look" through the second tab: **Visualization**.
 - And ultimately, to put statistical regression models and machine learning techniques to use in the **Prediction** tab. This way, we can make predictions about a portion of our data (20%) our models don’t train on and only see at the last step (testing), see how "on point" these predictions are and play around with different parameter values to see how they affect the performance of the more complex model (elastic net) on the test data, and compare the performances of the two models.
 
-![Information module]("https://raw.githubusercontent.com/erenakgunduz/SFV_Attacks_Analysis/main/https://raw.githubusercontent.com/erenakgunduz/SFV_Attacks_Analysis/main/www/img/screenshots/information.png")
-![Visualization module]("https://raw.githubusercontent.com/erenakgunduz/SFV_Attacks_Analysis/main/https://raw.githubusercontent.com/erenakgunduz/SFV_Attacks_Analysis/main/www/img/screenshots/viz.png")
-![Prediction module]("https://raw.githubusercontent.com/erenakgunduz/SFV_Attacks_Analysis/main/https://raw.githubusercontent.com/erenakgunduz/SFV_Attacks_Analysis/main/www/img/screenshots/pred.png")
+![Information module]("https://raw.githubusercontent.com/erenakgunduz/SFV_Attacks_Analysis/main/www/img/screenshots/information.png")
+![Visualization module]("https://raw.githubusercontent.com/erenakgunduz/SFV_Attacks_Analysis/main/www/img/screenshots/viz.png")
+![Prediction module]("https://raw.githubusercontent.com/erenakgunduz/SFV_Attacks_Analysis/main/www/img/screenshots/pred.png")
 
 ## Abstract
 
